@@ -28,15 +28,6 @@ Academic_Performance_ML_Complete/
 │       ├── test.csv
 │       ├── train.csv
 │       └── validation.csv
-├── data_generation
-│   ├── legacy_tools
-│   │   └── submit.py
-│   ├── quality_control
-│   │   ├── quality_control_report.md
-│   │   └── quality_control_report_updated.md
-│   └── synthetic
-│       ├── synthetic_survey_responses_800.csv
-│       └── synthetic_survey_responses_800_updated.csv
 ├── docs
 │   ├── ARCHITECTURE.md
 │   ├── DATA_DICTIONARY.md
