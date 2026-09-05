@@ -1,0 +1,37 @@
+RESEARCH PARTICIPATION FINAL TEST SET
+=====================================
+
+STATUS: LOCKED
+
+File:
+test.csv
+
+Rows:
+522
+
+Purpose:
+One-time final evaluation only.
+
+DO NOT USE THIS FILE FOR:
+- WEKA broad model comparison
+- feature selection
+- hyperparameter tuning
+- model-family selection
+- preprocessing decisions based on performance
+- threshold tuning
+- exploratory performance inspection
+
+Allowed use:
+Only after the complete model configuration has been
+selected and locked using Train and Validation data.
+
+Random state:
+1
+
+Prediction horizon:
+End of Year 1, predicting later research participation.
+
+IMPORTANT:
+Do not open Test results simply to see how well a
+development model performs. Doing so would weaken the
+independence of the final evaluation.

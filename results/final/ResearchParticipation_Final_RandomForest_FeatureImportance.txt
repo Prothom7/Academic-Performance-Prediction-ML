@@ -1,0 +1,99 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -attribute-importance -I 100 -num-slots 1 -K 12 -M 1.0 -V 0.001 -S 1
+Relation:     ResearchParticipation_TrainValidation_2953
+Instances:    2953
+Attributes:   25
+              Faculty
+              CurrentInstitution
+              HSCGraduationYear
+              Gender
+              CollegeCategory
+              CollegeLocation
+              HSCLearningSource
+              CollegeAttendance
+              HSCMath
+              HSCPhysics
+              HSCChemistry
+              FamilyMembers
+              BirthOrder
+              HouseholdIncomeYearly
+              HSCMonthlyExpenditure
+              InternetAvailability
+              ComputerAvailability
+              Year1CGPA
+              UniversityPreferenceOrder
+              DepartmentPreferenceOrder
+              FatherEducation
+              MotherEducation
+              FatherEmploymentSector
+              MotherEmploymentSector
+              ResearchParticipationBinary
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 12 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Attribute importance based on average impurity decrease (and number of nodes using that attribute)
+
+      0.81 (  2644)  HSCGraduationYear
+      0.8  (   968)  Gender
+      0.76 (  4773)  Faculty
+      0.7  (  2099)  CollegeLocation
+      0.69 (   604)  CollegeCategory
+      0.69 (   603)  HSCMath
+      0.67 (  2443)  HSCLearningSource
+      0.65 (  2246)  CollegeAttendance
+      0.64 (   557)  HSCPhysics
+      0.64 (   186)  ComputerAvailability
+      0.62 (  1132)  BirthOrder
+      0.61 (   451)  HSCChemistry
+      0.59 (  1480)  FamilyMembers
+      0.58 (   876)  HouseholdIncomeYearly
+      0.54 (  1206)  HSCMonthlyExpenditure
+      0.53 (   820)  InternetAvailability
+      0.52 (  1203)  Year1CGPA
+      0.51 (  1268)  UniversityPreferenceOrder
+      0.5  (  1095)  CurrentInstitution
+      0.48 (  1091)  DepartmentPreferenceOrder
+      0.47 (  1033)  FatherEmploymentSector
+      0.45 (  1232)  FatherEducation
+      0.45 (  1311)  MotherEducation
+      0.39 (   597)  MotherEmploymentSector
+
+
+Time taken to build model: 0.25 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         423               81.0345 %
+Incorrectly Classified Instances        99               18.9655 %
+Kappa statistic                          0.5641
+Mean absolute error                      0.2936
+Root mean squared error                  0.365 
+Relative absolute error                 64.0361 %
+Root relative squared error             76.2092 %
+Total Number of Instances              522     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.917    0.382    0.813      0.917    0.862      0.574    0.879     0.928     NotParticipated
+                 0.618    0.083    0.804      0.618    0.699      0.574    0.879     0.827     Participated
+Weighted Avg.    0.810    0.275    0.810      0.810    0.804      0.574    0.879     0.892     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 308  28 |   a = NotParticipated
+  71 115 |   b = Participated
+

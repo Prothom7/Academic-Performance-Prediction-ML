@@ -1,0 +1,48 @@
+{
+    "phase": "RP-04",
+    "target": "ResearchParticipationBinary",
+    "prediction_horizon": "End of Year 1, predicting later research participation",
+    "source_dataset": "D:\\Files\\Academic\\4-1\\ML\\Academic_Performance_ML_Project\\Academic_Performance_ML_Complete\\data\\processed\\research_participation\\ResearchParticipation_Binary_FinalClean.csv",
+    "source_sha256": "e6b927a92ef1168e30e9350cad54397ee21069870565f074b74c6ed0f629cc77",
+    "random_state": 1,
+    "stratified": true,
+    "split_protocol": {
+        "stage_1": "train_test_split(test_size=0.30, random_state=1, stratify=target)",
+        "stage_2": "split temporary set 50/50 using random_state=1 and stratification"
+    },
+    "rows": {
+        "total": 3475,
+        "train": 2432,
+        "validation": 521,
+        "test": 522
+    },
+    "class_counts": {
+        "Train": {
+            "NotParticipated": 1567,
+            "Participated": 865
+        },
+        "Validation": {
+            "NotParticipated": 336,
+            "Participated": 185
+        },
+        "Test": {
+            "NotParticipated": 336,
+            "Participated": 186
+        }
+    },
+    "files": {
+        "train": {
+            "path": "D:\\Files\\Academic\\4-1\\ML\\Academic_Performance_ML_Project\\Academic_Performance_ML_Complete\\data\\splits\\research_participation\\train.csv",
+            "sha256": "72b2dd00e38aa98abd1ef5b9b19def706ee1914c81d8cfc5e455824dd81399e8"
+        },
+        "validation": {
+            "path": "D:\\Files\\Academic\\4-1\\ML\\Academic_Performance_ML_Project\\Academic_Performance_ML_Complete\\data\\splits\\research_participation\\validation.csv",
+            "sha256": "048f96a972ab3900a000cbcb7c63d9d877f0c769a8b518a336797067f74cf163"
+        },
+        "test": {
+            "path": "D:\\Files\\Academic\\4-1\\ML\\Academic_Performance_ML_Project\\Academic_Performance_ML_Complete\\data\\splits\\research_participation\\test.csv",
+            "sha256": "9998fecc46ca7a08a0b452967f16a0ae9f013c08b3cfaedf520f7d2a88795a31"
+        }
+    },
+    "test_policy": "TEST IS LOCKED. Do not use for model selection, feature selection, hyperparameter tuning, threshold tuning, or exploratory evaluation. Evaluate once after the model is fully locked."
+}

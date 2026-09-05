@@ -1,0 +1,162 @@
+RP-03 RESEARCH PARTICIPATION BINARY DATASET
+============================================
+
+PROJECT ROOT
+------------
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete
+
+RAW DATASET
+-----------
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\raw\academic_performance_raw.csv
+
+Raw shape:
+(3516, 32)
+
+Raw rows:
+3516
+
+Raw columns:
+32
+
+
+TARGET
+------
+Original target column:
+'Participation in Research Projects  \n(গবেষণা প্রকল্পে অংশগ্রহণ)'
+
+Missing target rows removed:
+37
+
+Rows after missing-target removal:
+3479
+
+
+DUPLICATE AUDIT
+---------------
+Exact duplicate copies in raw dataset:
+4
+
+Exact labeled duplicate copies removed:
+4
+
+Removed pandas indices:
+[209, 212, 1013, 1815]
+
+Rows after duplicate removal:
+3475
+
+Duplicate evidence file:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\processed\research_participation\RP03_EXACT_DUPLICATE_GROUPS.csv
+
+
+PREDICTION HORIZON
+------------------
+Prediction is made at the end of Year 1,
+using information reasonably available by that point,
+to predict later ResearchParticipation.
+
+
+PRIMARY FEATURE SET
+-------------------
+Safe predictors:
+24
+
+Included predictors:
+- Faculty
+- CurrentInstitution
+- HSCGraduationYear
+- Gender
+- CollegeCategory
+- CollegeLocation
+- HSCLearningSource
+- CollegeAttendance
+- HSCMath
+- HSCPhysics
+- HSCChemistry
+- FamilyMembers
+- BirthOrder
+- HouseholdIncomeYearly
+- HSCMonthlyExpenditure
+- InternetAvailability
+- ComputerAvailability
+- Year1CGPA
+- UniversityPreferenceOrder
+- DepartmentPreferenceOrder
+- FatherEducation
+- MotherEducation
+- FatherEmploymentSector
+- MotherEmploymentSector
+
+
+EXCLUDED FROM PRIMARY MODEL
+---------------------------
+- Timestamp
+- Year2CGPA
+- CurrentLivingArrangement
+- PartTimeEmployment
+- UniversityMonthlyExpenditure
+- FinancialSupportSource
+- StudentClubMember
+- Original ResearchParticipation field
+
+
+BINARY TARGET
+-------------
+Target name:
+ResearchParticipationBinary
+
+Participated:
+1236
+
+NotParticipated:
+2239
+
+
+FINAL DATASET
+-------------
+Rows:
+3475
+
+Predictors:
+24
+
+Target:
+1
+
+Total columns:
+25
+
+Final shape:
+(3475, 25)
+
+
+MISSING PREDICTOR VALUES
+------------------------
+MotherEmploymentSector    1
+
+
+OUTPUT FILES
+------------
+CSV:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\processed\research_participation\ResearchParticipation_Binary_FinalClean.csv
+
+ARFF:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\processed\research_participation\ResearchParticipation_Binary_FinalClean.arff
+
+Audit:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\processed\research_participation\RP03_DATASET_AUDIT.txt
+
+Duplicate evidence:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\processed\research_participation\RP03_EXACT_DUPLICATE_GROUPS.csv
+
+
+IMPORTANT
+---------
+The completed Year-1 CGPA datasets, splits,
+models, experiments, and results were not modified.
+
+The ResearchParticipation Test split has NOT
+been created yet.
+
+No machine-learning model has been trained
+during RP-03.

@@ -1,0 +1,133 @@
+RP-04 FIXED STRATIFIED DATA SPLIT
+=================================
+
+SOURCE
+------
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\processed\research_participation\ResearchParticipation_Binary_FinalClean.csv
+
+Source SHA256:
+e6b927a92ef1168e30e9350cad54397ee21069870565f074b74c6ed0f629cc77
+
+
+DATASET
+-------
+Rows:
+3475
+
+Columns:
+25
+
+Target:
+ResearchParticipationBinary
+
+
+SPLIT DESIGN
+------------
+Random state:
+1
+
+Stratification:
+Yes
+
+Train:
+2432 rows
+69.99%
+
+Validation:
+521 rows
+14.99%
+
+Test:
+522 rows
+15.02%
+
+
+CLASS COUNTS
+------------
+
+Train
+-----
+NotParticipated:
+1567
+
+Participated:
+865
+
+
+Validation
+----------
+NotParticipated:
+336
+
+Participated:
+185
+
+
+Test
+----
+NotParticipated:
+336
+
+Participated:
+186
+
+
+OUTPUT FILES
+------------
+Train:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\splits\research_participation\train.csv
+
+Validation:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\splits\research_participation\validation.csv
+
+Test:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\splits\research_participation\test.csv
+
+Manifest:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\splits\research_participation\SPLIT_MANIFEST.json
+
+Checksums:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\splits\research_participation\SHA256SUMS.txt
+
+Test lock notice:
+D:\Files\Academic\4-1\ML\Academic_Performance_ML_Project\Academic_Performance_ML_Complete\data\splits\research_participation\TEST_SET_LOCKED.txt
+
+
+SHA256
+------
+Train:
+72b2dd00e38aa98abd1ef5b9b19def706ee1914c81d8cfc5e455824dd81399e8
+
+Validation:
+048f96a972ab3900a000cbcb7c63d9d877f0c769a8b518a336797067f74cf163
+
+Test:
+9998fecc46ca7a08a0b452967f16a0ae9f013c08b3cfaedf520f7d2a88795a31
+
+
+TEST POLICY
+-----------
+The 522-row Test set is now LOCKED.
+
+It must not be used for:
+
+- broad model benchmarking
+- model-family selection
+- feature selection
+- hyperparameter tuning
+- preprocessing decisions based on performance
+- threshold tuning
+- exploratory test evaluation
+
+Model development must use Train and Validation only.
+
+The Test set will be evaluated once after the final
+model configuration has been locked.
+
+
+STATUS
+------
+RP-04 completed.
+
+No model was trained.
+No Test performance was inspected.
