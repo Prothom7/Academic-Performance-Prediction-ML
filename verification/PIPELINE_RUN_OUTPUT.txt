@@ -1,0 +1,34 @@
+========================================================================
+ACADEMIC PERFORMANCE ML PIPELINE
+========================================================================
+
+[1/4] Cleaning raw dataset...
+Clean data: 3516 rows x 24 columns
+
+[2/4] Creating reproducible stratified 70/15/15 split...
+Train=2461, Validation=527, Test=528
+
+[3/4] Tuning RandomForest on Train -> Validation...
+Best validation parameters: {'n_estimators': 100, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Validation weighted F1: 0.5533
+Validation accuracy:    0.5560
+
+[4/4] Locking model and evaluating once on held-out Test...
+
+FINAL HELD-OUT TEST RESULTS
+accuracy                  : 0.5985
+weighted_precision        : 0.6202
+weighted_recall           : 0.5985
+weighted_f1               : 0.5984
+macro_precision           : 0.6481
+macro_recall              : 0.5843
+macro_f1                  : 0.6033
+cohen_kappa               : 0.4811
+weighted_roc_auc_ovr      : 0.8617
+macro_roc_auc_ovr         : 0.8663
+weighted_prc_auc          : 0.7150
+macro_prc_auc             : 0.7158
+
+Pipeline complete.
+Results: /mnt/data/Academic_Performance_ML_Complete/results/reproduction
+Model:   /mnt/data/Academic_Performance_ML_Complete/models/reproduction/final_random_forest_pipeline.joblib

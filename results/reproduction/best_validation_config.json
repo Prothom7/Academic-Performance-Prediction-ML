@@ -1,0 +1,22 @@
+{
+  "selection_rule": "maximize weighted_f1; tie-break by accuracy then kappa",
+  "best_parameters": {
+    "n_estimators": 100,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1
+  },
+  "best_validation_metrics": {
+    "accuracy": 0.5559772296015181,
+    "weighted_precision": 0.5713380767508678,
+    "weighted_recall": 0.5559772296015181,
+    "weighted_f1": 0.5533032475073242,
+    "macro_precision": 0.588165941285844,
+    "macro_recall": 0.535901656894135,
+    "macro_f1": 0.5512222358309545,
+    "cohen_kappa": 0.4255221022915202,
+    "weighted_roc_auc_ovr": 0.8392799420145988,
+    "macro_roc_auc_ovr": 0.8417416577070522,
+    "weighted_prc_auc": 0.6605602043940427,
+    "macro_prc_auc": 0.6541543712548084
+  }
+}

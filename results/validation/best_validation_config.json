@@ -1,0 +1,25 @@
+{
+  "selection_rule": "maximize weighted_f1; tie-break by accuracy then kappa",
+  "target": "Year1CGPA",
+  "train_rows": 2461,
+  "validation_rows": 527,
+  "numeric_features": [
+    "HSCGraduationYear"
+  ],
+  "categorical_feature_count": 22,
+  "best_parameters": {
+    "n_estimators": 100,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1
+  },
+  "best_validation_metrics": {
+    "accuracy": 0.5559772296015181,
+    "weighted_precision": 0.5713380767508678,
+    "weighted_recall": 0.5559772296015181,
+    "weighted_f1": 0.5533032475073242,
+    "macro_f1": 0.5512222358309545,
+    "kappa": 0.4255221022915202,
+    "weighted_roc_auc_ovr": 0.8392799420145988,
+    "weighted_prc_auc": 0.6605602043940427
+  }
+}

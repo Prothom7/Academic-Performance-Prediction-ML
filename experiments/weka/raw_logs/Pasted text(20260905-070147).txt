@@ -1,0 +1,150 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     E1_Year1CGPA_FinalClean
+Instances:    3516
+Attributes:   24
+              Faculty
+              CurrentInstitution
+              HSCGraduationYear
+              Gender
+              CollegeCategory
+              CollegeLocation
+              HSCLearningSource
+              CollegeAttendance
+              HSCMath
+              HSCPhysics
+              HSCChemistry
+              FamilyMembers
+              BirthOrder
+              HouseholdIncomeYearly
+              HSCMonthlyExpenditure
+              InternetAvailability
+              ComputerAvailability
+              Year1CGPA
+              UniversityPreferenceOrder
+              DepartmentPreferenceOrder
+              FatherEducation
+              MotherEducation
+              FatherEmploymentSector
+              MotherEmploymentSector
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (HSCGraduationYear >= 2023) and (MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)) and (FamilyMembers = 3 (à§©)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (13.0/0.0)
+(HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (Faculty = CSE) and (UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (HSCGraduationYear >= 2023) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (11.0/2.0)
+(HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)) and (HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (21.0/5.0)
+(HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (HSCGraduationYear <= 2021) and (MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)) and (CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))) and (HSCGraduationYear >= 2021) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (10.0/0.0)
+(HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)) and (BirthOrder = First-child) and (FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) and (Gender = Male (à¦ªà§�à¦°à§�à¦·)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (11.0/1.0)
+(HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (HSCGraduationYear <= 2020) and (UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)) and (InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (12.0/0.0)
+(CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾)) and (HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (HSCGraduationYear <= 2021) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (16.0/4.0)
+(FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (Faculty = CSE) and (ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾)) and (HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/0.0)
+(HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (BirthOrder = Middle child) and (Faculty = CSE) and (Gender = Male (à¦ªà§�à¦°à§�à¦·)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (12.0/3.0)
+(HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (HSCGraduationYear <= 2021) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/1.0)
+(HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (13.0/5.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (CurrentInstitution = SEU) and (InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)) and (HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (10.0/0.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (CurrentInstitution = UIU) and (DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))) and (HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (11.0/1.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (CurrentInstitution = SEU) and (CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0/0.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)) and (MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) and (CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)) and (DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0/2.0)
+(CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))) and (HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)) and (UniversityPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/0.0)
+(DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)) and (HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0/0.0)
+(CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)) and (HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)) and (UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)) and (HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/1.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (CurrentInstitution = SEU) and (HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0/0.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)) and (HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)) and (FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)) and (CurrentInstitution = KUET) and (CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0/0.0)
+(HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)) and (CurrentInstitution = KUET) => Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0/0.0)
+(HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (Faculty = EEE) and (HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (47.0/10.0)
+(HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (BirthOrder = Last Child) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (82.0/35.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (29.0/4.0)
+(HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)) and (BirthOrder = First-child) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (16.0/4.0)
+(HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (Gender = Female (à¦¨à¦¾à¦°à§€)) and (InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (39.0/18.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)) and (CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (35.0/10.0)
+(HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)) and (FamilyMembers = 3 (à§©)) and (BirthOrder = First-child) and (HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)) and (Faculty = CSE) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (12.0/0.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)) and (UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)) and (CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/0.0)
+(HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (Faculty = EEE) and (HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (9.0/0.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/1.0)
+(CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (FamilyMembers = 3 (à§©)) and (Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)) and (FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/0.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (FamilyMembers = 3 (à§©)) and (ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾)) and (CurrentInstitution = UIU) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/0.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)) and (DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)) and (ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾)) and (InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (13.0/3.0)
+(HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)) and (HSCGraduationYear >= 2022) and (FamilyMembers = 6 - 7 (à§¬ - à§­)) and (InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)) and (HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (18.0/5.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (FamilyMembers = 3 (à§©)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0/3.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)) and (Faculty = CE) and (CurrentInstitution = KUET) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/0.0)
+(CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (Faculty = ME) and (BirthOrder = Last Child) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0/0.0)
+(CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)) and (DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)) and (CurrentInstitution = AIUB) and (ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (13.0/1.0)
+(HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (Gender = Female (à¦¨à¦¾à¦°à§€)) and (FamilyMembers = 6 - 7 (à§¬ - à§­)) and (HSCGraduationYear >= 2022) and (CurrentInstitution = KUET) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/1.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)) and (Faculty = CSE) and (FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)) and (UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)) and (CurrentInstitution = KUET) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/0.0)
+(HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)) and (FamilyMembers = 3 (à§©)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (16.0/5.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)) and (UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)) and (BirthOrder = Middle child) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (14.0/4.0)
+(Faculty = CSE) and (FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)) and (HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/1.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)) and (CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)) and (DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)) and (HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/0.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (BirthOrder = Last Child) and (HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0/1.0)
+(HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)) and (HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)) and (CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)) and (Faculty = EEE) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (11.0/2.0)
+(Faculty = CSE) and (BirthOrder = First-child) and (CurrentInstitution = RUET) and (CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)) and (HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/0.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HSCGraduationYear >= 2023) and (CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))) and (CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)) => Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (15.0/6.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (CurrentInstitution = UIU) and (FamilyMembers = 4 - 5 (à§ª - à§«)) => Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (27.0/7.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)) and (CurrentInstitution = SUST) => Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (18.0/6.0)
+(HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) and (ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾)) and (InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)) and (CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))) => Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (37.0/18.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HSCGraduationYear <= 2020) and (CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (33.0/8.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (Gender = Female (à¦¨à¦¾à¦°à§€)) and (HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (57.0/22.0)
+(HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (FamilyMembers = 6 - 7 (à§¬ - à§­)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (70.0/33.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)) and (BirthOrder = Middle child) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (50.0/23.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)) and (HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (24.0/8.0)
+(ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)) and (InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)) and (FamilyMembers = 4 - 5 (à§ª - à§«)) and (HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (Gender = Male (à¦ªà§�à¦°à§�à¦·)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (27.0/6.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HSCGraduationYear >= 2022) and (Faculty = Others) and (CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (HSCGraduationYear <= 2022) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (13.0/2.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))) and (CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿)) and (InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (14.0/3.0)
+(ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)) and (FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) and (CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (50.0/24.0)
+(ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)) and (HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)) and (FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (17.0/3.0)
+(ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)) and (DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)) and (Faculty = ME) and (MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (12.0/1.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (BirthOrder = Others) and (InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)) and (Faculty = ME) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0/0.0)
+(InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)) and (FamilyMembers = 3 (à§©)) and (BirthOrder = Last Child) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (35.0/10.0)
+(Gender = Male (à¦ªà§�à¦°à§�à¦·)) and (CollegeAttendance = Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))) and (FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)) and (CurrentInstitution = RUET) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (12.0/2.0)
+(FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) and (HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))) and (HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/0.0)
+(HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (HSCGraduationYear <= 2020) and (Faculty = Others) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0/0.0)
+(HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) and (BirthOrder = First-child) and (FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) and (FamilyMembers = 4 - 5 (à§ª - à§«)) and (HSCGraduationYear >= 2022) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (13.0/2.0)
+(Faculty = CSE) and (FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) and (FamilyMembers = 3 (à§©)) and (HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (13.0/2.0)
+(HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)) and (HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (12.0/3.0)
+(HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)) and (FamilyMembers = 4 - 5 (à§ª - à§«)) and (BirthOrder = First-child) and (FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)) and (HSCGraduationYear <= 2022) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (10.0/1.0)
+(HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)) and (DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (BirthOrder = Middle child) and (CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)) and (Faculty = ME) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/0.0)
+(HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)) and (FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)) and (CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (9.0/2.0)
+(CurrentInstitution = CUET) and (DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)) and (FamilyMembers = 4 - 5 (à§ª - à§«)) => Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (12.0/2.0)
+ => Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2243.0/1387.0)
+
+Number of Rules : 76
+
+
+Time taken to build model: 1.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1280               36.405  %
+Incorrectly Classified Instances      2236               63.595  %
+Kappa statistic                          0.1449
+Mean absolute error                      0.2867
+Root mean squared error                  0.3915
+Relative absolute error                 91.0979 %
+Root relative squared error             98.6903 %
+Total Number of Instances             3516     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.263    0.043    0.553      0.263    0.357      0.303    0.658     0.363     Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+                 0.037    0.016    0.348      0.037    0.066      0.059    0.594     0.231     3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+                 0.852    0.699    0.322      0.852    0.467      0.156    0.588     0.322     3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+                 0.199    0.073    0.453      0.199    0.276      0.175    0.605     0.327     3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+                 0.212    0.032    0.500      0.212    0.297      0.265    0.629     0.289     Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+Weighted Avg.    0.364    0.227    0.420      0.364    0.307      0.182    0.610     0.309     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 156   5 325  77  30 |   a = Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+  16  24 562  33  20 |   b = 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+  25  27 839  74  20 |   c = 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+  50  10 569 163  28 |   d = 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+  35   3 314  13  98 |   e = Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+

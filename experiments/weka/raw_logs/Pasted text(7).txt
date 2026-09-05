@@ -1,0 +1,1260 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     E1_Year1CGPA_FinalClean
+Instances:    3516
+Attributes:   24
+              Faculty
+              CurrentInstitution
+              HSCGraduationYear
+              Gender
+              CollegeCategory
+              CollegeLocation
+              HSCLearningSource
+              CollegeAttendance
+              HSCMath
+              HSCPhysics
+              HSCChemistry
+              FamilyMembers
+              BirthOrder
+              HouseholdIncomeYearly
+              HSCMonthlyExpenditure
+              InternetAvailability
+              ComputerAvailability
+              Year1CGPA
+              UniversityPreferenceOrder
+              DepartmentPreferenceOrder
+              FatherEducation
+              MotherEducation
+              FatherEmploymentSector
+              MotherEmploymentSector
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡), 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1524 * (normalized) Faculty=EEE
+ +      -0.134  * (normalized) Faculty=CSE
+ +       0.0598 * (normalized) Faculty=ME
+ +       0.0378 * (normalized) Faculty=Others
+ +       0.1889 * (normalized) Faculty=CE
+ +      -0.0943 * (normalized) CurrentInstitution=UIU
+ +       0.2123 * (normalized) CurrentInstitution=KUET
+ +       0      * (normalized) CurrentInstitution=Others
+ +      -0.6996 * (normalized) CurrentInstitution=RUET
+ +      -0.642  * (normalized) CurrentInstitution=KU
+ +       0.4932 * (normalized) CurrentInstitution=CU
+ +      -0.1285 * (normalized) CurrentInstitution=NSU
+ +      -0.1193 * (normalized) CurrentInstitution=IUBAT
+ +      -0.5989 * (normalized) CurrentInstitution=BRAC
+ +      -0.4413 * (normalized) CurrentInstitution=SEU
+ +      -0.3882 * (normalized) CurrentInstitution=AIUB
+ +       1.0125 * (normalized) CurrentInstitution=BUET
+ +       0.5907 * (normalized) CurrentInstitution=SUST
+ +       0.1529 * (normalized) CurrentInstitution=CUET
+ +       0.6505 * (normalized) CurrentInstitution=DU
+ +      -0.0465 * (normalized) HSCGraduationYear
+ +       0.5011 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +      -0.1998 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +      -0.3531 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +       0.0358 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +       0.2092 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +       0.1081 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +       0.2793 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.3901 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +       0.0608 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +       0.186  * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +      -0.136  * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.1861 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +       0.0011 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +      -0.0678 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.0372 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.0822 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +      -1.0887 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.6899 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.6318 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.685  * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +       0.4617 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.576  * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +      -0.5545 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.1112 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.2332 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.1435 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.2997 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.2068 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -1      * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.0929 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       1      * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +       0.2657 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.1762 * (normalized) FamilyMembers=3 (à§©)
+ +       0.0108 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +      -0.1345 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +       0.0342 * (normalized) FamilyMembers=2 (à§¨)
+ +      -0.1713 * (normalized) BirthOrder=Last Child
+ +      -0.0541 * (normalized) BirthOrder=First-child
+ +       0.2433 * (normalized) BirthOrder=Middle child
+ +      -0.0179 * (normalized) BirthOrder=Others
+ +      -0.066  * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +      -0.0077 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +       0.1618 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +      -0.088  * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.0639 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.192  * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +       0.05   * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +       0.1304 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +      -0.0524 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +       0.0516 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +      -0.0338 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +       0.1359 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +      -0.1536 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +      -0.0108 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +      -0.077  * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +      -0.013  * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1128 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0322 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.2349 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1874 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0389 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.1598 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0656 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0768 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0955 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.137  * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.0447 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.2287 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.0379 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.1876 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.3717 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0522 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.302  * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.0796 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0865 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.1289 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.0887 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0178 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.2163 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.0311 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.3183 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +       0.289  * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0688 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.4828 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.4329 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.2393 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +       0.069  * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ -       0.0292
+
+Number of kernel evaluations: 776791 (96.721% cached)
+
+Classifier for classes: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡), 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2883 * (normalized) Faculty=EEE
+ +      -0.3564 * (normalized) Faculty=CSE
+ +      -0.2364 * (normalized) Faculty=ME
+ +       0.1315 * (normalized) Faculty=Others
+ +      -0.2504 * (normalized) Faculty=CE
+ +       1      * (normalized) Faculty=ECE
+ +      -0.0702 * (normalized) CurrentInstitution=UIU
+ +       0.5726 * (normalized) CurrentInstitution=KUET
+ +      -0.7508 * (normalized) CurrentInstitution=Others
+ +      -0.1666 * (normalized) CurrentInstitution=RUET
+ +      -0.179  * (normalized) CurrentInstitution=KU
+ +       0.5187 * (normalized) CurrentInstitution=CU
+ +      -0.2107 * (normalized) CurrentInstitution=NSU
+ +      -0.0406 * (normalized) CurrentInstitution=IUBAT
+ +      -0.78   * (normalized) CurrentInstitution=BRAC
+ +      -0.5691 * (normalized) CurrentInstitution=SEU
+ +      -0.1552 * (normalized) CurrentInstitution=AIUB
+ +       0.2385 * (normalized) CurrentInstitution=BUET
+ +       0.7788 * (normalized) CurrentInstitution=SUST
+ +       0.2748 * (normalized) CurrentInstitution=CUET
+ +       0.5387 * (normalized) CurrentInstitution=DU
+ +       0.1169 * (normalized) HSCGraduationYear
+ +       0.3033 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +      -0.0686 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +      -0.0809 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +      -0.0196 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +       0.1483 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +      -0.0478 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +       0.2092 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.3855 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +       0.0764 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +      -0.0017 * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +       0.1016 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.2121 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +       0.0202 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +      -0.129  * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.2117 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +       0.1085 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +      -0.4793 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.6038 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.1918 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.4653 * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +      -0.3979 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.087  * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +      -0.826  * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.4811 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.3371 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.0947 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.3653 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.0193 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0      * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.4954 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.1108 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +       0.1738 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.1334 * (normalized) FamilyMembers=3 (à§©)
+ +      -0.0036 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +      -0.1589 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +       0.1221 * (normalized) FamilyMembers=2 (à§¨)
+ +      -0.2564 * (normalized) BirthOrder=Last Child
+ +      -0.1335 * (normalized) BirthOrder=First-child
+ +      -0.0199 * (normalized) BirthOrder=Middle child
+ +       0.4098 * (normalized) BirthOrder=Others
+ +      -0.1737 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +       0.0224 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +       0.2844 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +      -0.1331 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.0902 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.0015 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +      -0.1267 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +      -0.083  * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +       0.121  * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +       0.1598 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +      -0.1067 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +       0.1253 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +      -0.1785 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +      -0.0405 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +      -0.1182 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +      -0.1888 * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.164  * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1204 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.2634 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1556 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.3525 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.0931 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1701 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1199 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0941 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.174  * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.1808 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.402  * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.2677 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.2208 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.3982 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0425 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.2652 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.0826 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0385 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.1315 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.0672 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.1007 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.1636 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +      -0.2057 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.1257 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.2382 * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.18   * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.1586 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.2153 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.2556 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +       0.2572 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.4477
+
+Number of kernel evaluations: 2520619 (92.676% cached)
+
+Classifier for classes: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡), 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.4735 * (normalized) Faculty=EEE
+ +      -0.2633 * (normalized) Faculty=CSE
+ +      -0.1428 * (normalized) Faculty=ME
+ +      -0.0288 * (normalized) Faculty=Others
+ +       0.103  * (normalized) Faculty=CE
+ +       0.8054 * (normalized) Faculty=ECE
+ +      -0.3442 * (normalized) CurrentInstitution=UIU
+ +       0.5782 * (normalized) CurrentInstitution=KUET
+ +      -1      * (normalized) CurrentInstitution=Others
+ +      -0.002  * (normalized) CurrentInstitution=RUET
+ +       0.0881 * (normalized) CurrentInstitution=KU
+ +       0.1896 * (normalized) CurrentInstitution=CU
+ +      -0.3778 * (normalized) CurrentInstitution=NSU
+ +      -0.1902 * (normalized) CurrentInstitution=IUBAT
+ +      -0.6825 * (normalized) CurrentInstitution=BRAC
+ +      -0.5019 * (normalized) CurrentInstitution=SEU
+ +       0.0329 * (normalized) CurrentInstitution=AIUB
+ +       0.888  * (normalized) CurrentInstitution=BUET
+ +       0.3893 * (normalized) CurrentInstitution=SUST
+ +       1.0884 * (normalized) CurrentInstitution=CUET
+ +      -0.1559 * (normalized) CurrentInstitution=DU
+ +      -0.0677 * (normalized) HSCGraduationYear
+ +       0.3092 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +      -0.1845 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +      -0.0121 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +      -0.1895 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +       0.0504 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +       0.1512 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +       0.2694 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.1835 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +       0.0299 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +       0.0798 * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +      -0.1956 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.0257 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +      -0.0469 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.0997 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.0399 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.0386 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +       0.0625 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.3174 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.1711 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.4902 * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +      -0.4064 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.329  * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +      -0.1292 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.1412 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.0338 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.0248 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.2195 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.0943 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0      * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.1725 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.1413 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +       0.0196 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0302 * (normalized) FamilyMembers=3 (à§©)
+ +      -0.0274 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +      -0.163  * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +       0.1406 * (normalized) FamilyMembers=2 (à§¨)
+ +      -0.157  * (normalized) BirthOrder=Last Child
+ +      -0.0755 * (normalized) BirthOrder=First-child
+ +       0.1193 * (normalized) BirthOrder=Middle child
+ +       0.1132 * (normalized) BirthOrder=Others
+ +      -0.1811 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +      -0.1358 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +       0.1999 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +       0.1169 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.1256 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.2729 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +       0.3422 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +      -0.0606 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +       0.1168 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +       0.209  * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +       0.0033 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +       0.1323 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +      -0.3446 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +       0.1868 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +       0.0129 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +      -0.1223 * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1105 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0917 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0906 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.2115 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0851 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.2593 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.144  * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0112 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0528 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.1546 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.1791 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.3216 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.0174 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.4162 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.426  * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0265 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.0006 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.1685 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0485 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.2801 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.0367 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.1245 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.1398 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +      -0.1777 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0499 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.241  * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.1641 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.2074 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.5564 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.2771 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.221  * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.5153
+
+Number of kernel evaluations: 1432381 (95.861% cached)
+
+Classifier for classes: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡), Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.9145 * (normalized) Faculty=EEE
+ +      -0.1755 * (normalized) Faculty=CSE
+ +      -0.2139 * (normalized) Faculty=ME
+ +       0.4497 * (normalized) Faculty=Others
+ +      -0.1162 * (normalized) Faculty=CE
+ +       0.9704 * (normalized) Faculty=ECE
+ +       0.2618 * (normalized) CurrentInstitution=UIU
+ +      -0.0578 * (normalized) CurrentInstitution=KUET
+ +      -0.1698 * (normalized) CurrentInstitution=Others
+ +      -0.3428 * (normalized) CurrentInstitution=RUET
+ +       0.1216 * (normalized) CurrentInstitution=KU
+ +      -0.804  * (normalized) CurrentInstitution=CU
+ +       0.3301 * (normalized) CurrentInstitution=NSU
+ +      -0.1818 * (normalized) CurrentInstitution=IUBAT
+ +       0.7455 * (normalized) CurrentInstitution=BRAC
+ +       1.6328 * (normalized) CurrentInstitution=SEU
+ +       0.4743 * (normalized) CurrentInstitution=AIUB
+ +      -0.5132 * (normalized) CurrentInstitution=BUET
+ +      -0.458  * (normalized) CurrentInstitution=SUST
+ +      -0.4599 * (normalized) CurrentInstitution=CUET
+ +      -0.5788 * (normalized) CurrentInstitution=DU
+ +      -0.003  * (normalized) HSCGraduationYear
+ +       0.0622 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +      -0.581  * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +      -0.1369 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +      -0.1854 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +       0.2779 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +       0.0443 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +       0.3517 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.7415 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +      -0.0459 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +       0.3389 * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +       0.0967 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.1109 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +       0.0068 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.3174 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.1582 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.2768 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +      -1.0408 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.353  * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.2037 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0      * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +       0.4841 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.5109 * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +      -0.9541 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.5241 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.0943 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.1751 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.2668 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.2664 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.5593 * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.1712 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.3877 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +       0.11   * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0169 * (normalized) FamilyMembers=3 (à§©)
+ +       0.0904 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +      -0.0515 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +      -0.132  * (normalized) FamilyMembers=2 (à§¨)
+ +      -0.1739 * (normalized) BirthOrder=Last Child
+ +      -0.1865 * (normalized) BirthOrder=First-child
+ +       0.1312 * (normalized) BirthOrder=Middle child
+ +       0.2292 * (normalized) BirthOrder=Others
+ +      -0.1684 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +       0.021  * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +       0.2046 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +      -0.0573 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.1583 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.6376 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +       0.0044 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +       0.2377 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +       0.2372 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +      -0.1066 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +      -0.0579 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +       0.0067 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +       0.1578 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +      -0.1588 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +       0.0147 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +      -0.0158 * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.3983 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.3733 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0239 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.6472 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.4508 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.1514 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0736 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0286 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.2154 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.3282 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.0587 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.2006 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.032  * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.0029 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.304  * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0454 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.2821 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.1633 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +       0.067  * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.163  * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.0828 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.2344 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.2843 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +      -0.0158 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.42   * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.3062 * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.2739 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.2789 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.1794 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.1496 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.0278 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.8832
+
+Number of kernel evaluations: 555210 (98.015% cached)
+
+Classifier for classes: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«), 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2614 * (normalized) Faculty=EEE
+ +      -0.1208 * (normalized) Faculty=CSE
+ +      -0.0152 * (normalized) Faculty=ME
+ +       0.0307 * (normalized) Faculty=Others
+ +       0.3668 * (normalized) Faculty=CE
+ +      -0.4452 * (normalized) CurrentInstitution=UIU
+ +       0.1646 * (normalized) CurrentInstitution=KUET
+ +       0.1656 * (normalized) CurrentInstitution=Others
+ +       0.2169 * (normalized) CurrentInstitution=RUET
+ +       0.0939 * (normalized) CurrentInstitution=KU
+ +       0.1292 * (normalized) CurrentInstitution=CU
+ +      -0.293  * (normalized) CurrentInstitution=NSU
+ +       0.0276 * (normalized) CurrentInstitution=IUBAT
+ +       0.3222 * (normalized) CurrentInstitution=BRAC
+ +       0.7316 * (normalized) CurrentInstitution=SEU
+ +       0.1922 * (normalized) CurrentInstitution=AIUB
+ +      -0.1438 * (normalized) CurrentInstitution=BUET
+ +      -0.5452 * (normalized) CurrentInstitution=SUST
+ +       0.0028 * (normalized) CurrentInstitution=CUET
+ +      -0.6195 * (normalized) CurrentInstitution=DU
+ +       0.1188 * (normalized) HSCGraduationYear
+ +      -0.2351 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +       0.1317 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +       0.4507 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +       0.0091 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +      -0.1379 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +      -0.3219 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +       0.1295 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.1616 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +      -0.2167 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +      -0.0211 * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +       0.2699 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.0565 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +      -0.1043 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.1058 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.2794 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +       0.2214 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +       0.4677 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       1.1461 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.3239 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.525  * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +      -0.7648 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.2753 * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +       0.0056 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.3865 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.0093 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.1148 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.5497 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.0779 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       1.5702 * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.1036 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -1.0462 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +      -0.0691 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0924 * (normalized) FamilyMembers=3 (à§©)
+ +       0.0598 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +       0.0918 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +      -0.1748 * (normalized) FamilyMembers=2 (à§¨)
+ +       0.077  * (normalized) BirthOrder=Last Child
+ +      -0.082  * (normalized) BirthOrder=First-child
+ +      -0.2927 * (normalized) BirthOrder=Middle child
+ +       0.2977 * (normalized) BirthOrder=Others
+ +      -0.0046 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +       0.2393 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +      -0.0344 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +      -0.2003 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.2243 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.0248 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +      -0.2623 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +      -0.122  * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +       0.1351 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +      -0.0643 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +      -0.0505 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +       0.2174 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +      -0.1025 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +       0.1093 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +       0.1307 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +      -0.1646 * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1468 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0524 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1653 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1223 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0755 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +      -0.0844 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0759 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0376 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0236 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0454 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.1702 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.2128 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.2556 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.1492 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0608 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0026 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.0054 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.2001 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0289 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.2978 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.1924 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.167  * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.0521 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +      -0.2684 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.2417 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.6517 * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.1684 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.6234 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.1042 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.1255 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.1187 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.6133
+
+Number of kernel evaluations: 3525258 (91.691% cached)
+
+Classifier for classes: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«), 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0743 * (normalized) Faculty=EEE
+ +      -0.0289 * (normalized) Faculty=CSE
+ +      -0.0319 * (normalized) Faculty=ME
+ +       0.0142 * (normalized) Faculty=Others
+ +       0.1209 * (normalized) Faculty=CE
+ +       0      * (normalized) Faculty=ECE
+ +      -0.558  * (normalized) CurrentInstitution=UIU
+ +       0.1661 * (normalized) CurrentInstitution=KUET
+ +      -0.1753 * (normalized) CurrentInstitution=Others
+ +       0.8605 * (normalized) CurrentInstitution=RUET
+ +       0.3782 * (normalized) CurrentInstitution=KU
+ +       0.2648 * (normalized) CurrentInstitution=CU
+ +      -0.352  * (normalized) CurrentInstitution=NSU
+ +      -0.4922 * (normalized) CurrentInstitution=IUBAT
+ +      -0.1464 * (normalized) CurrentInstitution=BRAC
+ +       0.2572 * (normalized) CurrentInstitution=SEU
+ +       0.4169 * (normalized) CurrentInstitution=AIUB
+ +       0.5096 * (normalized) CurrentInstitution=BUET
+ +      -0.3142 * (normalized) CurrentInstitution=SUST
+ +       0.0564 * (normalized) CurrentInstitution=CUET
+ +      -0.8716 * (normalized) CurrentInstitution=DU
+ +      -0.2    * (normalized) HSCGraduationYear
+ +      -0.3605 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +       0.2417 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +       0.3202 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +       0.0677 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +      -0.237  * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +      -0.1509 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +      -0.0346 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +       0.1148 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +      -0.0341 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +      -0.2003 * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +       0.1542 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.0108 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +      -0.1585 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.08   * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +       0.0957 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.0281 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +       1.0399 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.5724 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.2894 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.3791 * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +      -0.9439 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.5704 * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +       0.2728 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.4501 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.5181 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.125  * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.1284 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.3453 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.9402 * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.3321 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.1344 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +      -0.1751 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.1312 * (normalized) FamilyMembers=3 (à§©)
+ +      -0.0447 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +       0.1609 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +      -0.0724 * (normalized) FamilyMembers=2 (à§¨)
+ +      -0.0711 * (normalized) BirthOrder=Last Child
+ +       0.0462 * (normalized) BirthOrder=First-child
+ +      -0.1167 * (normalized) BirthOrder=Middle child
+ +       0.1416 * (normalized) BirthOrder=Others
+ +      -0.1973 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +       0.0566 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +       0.0053 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +       0.1354 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.0759 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.1325 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +       0.1579 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +      -0.2698 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +      -0.0964 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +       0.0569 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +      -0.1118 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +       0.0723 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +      -0.0173 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +       0.3329 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +      -0.1028 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.02   * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.2033 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.143  * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0225 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1557 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1538 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.0229 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1064 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0815 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.2518 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.1343 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.1194 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.2526 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.054  * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.0384 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0689 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0146 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.0441 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.0504 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +       0.0216 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.1272 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.1825 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.0406 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.0164 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +      -0.1899 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.3154 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.5525 * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.2074 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.2605 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.3984 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.9597 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.0619 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.9406
+
+Number of kernel evaluations: 2189537 (93.301% cached)
+
+Classifier for classes: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«), Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2796 * (normalized) Faculty=EEE
+ +      -0.0896 * (normalized) Faculty=CSE
+ +      -0.2822 * (normalized) Faculty=ME
+ +       0.0545 * (normalized) Faculty=Others
+ +      -0.2517 * (normalized) Faculty=CE
+ +       0.8485 * (normalized) Faculty=ECE
+ +       0.1576 * (normalized) CurrentInstitution=UIU
+ +      -0.1872 * (normalized) CurrentInstitution=KUET
+ +      -0.4093 * (normalized) CurrentInstitution=Others
+ +       0.6144 * (normalized) CurrentInstitution=RUET
+ +      -0.3136 * (normalized) CurrentInstitution=KU
+ +      -0.3785 * (normalized) CurrentInstitution=CU
+ +       0.1146 * (normalized) CurrentInstitution=NSU
+ +       0.4078 * (normalized) CurrentInstitution=IUBAT
+ +       0.5902 * (normalized) CurrentInstitution=BRAC
+ +       1.1138 * (normalized) CurrentInstitution=SEU
+ +       0.3966 * (normalized) CurrentInstitution=AIUB
+ +      -0.4519 * (normalized) CurrentInstitution=BUET
+ +      -0.5876 * (normalized) CurrentInstitution=SUST
+ +      -0.7166 * (normalized) CurrentInstitution=CUET
+ +      -0.3503 * (normalized) CurrentInstitution=DU
+ +      -0.1656 * (normalized) HSCGraduationYear
+ +      -0.4551 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +       0.0788 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +       0.0517 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +       0.0239 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +      -0.0532 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +      -0.0224 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +       0.1528 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.2024 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +      -0.0653 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +      -0.044  * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +       0.1589 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +      -0.0643 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +      -0.0373 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.2379 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.1137 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.0225 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +      -0.4141 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       1.2556 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.5886 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.8348 * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +       0.5819 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.1345 * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +      -0.0956 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.2137 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.1287 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.3035 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.2465 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.408  * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       1.2092 * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.3616 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.6861 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +      -0.1543 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.1939 * (normalized) FamilyMembers=3 (à§©)
+ +      -0.0198 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +       0.032  * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +      -0.0518 * (normalized) FamilyMembers=2 (à§¨)
+ +       0.0647 * (normalized) BirthOrder=Last Child
+ +      -0.1552 * (normalized) BirthOrder=First-child
+ +      -0.1308 * (normalized) BirthOrder=Middle child
+ +       0.2213 * (normalized) BirthOrder=Others
+ +       0.0074 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +       0.0053 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +      -0.0267 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +       0.0141 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +       0.0962 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.2176 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +       0.0184 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +      -0.0667 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +       0.1697 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +       0.0284 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +      -0.0529 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +      -0.1301 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +       0.1547 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +      -0.231  * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +       0.0668 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.062  * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1985 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.2781 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0492 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.2285 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1329 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.1464 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0255 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0763 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1423 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0401 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.0992 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.0737 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.0482 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.0225 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +       0.1361 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0166 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.0643 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.1676 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0563 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +       0.1355 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.0951 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.1226 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.0819 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +      -0.0796 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.134  * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.5332 * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0594 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.5182 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0318 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.4008 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.2946 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.9613
+
+Number of kernel evaluations: 621901 (97.014% cached)
+
+Classifier for classes: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦), 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0424 * (normalized) Faculty=EEE
+ +       0.1525 * (normalized) Faculty=CSE
+ +       0.0605 * (normalized) Faculty=ME
+ +       0.0265 * (normalized) Faculty=Others
+ +       0.0133 * (normalized) Faculty=CE
+ +      -0.2105 * (normalized) Faculty=ECE
+ +      -0.1725 * (normalized) CurrentInstitution=UIU
+ +       0.0444 * (normalized) CurrentInstitution=KUET
+ +      -0.0243 * (normalized) CurrentInstitution=Others
+ +       0.2427 * (normalized) CurrentInstitution=RUET
+ +       0.189  * (normalized) CurrentInstitution=KU
+ +      -0.2633 * (normalized) CurrentInstitution=CU
+ +      -0.0856 * (normalized) CurrentInstitution=NSU
+ +      -0.3772 * (normalized) CurrentInstitution=IUBAT
+ +       0.1587 * (normalized) CurrentInstitution=BRAC
+ +      -0.3745 * (normalized) CurrentInstitution=SEU
+ +       0.498  * (normalized) CurrentInstitution=AIUB
+ +       0.5431 * (normalized) CurrentInstitution=BUET
+ +      -0.0498 * (normalized) CurrentInstitution=SUST
+ +       0.3929 * (normalized) CurrentInstitution=CUET
+ +      -0.7216 * (normalized) CurrentInstitution=DU
+ +      -0.2365 * (normalized) HSCGraduationYear
+ +      -0.0877 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +       0.0497 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +       0.0666 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +       0.0014 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +      -0.1399 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +       0.0718 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +      -0.156  * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +       0.2822 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +       0.0314 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +      -0.0645 * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +      -0.0932 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +      -0.1187 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +       0.0124 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.0576 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +       0.1964 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.1476 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +       0.8386 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.5565 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.0655 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.0899 * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +      -0.4375 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.6139 * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +       0.3288 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.2242 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.5361 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.1823 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.3775 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.1571 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.2093 * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.5052 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.0755 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +      -0.0166 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0437 * (normalized) FamilyMembers=3 (à§©)
+ +       0.1005 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +      -0.0113 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +      -0.1163 * (normalized) FamilyMembers=2 (à§¨)
+ +      -0.0343 * (normalized) BirthOrder=Last Child
+ +       0.0742 * (normalized) BirthOrder=First-child
+ +       0.084  * (normalized) BirthOrder=Middle child
+ +      -0.124  * (normalized) BirthOrder=Others
+ +      -0.2082 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +      -0.0947 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +       0.0153 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +       0.2876 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.0648 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.0229 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +       0.4121 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +      -0.0332 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +      -0.2912 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +       0.1988 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +      -0.0395 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +      -0.0331 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +      -0.1263 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +       0.3504 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +      -0.0166 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.248  * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0159 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1898 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0258 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1156 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0993 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.1508 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0985 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1625 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0712 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0858 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.287  * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.1819 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.1311 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.0115 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +       0.1808 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0827 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.1017 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.106  * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +       0.1507 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.2531 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.0515 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.1715 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.0046 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.0278 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.0968 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.0895 * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.2534 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.1096 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.1848 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.6086 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.1905 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.1551
+
+Number of kernel evaluations: 6531273 (86.514% cached)
+
+Classifier for classes: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦), Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0252 * (normalized) Faculty=EEE
+ +       0.065  * (normalized) Faculty=CSE
+ +      -0.0645 * (normalized) Faculty=ME
+ +       0.0599 * (normalized) Faculty=Others
+ +      -0.0352 * (normalized) Faculty=CE
+ +       0.3746 * (normalized) CurrentInstitution=UIU
+ +      -0.395  * (normalized) CurrentInstitution=KUET
+ +      -0.1174 * (normalized) CurrentInstitution=Others
+ +      -0.1255 * (normalized) CurrentInstitution=RUET
+ +      -0.3133 * (normalized) CurrentInstitution=KU
+ +      -0.5649 * (normalized) CurrentInstitution=CU
+ +       0.1431 * (normalized) CurrentInstitution=NSU
+ +       0.0723 * (normalized) CurrentInstitution=IUBAT
+ +       0.7072 * (normalized) CurrentInstitution=BRAC
+ +       1.4138 * (normalized) CurrentInstitution=SEU
+ +       0.1182 * (normalized) CurrentInstitution=AIUB
+ +      -0.3274 * (normalized) CurrentInstitution=BUET
+ +      -0.3859 * (normalized) CurrentInstitution=SUST
+ +      -0.3167 * (normalized) CurrentInstitution=CUET
+ +      -0.2832 * (normalized) CurrentInstitution=DU
+ +      -0.1142 * (normalized) HSCGraduationYear
+ +      -0.1482 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +      -0.082  * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +      -0.084  * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +       0.0171 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +       0.0351 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +       0.0318 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +      -0.0554 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.0389 * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +       0.0188 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +       0.077  * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +      -0.0014 * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.0136 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +       0.0228 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.0517 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.0069 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.0813 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +      -0.3051 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.5701 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.0923 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.168  * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +       1.1354 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.1278 * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +      -0.2131 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.1252 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.1872 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.1474 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.3765 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.2694 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.5852 * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.2665 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.7445 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +      -0.0259 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0001 * (normalized) FamilyMembers=3 (à§©)
+ +       0.0127 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +      -0.0128 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +       0.026  * (normalized) FamilyMembers=2 (à§¨)
+ +       0.0554 * (normalized) BirthOrder=Last Child
+ +      -0.0355 * (normalized) BirthOrder=First-child
+ +       0.0984 * (normalized) BirthOrder=Middle child
+ +      -0.1183 * (normalized) BirthOrder=Others
+ +       0.0712 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +      -0.0854 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +      -0.048  * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +       0.0622 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.0794 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.0825 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +       0.0703 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +       0.0333 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +       0.0582 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +      -0.0664 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +       0.0757 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +      -0.1754 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +       0.1661 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +      -0.1142 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +      -0.061  * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.1152 * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0802 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1058 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0286 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.1511 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0039 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.1151 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0427 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0028 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.1488 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.1077 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.0001 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.0158 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.0962 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.0708 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +       0.1504 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.0035 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +      -0.0358 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +       0.0046 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0634 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.0593 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.0495 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.1233 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.0379 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.0956 * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.0394 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.019  * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.1037 * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.204  * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0141 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.261  * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.3283 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +       0.0707
+
+Number of kernel evaluations: 1434775 (96.662% cached)
+
+Classifier for classes: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«), Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0973 * (normalized) Faculty=EEE
+ +       0.0295 * (normalized) Faculty=CSE
+ +      -0.0357 * (normalized) Faculty=ME
+ +       0.2964 * (normalized) Faculty=Others
+ +      -0.1368 * (normalized) Faculty=CE
+ +      -0.0562 * (normalized) Faculty=ECE
+ +       0.6881 * (normalized) CurrentInstitution=UIU
+ +      -0.5375 * (normalized) CurrentInstitution=KUET
+ +       0.9006 * (normalized) CurrentInstitution=Others
+ +      -0.3031 * (normalized) CurrentInstitution=RUET
+ +      -0.3033 * (normalized) CurrentInstitution=KU
+ +      -0.9883 * (normalized) CurrentInstitution=CU
+ +       0.2966 * (normalized) CurrentInstitution=NSU
+ +       0.5402 * (normalized) CurrentInstitution=IUBAT
+ +       0.5702 * (normalized) CurrentInstitution=BRAC
+ +       1.3944 * (normalized) CurrentInstitution=SEU
+ +      -0.3195 * (normalized) CurrentInstitution=AIUB
+ +      -0.8725 * (normalized) CurrentInstitution=BUET
+ +      -0.0894 * (normalized) CurrentInstitution=SUST
+ +      -0.9499 * (normalized) CurrentInstitution=CUET
+ +      -0.0265 * (normalized) CurrentInstitution=DU
+ +       0.1037 * (normalized) HSCGraduationYear
+ +      -0.1246 * (normalized) Gender=Female (à¦¨à¦¾à¦°à§€)
+ +      -0.2222 * (normalized) CollegeCategory=Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿)
+ +      -0.1618 * (normalized) CollegeLocation=Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²)
+ +      -0.0165 * (normalized) CollegeLocation=Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²)
+ +       0.1565 * (normalized) CollegeLocation=Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°)
+ +       0.0217 * (normalized) CollegeLocation=Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾)
+ +       0.0534 * (normalized) HSCLearningSource=College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸)
+ +      -0.094  * (normalized) HSCLearningSource=Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°)
+ +      -0.0168 * (normalized) HSCLearningSource=Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬)
+ +       0.0195 * (normalized) HSCLearningSource=Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡)
+ +       0.038  * (normalized) HSCLearningSource=Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨)
+ +       0.2205 * (normalized) CollegeAttendance=Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡))
+ +      -0.0445 * (normalized) CollegeAttendance=Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%))
+ +       0.0914 * (normalized) CollegeAttendance=Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿))
+ +      -0.2212 * (normalized) CollegeAttendance=Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%))
+ +      -0.0462 * (normalized) CollegeAttendance=Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%))
+ +      -0.8476 * (normalized) HSCMath=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -0.0975 * (normalized) HSCMath=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +      -0.0443 * (normalized) HSCMath=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +      -0.1257 * (normalized) HSCMath=< 120 (< à§§à§¨à§¦)
+ +       1.1151 * (normalized) HSCMath=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +      -0.1902 * (normalized) HSCPhysics=< 120 (< à§§à§¨à§¦)
+ +      -0.4287 * (normalized) HSCPhysics=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +       0.4653 * (normalized) HSCPhysics=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.0589 * (normalized) HSCPhysics=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.0947 * (normalized) HSCPhysics=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.6926 * (normalized) HSCChemistry=140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦)
+ +       0.0184 * (normalized) HSCChemistry=190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦)
+ +      -1      * (normalized) HSCChemistry=120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦)
+ +       0.2494 * (normalized) HSCChemistry=160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦)
+ +       0.0396 * (normalized) HSCChemistry=< 120 (< à§§à§¨à§¦)
+ +      -0.1088 * (normalized) FamilyMembers=8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0526 * (normalized) FamilyMembers=3 (à§©)
+ +       0.0843 * (normalized) FamilyMembers=4 - 5 (à§ª - à§«)
+ +      -0.0802 * (normalized) FamilyMembers=6 - 7 (à§¬ - à§­)
+ +       0.1573 * (normalized) FamilyMembers=2 (à§¨)
+ +      -0.0168 * (normalized) BirthOrder=Last Child
+ +      -0.1597 * (normalized) BirthOrder=First-child
+ +       0.099  * (normalized) BirthOrder=Middle child
+ +       0.0775 * (normalized) BirthOrder=Others
+ +       0.1951 * (normalized) HouseholdIncomeYearly=Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®)
+ +      -0.0793 * (normalized) HouseholdIncomeYearly=10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–)
+ +      -0.0624 * (normalized) HouseholdIncomeYearly=5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–)
+ +      -0.0534 * (normalized) HouseholdIncomeYearly=Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.0057 * (normalized) HSCMonthlyExpenditure=Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡)
+ +      -0.1254 * (normalized) HSCMonthlyExpenditure=Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®)
+ +      -0.2135 * (normalized) HSCMonthlyExpenditure=10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦)
+ +       0.1525 * (normalized) HSCMonthlyExpenditure=5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦)
+ +       0.1921 * (normalized) HSCMonthlyExpenditure=20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦)
+ +       0.0009 * (normalized) InternetAvailability=WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡)
+ +       0.0269 * (normalized) InternetAvailability=Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾)
+ +      -0.2649 * (normalized) InternetAvailability=Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾)
+ +       0.2372 * (normalized) InternetAvailability=Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾)
+ +      -0.4592 * (normalized) ComputerAvailability=Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯)
+ +      -0.0646 * (normalized) UniversityPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +       0.0359 * (normalized) UniversityPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0787 * (normalized) UniversityPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0109 * (normalized) UniversityPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0392 * (normalized) UniversityPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.2698 * (normalized) DepartmentPreferenceOrder=1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.2412 * (normalized) DepartmentPreferenceOrder=5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡)
+ +      -0.0454 * (normalized) DepartmentPreferenceOrder=2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0868 * (normalized) DepartmentPreferenceOrder=3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦)
+ +      -0.0129 * (normalized) DepartmentPreferenceOrder=4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦)
+ +       0.0628 * (normalized) FatherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +      -0.0921 * (normalized) FatherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.1512 * (normalized) FatherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.0969 * (normalized) FatherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.0963 * (normalized) FatherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +       0.1799 * (normalized) FatherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +       0.0632 * (normalized) MotherEducation=Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬)
+ +       0.1593 * (normalized) MotherEducation=Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸)
+ +       0.0779 * (normalized) MotherEducation=Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿)
+ +      -0.1745 * (normalized) MotherEducation=No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡)
+ +      -0.0873 * (normalized) MotherEducation=Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿)
+ +      -0.0386 * (normalized) MotherEducation=Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•)
+ +      -0.1123 * (normalized) FatherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0147 * (normalized) FatherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.0063 * (normalized) FatherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ +      -0.034  * (normalized) FatherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.1548 * (normalized) FatherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +      -0.1404 * (normalized) MotherEmploymentSector=Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +       0.05   * (normalized) MotherEmploymentSector=Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +       0.2914 * (normalized) MotherEmploymentSector=Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿)
+ +      -0.0059 * (normalized) MotherEmploymentSector=Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤)
+ +      -0.2355 * (normalized) MotherEmploymentSector=Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾)
+ +       0.0404 * (normalized) MotherEmploymentSector=Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€)
+ -       0.0728
+
+Number of kernel evaluations: 816299 (97.533% cached)
+
+
+
+Time taken to build model: 8.99 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1192               33.9022 %
+Incorrectly Classified Instances      2324               66.0978 %
+Kappa statistic                          0.1439
+Mean absolute error                      0.2928
+Root mean squared error                  0.3897
+Relative absolute error                 93.0515 %
+Root relative squared error             98.2471 %
+Total Number of Instances             3516     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.320    0.103    0.387      0.320    0.351      0.235    0.711     0.309     Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+                 0.237    0.151    0.265      0.237    0.250      0.090    0.623     0.242     3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+                 0.488    0.354    0.350      0.488    0.407      0.124    0.605     0.335     3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+                 0.330    0.205    0.328      0.330    0.329      0.125    0.618     0.296     3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+                 0.205    0.047    0.399      0.205    0.271      0.213    0.690     0.252     Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+Weighted Avg.    0.339    0.199    0.342      0.339    0.332      0.148    0.641     0.293     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 190  61 142 148  52 |   a = Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+  48 155 300 123  29 |   b = 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+  77 189 481 210  28 |   c = 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+ 103 100 312 271  34 |   d = 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+  73  81 141  73  95 |   e = Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)

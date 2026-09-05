@@ -1,0 +1,2798 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -C 0.25 -M 2
+Relation:     E1_Year1CGPA_FinalClean
+Instances:    3516
+Attributes:   24
+              Faculty
+              CurrentInstitution
+              HSCGraduationYear
+              Gender
+              CollegeCategory
+              CollegeLocation
+              HSCLearningSource
+              CollegeAttendance
+              HSCMath
+              HSCPhysics
+              HSCChemistry
+              FamilyMembers
+              BirthOrder
+              HouseholdIncomeYearly
+              HSCMonthlyExpenditure
+              InternetAvailability
+              ComputerAvailability
+              Year1CGPA
+              UniversityPreferenceOrder
+              DepartmentPreferenceOrder
+              FatherEducation
+              MotherEducation
+              FatherEmploymentSector
+              MotherEmploymentSector
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCGraduationYear <= 2021: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = < 120 (< à§§à§¨à§¦) AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CUET AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (13.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CUET AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = AIUB: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (16.0/6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = SUST AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (9.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = SUST AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = < 120 (< à§§à§¨à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CUET: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = IUBAT AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = SUST AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = IUBAT: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = AIUB: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SUST AND
+Faculty = EEE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = SUST: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BRAC AND
+HSCGraduationYear <= 2022: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = NSU: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (15.0/8.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BRAC AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = NSU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SUST AND
+BirthOrder = Last Child: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = UIU AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾) AND
+Faculty = Others: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = UIU: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BRAC: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FamilyMembers = 3 (à§©) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (9.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FamilyMembers = 4 - 5 (à§ª - à§«) AND
+CurrentInstitution = KUET AND
+HSCGraduationYear > 2021: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (10.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾) AND
+Faculty = EEE: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬) AND
+FamilyMembers = 3 (à§©): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (21.0/8.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+HSCGraduationYear <= 2021 AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+HSCGraduationYear <= 2021: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0/1.0)
+
+HSCChemistry = < 120 (< à§§à§¨à§¦) AND
+Faculty = CE: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0/2.0)
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCChemistry = < 120 (< à§§à§¨à§¦) AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0/1.0)
+
+HSCChemistry = < 120 (< à§§à§¨à§¦) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCChemistry = < 120 (< à§§à§¨à§¦) AND
+FamilyMembers = 3 (à§©): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+Faculty = ME AND
+FamilyMembers = 2 (à§¨): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = BUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+Faculty = Others AND
+FamilyMembers = 4 - 5 (à§ª - à§«) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+Faculty = Others: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (13.0/6.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = CU: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = DU: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+Faculty = ME AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCChemistry = < 120 (< à§§à§¨à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)) AND
+Faculty = EEE: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+CurrentInstitution = BRAC AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (8.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+CurrentInstitution = BRAC AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+CurrentInstitution = BRAC AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (12.0/3.0)
+
+HSCMath = < 120 (< à§§à§¨à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMath = < 120 (< à§§à§¨à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = < 120 (< à§§à§¨à§¦) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+BirthOrder = Others: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCMath = < 120 (< à§§à§¨à§¦) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CUET AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = < 120 (< à§§à§¨à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CUET AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = Others: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SUST AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CUET AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·) AND
+HSCGraduationYear > 2020: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SUST: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CUET AND
+CollegeAttendance = Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = UIU: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0/5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CUET AND
+Gender = Female (à¦¨à¦¾à¦°à§€): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SEU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0/3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = Others: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+FamilyMembers = 3 (à§©) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCGraduationYear > 2021: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CurrentInstitution = KUET AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+HSCGraduationYear <= 2021 AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+MotherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+HSCGraduationYear <= 2021: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CurrentInstitution = KU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KU AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+Faculty = Others AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+BirthOrder = Last Child: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (21.0/5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+CurrentInstitution = BUET AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = IUBAT AND
+Faculty = EEE: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (19.0/3.0)
+
+HSCMath = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+CurrentInstitution = IUBAT: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (11.0/3.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = KUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (10.0/5.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0/1.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = CUET AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/2.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (11.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (9.0/2.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+Faculty = CSE AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (8.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = KU AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+CurrentInstitution = UIU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0)
+
+HSCPhysics = < 120 (< à§§à§¨à§¦) AND
+CurrentInstitution = KUET AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/2.0)
+
+HSCPhysics = < 120 (< à§§à§¨à§¦) AND
+MotherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+HSCPhysics = < 120 (< à§§à§¨à§¦) AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCPhysics = < 120 (< à§§à§¨à§¦) AND
+HSCGraduationYear <= 2021: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = DU: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+HSCGraduationYear <= 2021: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeAttendance = Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0/2.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/1.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/2.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/1.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/2.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+HSCGraduationYear <= 2021: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = IUBAT AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = IUBAT: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = CUET AND
+Faculty = EEE: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·) AND
+Faculty = EEE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = KUET AND
+HSCGraduationYear <= 2020: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Others AND
+Faculty = EEE: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+FamilyMembers = 4 - 5 (à§ª - à§«) AND
+Faculty = EEE AND
+HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (9.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = SEU AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCMath = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+FamilyMembers = 4 - 5 (à§ª - à§«) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+FamilyMembers = 4 - 5 (à§ª - à§«): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+CurrentInstitution = SEU AND
+CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+HSCGraduationYear > 2022 AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯) AND
+HSCGraduationYear <= 2022 AND
+HSCGraduationYear > 2021: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (9.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+BirthOrder = Last Child AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) AND
+HSCGraduationYear <= 2022: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = SEU AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+CurrentInstitution = UIU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FamilyMembers = 2 (à§¨) AND
+CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+CurrentInstitution = UIU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FamilyMembers = 4 - 5 (à§ª - à§«): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+UniversityPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾) AND
+FamilyMembers = 3 (à§©) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (10.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (10.0/4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨) AND
+Faculty = ME: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+Faculty = Others AND
+FamilyMembers = 4 - 5 (à§ª - à§«): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–) AND
+HSCGraduationYear > 2022: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (9.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+FamilyMembers = 3 (à§©) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+FamilyMembers = 6 - 7 (à§¬ - à§­) AND
+HSCGraduationYear <= 2021: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+Faculty = CSE AND
+FamilyMembers = 4 - 5 (à§ª - à§«): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KU AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨) AND
+Faculty = CSE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+Faculty = CE AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KU AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KU AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KU AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+Faculty = ME: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬) AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+Faculty = ME: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+BirthOrder = First-child: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®) AND
+HSCGraduationYear <= 2021 AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (9.0/2.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = AIUB: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–) AND
+DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+HSCPhysics = < 120 (< à§§à§¨à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0/1.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = UIU AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0/1.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = UIU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = IUBAT AND
+HSCGraduationYear <= 2021: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/1.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+Gender = Female (à¦¨à¦¾à¦°à§€): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/2.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = SUST: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (15.0/6.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCGraduationYear <= 2021: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (9.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMath = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/3.0)
+
+HSCMath = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0/1.0)
+
+HSCMath = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/2.0)
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾) AND
+FamilyMembers = 4 - 5 (à§ª - à§«) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (9.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡) AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/1.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0)
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯) AND
+HSCGraduationYear <= 2021: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0)
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (8.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+Faculty = EEE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–) AND
+DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) AND
+Faculty = EEE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (14.0/3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (8.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+Faculty = CSE: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CU AND
+Faculty = EEE: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®) AND
+HSCGraduationYear <= 2021 AND
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (11.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CUET AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = CUET AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = DU AND
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SUST AND
+CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SUST AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+Faculty = CSE: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = SUST: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+CollegeAttendance = Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡)) AND
+HSCGraduationYear <= 2022: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = BUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+CurrentInstitution = KUET: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (16.0/4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (8.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BRAC AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = SEU: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BRAC AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = Others: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0/5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (8.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = UIU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = UIU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+FamilyMembers = 2 (à§¨): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (8.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = UIU AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (11.0/4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = UIU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (10.0/3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = Others AND
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+UniversityPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+DepartmentPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+DepartmentPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦) AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = Others: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+HSCGraduationYear <= 2022: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (14.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+FamilyMembers = 4 - 5 (à§ª - à§«) AND
+Faculty = CE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+FamilyMembers = 6 - 7 (à§¬ - à§­) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = CU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+HSCGraduationYear > 2021: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+BirthOrder = Last Child: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = BRAC: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = BUET AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®) AND
+DepartmentPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = BUET AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = UIU AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = DU AND
+Faculty = EEE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+Faculty = ME: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+Faculty = CE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = UIU AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = UIU AND
+CollegeAttendance = Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡)): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = UIU AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (22.0/7.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (18.0/7.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+CurrentInstitution = KUET: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+BirthOrder = First-child AND
+Faculty = CSE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (9.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+DepartmentPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0/3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+CollegeAttendance = Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%)) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+UniversityPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = RUET AND
+HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+MotherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (13.0/4.0)
+
+CurrentInstitution = CU AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BRAC AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (11.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+HSCGraduationYear <= 2021: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BRAC AND
+FamilyMembers = 4 - 5 (à§ª - à§«): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (14.0/5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BRAC AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+Faculty = CSE: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BRAC: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (9.0/4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+BirthOrder = Middle child AND
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = DU AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = DU AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = BUET AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) AND
+Faculty = CE AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = RUET AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+BirthOrder = First-child AND
+Faculty = CE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = BUET AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = DU AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = DU AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = SEU AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (12.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (13.0/3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = DU: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = IUBAT AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = IUBAT AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0/2.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+MotherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = CUET AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (10.0/4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = CUET AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+Faculty = EEE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = CUET AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (12.0/5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = CUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (11.0/3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (15.0/5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+MotherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+BirthOrder = Last Child: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+CurrentInstitution = NSU: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+MotherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+FamilyMembers = 2 (à§¨): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = KUET AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+Faculty = ME: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+FamilyMembers = 3 (à§©): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = KUET AND
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0)
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = KUET AND
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦) AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0/1.0)
+
+CurrentInstitution = NSU AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) AND
+BirthOrder = First-child: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0/2.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CurrentInstitution = IUBAT: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+CurrentInstitution = KU AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸) AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+Faculty = ME: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (11.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CurrentInstitution = UIU: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CurrentInstitution = SUST: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CurrentInstitution = RUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CurrentInstitution = KU: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CurrentInstitution = AIUB AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CurrentInstitution = KUET AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+CurrentInstitution = KU AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+HSCGraduationYear <= 2022 AND
+Faculty = EEE: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/3.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/2.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+BirthOrder = First-child: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+CurrentInstitution = KU AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®) AND
+BirthOrder = Middle child: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+CurrentInstitution = KU AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (9.0/3.0)
+
+CurrentInstitution = BUET AND
+FamilyMembers = 3 (à§©): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0)
+
+CurrentInstitution = BUET AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0)
+
+CurrentInstitution = BUET AND
+CollegeAttendance = Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%)) AND
+FamilyMembers = 4 - 5 (à§ª - à§«): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0)
+
+CurrentInstitution = BUET AND
+CollegeAttendance = Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/2.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/2.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+CurrentInstitution = UIU: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0/1.0)
+
+MotherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+Faculty = EEE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+Faculty = Others: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/2.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯) AND
+HSCGraduationYear > 2021: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/2.0)
+
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/2.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+Faculty = ME AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCGraduationYear <= 2022: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+Faculty = ME AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+Faculty = ME AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+Faculty = ME AND
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬) AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+CurrentInstitution = KUET AND
+HSCGraduationYear <= 2020 AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (9.0/2.0)
+
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = IUBAT AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/2.0)
+
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+CurrentInstitution = IUBAT AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+CurrentInstitution = UIU: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0/2.0)
+
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/2.0)
+
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0/2.0)
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+CurrentInstitution = KU AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+CurrentInstitution = KU AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+CurrentInstitution = CU: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+CurrentInstitution = KU AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+Faculty = CSE: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CurrentInstitution = IUBAT AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+BirthOrder = Last Child: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (9.0/1.0)
+
+CurrentInstitution = KU: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/1.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦) AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (8.0/1.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+CurrentInstitution = SUST AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+BirthOrder = Middle child: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+CurrentInstitution = SUST AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²) AND
+HSCGraduationYear > 2022: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+CurrentInstitution = SUST AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0/1.0)
+
+CurrentInstitution = SUST AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (10.0)
+
+CurrentInstitution = SUST AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾) AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0)
+
+CurrentInstitution = SUST AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0/2.0)
+
+CurrentInstitution = SUST AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0/1.0)
+
+CurrentInstitution = SUST AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0)
+
+CurrentInstitution = SUST AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+CurrentInstitution = SUST AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+CurrentInstitution = SUST AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+Faculty = EEE AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0)
+
+CurrentInstitution = SUST: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+CurrentInstitution = IUBAT AND
+Faculty = ME AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+CurrentInstitution = IUBAT AND
+Faculty = EEE: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/2.0)
+
+CurrentInstitution = IUBAT AND
+Faculty = Others AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+CurrentInstitution = IUBAT AND
+Faculty = Others: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+CurrentInstitution = IUBAT AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾) AND
+HSCGraduationYear > 2021: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0)
+
+CurrentInstitution = IUBAT AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0/2.0)
+
+CurrentInstitution = IUBAT AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0/1.0)
+
+CurrentInstitution = IUBAT AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+CurrentInstitution = IUBAT AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/1.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+BirthOrder = Last Child: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦) AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (15.0/4.0)
+
+CurrentInstitution = IUBAT: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+CurrentInstitution = BUET AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)) AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+CurrentInstitution = BUET AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/3.0)
+
+CurrentInstitution = BUET AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+CurrentInstitution = BUET AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+CurrentInstitution = BUET AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/1.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿) AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (17.0/9.0)
+
+CurrentInstitution = UIU AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+CurrentInstitution = UIU AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+HSCGraduationYear > 2020: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/1.0)
+
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) AND
+BirthOrder = First-child AND
+HSCGraduationYear <= 2022: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/1.0)
+
+CurrentInstitution = NSU AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/1.0)
+
+FamilyMembers = 2 (à§¨) AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0/1.0)
+
+CurrentInstitution = NSU AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+HSCGraduationYear <= 2022: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+CurrentInstitution = NSU AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (11.0/4.0)
+
+CurrentInstitution = NSU AND
+MotherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+CurrentInstitution = NSU AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+CurrentInstitution = CUET AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) AND
+Faculty = EEE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+CurrentInstitution = NSU AND
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡) AND
+Faculty = EEE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+CurrentInstitution = KUET AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+CurrentInstitution = KUET AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨) AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+MotherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+BirthOrder = First-child: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (8.0/1.0)
+
+CurrentInstitution = KUET AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (11.0)
+
+CurrentInstitution = KUET AND
+Faculty = ME AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (19.0/2.0)
+
+CurrentInstitution = CUET AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+FamilyMembers = 4 - 5 (à§ª - à§«): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (10.0/1.0)
+
+CurrentInstitution = CUET AND
+BirthOrder = First-child AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+CurrentInstitution = CUET AND
+BirthOrder = Others AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+CurrentInstitution = KUET AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCGraduationYear > 2022 AND
+CurrentInstitution = KUET AND
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/1.0)
+
+CurrentInstitution = DU AND
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+CurrentInstitution = KUET AND
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0/1.0)
+
+CurrentInstitution = KUET AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (12.0/4.0)
+
+CurrentInstitution = KUET AND
+FamilyMembers = 2 (à§¨) AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+FamilyMembers = 2 (à§¨) AND
+CurrentInstitution = UIU: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/2.0)
+
+CurrentInstitution = UIU AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/1.0)
+
+FamilyMembers = 2 (à§¨) AND
+CurrentInstitution = AIUB AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+FamilyMembers = 2 (à§¨) AND
+CurrentInstitution = AIUB AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+FamilyMembers = 2 (à§¨) AND
+CurrentInstitution = RUET AND
+BirthOrder = Others: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+CurrentInstitution = UIU AND
+MotherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+CurrentInstitution = UIU AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+CurrentInstitution = UIU AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+Faculty = EEE: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+CurrentInstitution = UIU AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+CurrentInstitution = UIU AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+CurrentInstitution = RUET AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0)
+
+CurrentInstitution = KUET AND
+FamilyMembers = 2 (à§¨) AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (8.0/2.0)
+
+CurrentInstitution = DU AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCGraduationYear <= 2021: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0)
+
+CurrentInstitution = DU AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0)
+
+CurrentInstitution = DU AND
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡) AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0)
+
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+MotherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0/1.0)
+
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+CurrentInstitution = AIUB: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+CurrentInstitution = DU AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0/2.0)
+
+CurrentInstitution = DU AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0)
+
+CurrentInstitution = DU AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+HSCGraduationYear > 2020 AND
+Faculty = Others: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+CurrentInstitution = DU AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (8.0/1.0)
+
+CurrentInstitution = UIU: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+Faculty = EEE AND
+CurrentInstitution = RUET AND
+BirthOrder = Last Child: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+CurrentInstitution = DU AND
+BirthOrder = Last Child AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+CurrentInstitution = DU AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/1.0)
+
+CurrentInstitution = DU AND
+HSCGraduationYear <= 2020: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+CurrentInstitution = BUET: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+CurrentInstitution = DU AND
+BirthOrder = First-child: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0)
+
+CurrentInstitution = KUET AND
+FamilyMembers = 2 (à§¨) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (15.0/8.0)
+
+CurrentInstitution = KUET AND
+FamilyMembers = 2 (à§¨): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (14.0/5.0)
+
+CurrentInstitution = KUET AND
+Faculty = EEE AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (8.0)
+
+CurrentInstitution = KUET AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (15.0/2.0)
+
+Faculty = Others AND
+CurrentInstitution = AIUB: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+Faculty = Others AND
+CurrentInstitution = CUET AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0)
+
+Faculty = Others AND
+CurrentInstitution = CUET: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+Faculty = Others AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+Faculty = Others AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+Faculty = Others AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+Faculty = EEE AND
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (6.0)
+
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (16.0/2.0)
+
+CurrentInstitution = AIUB AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+Faculty = Others AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+FamilyMembers = 2 (à§¨) AND
+CurrentInstitution = CUET: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+Faculty = Others AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+Faculty = Others AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0)
+
+Faculty = Others AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (20.0/8.0)
+
+Faculty = Others AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCGraduationYear <= 2021: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0)
+
+Faculty = Others AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0/2.0)
+
+Faculty = Others AND
+BirthOrder = Others AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+Faculty = Others AND
+BirthOrder = Others: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0)
+
+Faculty = Others AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) AND
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (11.0/3.0)
+
+CollegeAttendance = Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%)) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·) AND
+DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+CollegeAttendance = Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%)) AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+Faculty = Others AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+Faculty = Others AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–) AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+Faculty = Others AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+CollegeAttendance = Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%)) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–) AND
+FamilyMembers = 4 - 5 (à§ª - à§«): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (12.0/1.0)
+
+Faculty = Others AND
+UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0/1.0)
+
+Faculty = Others AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾) AND
+HSCGraduationYear <= 2020: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+Faculty = Others AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+Faculty = EEE AND
+CurrentInstitution = CUET AND
+CollegeLocation = Urban area (City) (à¦¶à¦¹à¦°à¦¾à¦žà§�à¦šà¦²): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0)
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0/1.0)
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+CurrentInstitution = RUET AND
+Faculty = CSE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+CurrentInstitution = CUET AND
+BirthOrder = Middle child AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0)
+
+CurrentInstitution = CUET AND
+CollegeAttendance = Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%)): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/1.0)
+
+CurrentInstitution = CUET AND
+InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾) AND
+BirthOrder = Last Child: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+CurrentInstitution = CUET AND
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+CurrentInstitution = CUET AND
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/1.0)
+
+CurrentInstitution = CUET AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+CurrentInstitution = CUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0)
+
+CurrentInstitution = SEU AND
+MotherEmploymentSector = Homemaker (à¦—à§ƒà¦¹à¦•à¦°à§�à¦®à§‡ à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+Faculty = EEE AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0)
+
+CurrentInstitution = SEU AND
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+CurrentInstitution = SEU AND
+Faculty = CSE AND
+InternetAvailability = WIFI Connectivity (à¦‰à¦šà§�à¦šà¦—à¦¤à¦¿à¦° à¦“à§Ÿà¦¾à¦‡à¦«à¦¾à¦‡): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+CurrentInstitution = SEU AND
+Faculty = CSE: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+CurrentInstitution = NSU AND
+HSCLearningSource = Self-study (à¦¸à§�à¦¬-à¦…à¦§à§�à¦¯à§Ÿà¦¨): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/2.0)
+
+CurrentInstitution = NSU AND
+Faculty = CSE: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0/3.0)
+
+CurrentInstitution = NSU AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+CurrentInstitution = RUET AND
+UniversityPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCGraduationYear <= 2020: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+CurrentInstitution = RUET AND
+UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FamilyMembers = 4 - 5 (à§ª - à§«): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0/1.0)
+
+CurrentInstitution = RUET AND
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+CurrentInstitution = RUET AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+CurrentInstitution = RUET AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+Faculty = CSE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+CurrentInstitution = RUET AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+FamilyMembers = 3 (à§©): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+CurrentInstitution = RUET AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+CurrentInstitution = RUET AND
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+CurrentInstitution = RUET AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+CurrentInstitution = RUET AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+CurrentInstitution = NSU: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0/1.0)
+
+CurrentInstitution = SEU: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+CurrentInstitution = RUET AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+CurrentInstitution = RUET: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0/2.0)
+
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/1.0)
+
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0)
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+CollegeAttendance = Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/2.0)
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+MotherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (8.0/1.0)
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+Faculty = CE: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (17.0/5.0)
+
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)) AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+Faculty = CSE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦) AND
+HSCGraduationYear <= 2020: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (2.0)
+
+CurrentInstitution = AIUB AND
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) AND
+MotherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0)
+
+CurrentInstitution = AIUB AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/2.0)
+
+MotherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+CurrentInstitution = KUET: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+FatherEducation = No formal education (à¦ªà§�à¦°à¦¾à¦¤à¦¿à¦·à§�à¦ à¦¾à¦¨à¦¿à¦• à¦¶à¦¿à¦•à§�à¦·à¦¾ à¦¨à§‡à¦‡) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (10.0/1.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿) AND
+UniversityPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+MotherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€) AND
+HSCLearningSource = College classes (à¦•à¦²à§‡à¦œ à¦•à§�à¦²à¦¾à¦¸): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+MotherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0/1.0)
+
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤) AND
+HSCGraduationYear <= 2021: Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0)
+
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) AND
+InternetAvailability = Unavailable (à¦‡à¦¨à§�à¦Ÿà¦¾à¦°à¦¨à§‡à¦Ÿ à¦¸à§�à¦¬à¦¿à¦§à¦¾ à¦›à¦¿à¦² à¦¨à¦¾): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMonthlyExpenditure = Above 30,000 (à§©à§¦,à§¦à§¦à§¦ à¦�à¦° à¦‰à¦ªà¦°à§‡) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0)
+
+CurrentInstitution = AIUB AND
+FatherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/1.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+FatherEmploymentSector = Armed forces / Law enforcement (à¦¸à¦¶à¦¸à§�à¦¤à§�à¦° à¦¬à¦¾à¦¹à¦¿à¦¨à§€): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®) AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (2.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+FamilyMembers = 6 - 7 (à§¬ - à§­) AND
+Faculty = ME AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0)
+
+CollegeAttendance = Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%)) AND
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬) AND
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+CollegeAttendance = Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%)) AND
+Faculty = EEE AND
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0)
+
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•) AND
+UniversityPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCGraduationYear <= 2022: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+FamilyMembers = 3 (à§©) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (5.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+FatherEmploymentSector = Public sector (à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) AND
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (7.0/1.0)
+
+FamilyMembers = 3 (à§©) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+DepartmentPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0/1.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+Gender = Female (à¦¨à¦¾à¦°à§€) AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (10.0/3.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FamilyMembers = 3 (à§©) AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FamilyMembers = 3 (à§©) AND
+HSCGraduationYear > 2020: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0/1.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+FamilyMembers = 3 (à§©): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeAttendance = Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%)) AND
+FamilyMembers = 4 - 5 (à§ª - à§«): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (17.0/3.0)
+
+Faculty = ME AND
+HouseholdIncomeYearly = Above 18 Lakhs (à§§à§® à¦²à¦¾à¦–à§‡à¦° à¦‰à¦ªà¦°à§‡): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0/1.0)
+
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦) AND
+FamilyMembers = 4 - 5 (à§ª - à§«) AND
+HSCGraduationYear <= 2022: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCMonthlyExpenditure = 20,000 - 30,000 (à§¨à§¦,à§¦à§¦à§¦ - à§©à§¦,à§¦à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0/3.0)
+
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (5.0/1.0)
+
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+FamilyMembers = 8 and above (à§® à¦�à¦¬à¦‚ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+DepartmentPreferenceOrder = 4th choice (à§ªà¦°à§�à¦¥ à¦ªà¦›à¦¨à§�à¦¦) AND
+InternetAvailability = Mobile Data (à¦®à§‹à¦¬à¦¾à¦‡à¦² à¦¡à¦¾à¦Ÿà¦¾) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0)
+
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡) AND
+FamilyMembers = 6 - 7 (à§¬ - à§­): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (7.0/1.0)
+
+Faculty = CE AND
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) AND
+ComputerAvailability = Available (à¦¸à¦¹à¦œà¦²à¦­à§�à¦¯): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (9.0/1.0)
+
+CurrentInstitution = AIUB AND
+HouseholdIncomeYearly = Less than 5  Lakhs (à§« à¦²à¦¾à¦–à§‡à¦° à¦•à¦®): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+CurrentInstitution = KUET AND
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–) AND
+CollegeAttendance = Very regularly (90â€“100% attendance) (à¦–à§�à¦¬ à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§¯à§¦â€“à§§à§¦à§¦% à¦‰à¦ªà¦¸à§�à¦¥à¦¿à¦¤à¦¿)): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (4.0/1.0)
+
+CurrentInstitution = KUET AND
+FamilyMembers = 6 - 7 (à§¬ - à§­) AND
+CollegeCategory = Private (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿) AND
+Faculty = CSE: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+CurrentInstitution = KUET AND
+HSCGraduationYear <= 2020 AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (7.0/1.0)
+
+CurrentInstitution = KUET AND
+UniversityPreferenceOrder = 5th choice or lower (à§«à¦® à¦ªà¦›à¦¨à§�à¦¦ à¦¬à¦¾ à¦¤à¦¾à¦° à¦¨à¦¿à¦šà§‡) AND
+Gender = Male (à¦ªà§�à¦°à§�à¦·) AND
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (4.0)
+
+CollegeLocation = Semi-urban area (à¦†à¦§à¦¾-à¦¨à¦—à¦° à¦�à¦²à¦¾à¦•à¦¾) AND
+HSCMonthlyExpenditure = Less than 5,000 (à§«,à§¦à§¦à§¦ à¦�à¦° à¦•à¦®) AND
+FatherEducation = Primary (à¦ªà§�à¦°à¦¾à¦¥à¦®à¦¿à¦•): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (6.0)
+
+HSCLearningSource = Both equally (à¦‰à¦­à¦¯à¦¼à¦‡ à¦¸à¦®à¦¾à¦¨à¦­à¦¾à¦¬à§‡) AND
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (5.0/1.0)
+
+HSCMonthlyExpenditure = 5,000 - 10,000 (à§«,à§¦à§¦à§¦ - à§§à§¦,à§¦à§¦à§¦) AND
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) AND
+UniversityPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HSCGraduationYear > 2021: Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (6.0)
+
+BirthOrder = Others AND
+Faculty = EEE: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (2.0)
+
+BirthOrder = Last Child AND
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (7.0/3.0)
+
+BirthOrder = Last Child AND
+HSCGraduationYear <= 2021 AND
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (5.0/2.0)
+
+BirthOrder = Last Child AND
+HSCGraduationYear <= 2021: 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (4.0)
+
+BirthOrder = Last Child AND
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°) AND
+HSCGraduationYear <= 2022: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+BirthOrder = Last Child: 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (11.0/4.0)
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) AND
+HSCChemistry = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (2.0)
+
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+CurrentInstitution = KUET AND
+CollegeAttendance = Regularly (75â€“89%) (à¦¨à¦¿à¦¯à¦¼à¦®à¦¿à¦¤ (à§­à§«â€“à§®à§¯%)): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (5.0/1.0)
+
+Faculty = CE AND
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (7.0)
+
+FatherEducation = Higher Secondary (à¦‰à¦šà§�à¦š à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦‡à¦šà¦�à¦¸à¦¸à¦¿) AND
+UniversityPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (3.0)
+
+DepartmentPreferenceOrder = 3rd choice (à§©à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (2.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+HouseholdIncomeYearly = 10- 18 Lakhs (à§§à§¦ - à§§à§® à¦²à¦¾à¦–): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (4.0/2.0)
+
+FatherEmploymentSector = Self-employed (à¦¸à§�à¦¬à¦¨à¦¿à¦¯à¦¼à§‹à¦œà¦¿à¦¤): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (4.0/1.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeAttendance = Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%)): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (6.0/1.0)
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0/1.0)
+
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeAttendance = Very rarely (Below 25%) (à¦–à§�à¦¬à¦‡ à¦•à¦® (à§¨à§«%-à¦�à¦° à¦¨à¦¿à¦šà§‡)): 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0)
+
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–): Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®) (6.0/1.0)
+
+DepartmentPreferenceOrder = 2nd choice (à§¨à§Ÿ à¦ªà¦›à¦¨à§�à¦¦) AND
+CollegeAttendance = Rarely (25â€“49%) (à¦•à¦¦à¦¾à¦šà¦¿à§Ž / à¦–à§�à¦¬ à¦•à¦® (à§¨à§«â€“à§ªà§¯%)): 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦) (3.0)
+
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°): 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«) (3.0)
+
+HSCLearningSource = Online Platforms / YouTube (à¦…à¦¨à¦²à¦¾à¦‡à¦¨ à¦ªà§�à¦²à§�à¦¯à¦¾à¦Ÿà¦«à¦°à§�à¦®/à¦‡à¦‰à¦Ÿà¦¿à¦‰à¦¬): Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡) (3.0/1.0)
+
+: 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«) (3.0/1.0)
+
+Number of Rules  : 	653
+
+
+Time taken to build model: 0.52 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1791               50.9386 %
+Incorrectly Classified Instances      1725               49.0614 %
+Kappa statistic                          0.3752
+Mean absolute error                      0.209 
+Root mean squared error                  0.3919
+Relative absolute error                 66.4065 %
+Root relative squared error             98.8097 %
+Total Number of Instances             3516     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.587    0.096    0.552      0.587    0.569      0.479    0.811     0.509     Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+                 0.447    0.132    0.437      0.447    0.442      0.312    0.722     0.380     3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+                 0.535    0.196    0.515      0.535    0.525      0.335    0.717     0.497     3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+                 0.516    0.136    0.535      0.516    0.525      0.384    0.746     0.494     3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+                 0.432    0.066    0.499      0.432    0.463      0.389    0.769     0.436     Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+Weighted Avg.    0.509    0.136    0.509      0.509    0.509      0.374    0.747     0.469     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 348  49  74  83  39 |   a = Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+  48 293 157  91  66 |   b = 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+  91 160 527 143  64 |   c = 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+  93  98 174 423  32 |   d = 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+  50  71  91  51 200 |   e = Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+

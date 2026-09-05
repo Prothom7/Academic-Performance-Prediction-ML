@@ -1,0 +1,631 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     E1_Year1CGPA_FinalClean
+Instances:    3516
+Attributes:   24
+              Faculty
+              CurrentInstitution
+              HSCGraduationYear
+              Gender
+              CollegeCategory
+              CollegeLocation
+              HSCLearningSource
+              CollegeAttendance
+              HSCMath
+              HSCPhysics
+              HSCChemistry
+              FamilyMembers
+              BirthOrder
+              HouseholdIncomeYearly
+              HSCMonthlyExpenditure
+              InternetAvailability
+              ComputerAvailability
+              Year1CGPA
+              UniversityPreferenceOrder
+              DepartmentPreferenceOrder
+              FatherEducation
+              MotherEducation
+              FatherEmploymentSector
+              MotherEmploymentSector
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : -0.4348369361489215
+HSCPhysics != 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : 0.37891986062718247
+HSCPhysics is missing : -0.17609084711095524
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+HSCMath = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : 0.15240795005733454
+HSCMath != 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : -0.5238214018458501
+HSCMath is missing : -0.0762143700455443
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : 0.6236762902686555
+HSCPhysics != 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : -0.08775021144629168
+HSCPhysics is missing : 0.422092187250356
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : 0.8346106683016545
+HSCMath != 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : -0.059657181268206384
+HSCMath is missing : 0.17968493600263116
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+HSCChemistry = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) : 0.5008305647840533
+HSCChemistry != 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) : -0.5273848931688168
+HSCChemistry is missing : -0.3925178664807325
+
+
+Iteration 2
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) : 0.40766059995197457
+HSCLearningSource != Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) : -0.24690284696562306
+HSCLearningSource is missing : -1.3227583808283054
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+HSCPhysics = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : 0.11500312533526909
+HSCPhysics != 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : -0.2882394017290713
+HSCPhysics is missing : 0.008301259582062452
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) : -0.6859667199282155
+HSCMath != 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) : 0.08999585214359418
+HSCMath is missing : 0.028896327207100662
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+HSCMath = 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) : -0.4795867885670102
+HSCMath != 140 - 160 (à§§à§ªà§¦ - à§§à§¬à§¦) : 0.0787794768036846
+HSCMath is missing : 0.03629475682534071
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : -0.5883731011639374
+HSCMath != 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : 0.049185902560265136
+HSCMath is missing : -0.08052584391936594
+
+
+Iteration 3
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) : 0.42570848179471954
+MotherEducation != Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) : -0.16644512529846425
+MotherEducation is missing : -0.019982739104480687
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+FatherEducation = Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) : 0.3227665338917186
+FatherEducation != Secondary (à¦®à¦¾à¦§à§�à¦¯à¦®à¦¿à¦•/à¦�à¦¸à¦�à¦¸à¦¸à¦¿) : -0.042331596316772836
+FatherEducation is missing : 0.018303459607008868
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+MotherEducation = Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) : -0.32437568217128326
+MotherEducation != Postgraduate (Master's and above) (à¦¸à§�à¦¨à¦¾à¦¤à¦•à§‹à¦¤à§�à¦¤à¦° à¦¬à¦¾ à¦¤à¦¦à§‚à¦°à§�à¦§à§�à¦¬) : 0.10371300984097284
+MotherEducation is missing : 0.015376106217288799
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+ComputerAvailability = Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) : -0.1452706408747405
+ComputerAvailability != Unavailable (à¦›à¦¿à¦² à¦¨à¦¾) : 0.1254478475727089
+ComputerAvailability is missing : 0.001944809144631115
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = SEU : 1.0481804627619649
+CurrentInstitution != SEU : -0.06936457237727493
+CurrentInstitution is missing : -0.026267765244112538
+
+
+Iteration 4
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) : 0.29818365782005374
+DepartmentPreferenceOrder != 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) : -0.16676503280739607
+DepartmentPreferenceOrder is missing : -0.012683647382790326
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+Gender = Male (à¦ªà§�à¦°à§�à¦·) : -0.09223632275454638
+Gender != Male (à¦ªà§�à¦°à§�à¦·) : 0.18580446247548962
+Gender is missing : 0.008412398459109634
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = CU : 0.5903379433469618
+CurrentInstitution != CU : -0.035022698851335236
+CurrentInstitution is missing : -0.005787727623360183
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = CUET : 0.5234729688621642
+CurrentInstitution != CUET : -0.02716148701515525
+CurrentInstitution is missing : 0.007514235040768451
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+DepartmentPreferenceOrder = 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) : -0.2668581608393981
+DepartmentPreferenceOrder != 1st choice (à§§à¦® à¦ªà¦›à¦¨à§�à¦¦) : 0.12174883796654631
+DepartmentPreferenceOrder is missing : 0.0022795567379171574
+
+
+Iteration 5
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : -0.14130311268185342
+HSCChemistry != 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : 0.2567063357114235
+HSCChemistry is missing : -0.010652510012802516
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = RUET : -0.5284129936002184
+CurrentInstitution != RUET : 0.030220975591967483
+CurrentInstitution is missing : 0.002503503604281311
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+HSCChemistry = 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : 0.07261814681392051
+HSCChemistry != 160 - 190 (à§§à§¬à§¦ - à§§à§¯à§¦) : -0.22346923988726514
+HSCChemistry is missing : 0.003943088917501196
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+MotherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) : 0.6035313299998851
+MotherEmploymentSector != Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) : -0.024193244630814174
+MotherEmploymentSector is missing : -1.210273337024072
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+MotherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) : 0.5768804268963298
+MotherEmploymentSector != Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) : -0.048921406514363996
+MotherEmploymentSector is missing : -1.4663297616635456
+
+
+Iteration 6
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+Faculty = EEE : 0.3022395887574484
+Faculty != EEE : -0.11102887326094155
+Faculty is missing : -0.005762801779754201
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+FatherEmploymentSector = Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) : -0.24305246791123272
+FatherEmploymentSector != Business owner (à¦¬à§�à¦¯à¦¬à¦¸à¦¾/à¦‰à¦¦à§�à¦¯à§‹à¦•à§�à¦¤à¦¾) : 0.059389925799215704
+FatherEmploymentSector is missing : 0.00467215352180692
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = KUET : 0.1365415242994184
+CurrentInstitution != KUET : -0.10960055835892933
+CurrentInstitution is missing : -0.00832816117454339
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+HSCMonthlyExpenditure = 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) : 0.20597317893337833
+HSCMonthlyExpenditure != 10,000 - 20,000 (à§§à§¦,à§¦à§¦à§¦ - à§¨à§¦,à§¦à§¦à§¦) : -0.05174275177319285
+HSCMonthlyExpenditure is missing : 0.004572876011021175
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = BRAC : 0.7534010002327753
+CurrentInstitution != BRAC : -0.028722613690305404
+CurrentInstitution is missing : 0.007119811887555821
+
+
+Iteration 7
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+HSCMath = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : 0.2678245923518588
+HSCMath != 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : -0.10141483656405334
+HSCMath is missing : -0.0011959324515320167
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+CollegeLocation = Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) : -0.18677576419553277
+CollegeLocation != Rural area (Village) (à¦—à§�à¦°à¦¾à¦®à¦¾à¦žà§�à¦šà¦²) : 0.06003259729594532
+CollegeLocation is missing : 9.034881431852351E-4
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+CollegeAttendance = Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%)) : 0.19616385930430452
+CollegeAttendance != Occasionally (50â€“74%) (à¦®à¦¾à¦�à§‡ à¦®à¦¾à¦�à§‡ (à§«à§¦â€“à§­à§ª%)) : -0.05705826126361981
+CollegeAttendance is missing : -0.0018568676126254193
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = KUET : 0.14216673391168888
+CurrentInstitution != KUET : -0.09370547397334614
+CurrentInstitution is missing : 0.0014877159905627203
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+CollegeLocation = Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°) : 0.2182685187499279
+CollegeLocation != Metropolitan city (à¦¬à¦¿à¦­à¦¾à¦—à§€à¦¯à¦¼ à¦¶à¦¹à¦°/à¦®à¦¹à¦¾à¦¨à¦—à¦°) : -0.08608916464190501
+CollegeLocation is missing : 9.641400261051943E-4
+
+
+Iteration 8
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+HouseholdIncomeYearly = 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–) : -0.24570367934818774
+HouseholdIncomeYearly != 5 - 10 Lakhs (à§« - à§§à§¦ à¦²à¦¾à¦–) : 0.07621378008415866
+HouseholdIncomeYearly is missing : 0.0012246987046761666
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = AIUB : -0.4695755510511143
+CurrentInstitution != AIUB : 0.020512691988600493
+CurrentInstitution is missing : -0.004329260846973772
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+BirthOrder = Others : 0.2534209799950854
+BirthOrder != Others : -0.04419646773648854
+BirthOrder is missing : 7.469713979547057E-4
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+HSCLearningSource = Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) : 0.16357566226920583
+HSCLearningSource != Private tuition/coaching (à¦•à§‹à¦šà¦¿à¦‚ à¦¸à§‡à¦¨à§�à¦Ÿà¦¾à¦°/à¦ªà§�à¦°à¦¾à¦‡à¦­à§‡à¦Ÿ à¦Ÿà¦¿à¦‰à¦Ÿà¦°) : -0.0566090324754015
+HSCLearningSource is missing : -1.8719296523478561
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+HSCPhysics = 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : -0.30845831504720467
+HSCPhysics != 190 - 200 (à§§à§¯à§¦ - à§¨à§¦à§¦) : 0.03578706761750479
+HSCPhysics is missing : -0.010786726901083395
+
+
+Iteration 9
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿) : -0.10775736326303242
+CollegeCategory != Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿) : 0.14365048315707998
+CollegeCategory is missing : 0.0017799557813615596
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = DU : 0.4014754162121141
+CurrentInstitution != DU : -0.02257217385829765
+CurrentInstitution is missing : 4.479743214492156E-4
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+FatherEmploymentSector = Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) : -0.15040139087225082
+FatherEmploymentSector != Private sector (à¦¬à§‡à¦¸à¦°à¦•à¦¾à¦°à¦¿ à¦šà¦¾à¦•à¦°à¦¿) : 0.05443782645742662
+FatherEmploymentSector is missing : -3.5321093185491876E-4
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+CurrentInstitution = DU : -0.4071591865629148
+CurrentInstitution != DU : 0.020318837526136297
+CurrentInstitution is missing : -1.1663472699779773E-4
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+InternetAvailability = Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) : -0.20344781426100292
+InternetAvailability != Mobile Data with limited Access (à¦¸à§€à¦®à¦¿à¦¤ à¦¸à§�à¦¬à¦¿à¦§à¦¾) : 0.05608254140288378
+InternetAvailability is missing : -0.0019045685248825772
+
+
+Iteration 10
+	Class 1 (Year1CGPA=Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡))
+
+Decision Stump
+
+Classifications
+
+Gender = Male (à¦ªà§�à¦°à§�à¦·) : 0.08399567795580432
+Gender != Male (à¦ªà§�à¦°à§�à¦·) : -0.18823968445165185
+Gender is missing : 0.0010652490335407998
+
+
+	Class 2 (Year1CGPA=3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«))
+
+Decision Stump
+
+Classifications
+
+HSCChemistry = 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) : -1.1800437658441827
+HSCChemistry != 120 - 140 (à§§à§¨à§¦ - à§§à§ªà§¦) : 0.006093644359321989
+HSCChemistry is missing : -0.0012797661363488594
+
+
+	Class 3 (Year1CGPA=3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦))
+
+Decision Stump
+
+Classifications
+
+HSCGraduationYear <= 2020.5 : -0.1838460041711683
+HSCGraduationYear > 2020.5 : 0.043302093170724615
+HSCGraduationYear is missing : -0.0011070028438656327
+
+
+	Class 4 (Year1CGPA=3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«))
+
+Decision Stump
+
+Classifications
+
+FatherEducation = Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) : 0.1584204339049081
+FatherEducation != Undergraduate (à¦¸à§�à¦¨à¦¾à¦¤à¦•/à¦…à¦¨à¦¾à¦°à§�à¦¸) : -0.04573005002745492
+FatherEducation is missing : -0.002397358054447153
+
+
+	Class 5 (Year1CGPA=Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®))
+
+Decision Stump
+
+Classifications
+
+CollegeCategory = Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿) : -0.0851243621189025
+CollegeCategory != Public (à¦¸à¦°à¦•à¦¾à¦°à¦¿) : 0.11359903335099923
+CollegeCategory is missing : 0.0058246784968781565
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 0.18 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1250               35.5518 %
+Incorrectly Classified Instances      2266               64.4482 %
+Kappa statistic                          0.1545
+Mean absolute error                      0.2971
+Root mean squared error                  0.3865
+Relative absolute error                 94.4217 %
+Root relative squared error             97.4397 %
+Total Number of Instances             3516     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.278    0.096    0.371      0.278    0.318      0.205    0.699     0.340     Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+                 0.145    0.070    0.321      0.145    0.200      0.105    0.648     0.282     3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+                 0.625    0.454    0.349      0.625    0.448      0.154    0.619     0.367     3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+                 0.348    0.181    0.369      0.348    0.358      0.171    0.642     0.343     3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+                 0.192    0.049    0.372      0.192    0.254      0.192    0.693     0.269     Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+Weighted Avg.    0.356    0.205    0.355      0.356    0.333      0.163    0.653     0.328     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 165  26 192 152  58 |   a = Above 3.75 (à§©.à§­à§« à¦�à¦° à¦‰à¦ªà¦°à§‡)
+  50  95 390  94  26 |   b = 3.00 - 3.25 (à§©.à§¦à§¦ - à§©.à§¨à§«)
+  58  94 616 187  30 |   c = 3.25 - 3.50 (à§©.à§¨à§« - à§©.à§«à§¦)
+  86  47 366 285  36 |   d = 3.50 - 3.75 (à§©.à§«à§¦ - à§©.à§­à§«)
+  86  34 200  54  89 |   e = Less than 3.00 (à§©.à§¦à§¦ à¦�à¦° à¦•à¦®)
+

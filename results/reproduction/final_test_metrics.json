@@ -1,0 +1,21 @@
+{
+  "locked_parameters": {
+    "n_estimators": 100,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1
+  },
+  "train_plus_validation_rows": 2988,
+  "test_rows": 528,
+  "accuracy": 0.5984848484848485,
+  "weighted_precision": 0.6201567132936899,
+  "weighted_recall": 0.5984848484848485,
+  "weighted_f1": 0.598370081200061,
+  "macro_precision": 0.6481163030333174,
+  "macro_recall": 0.5842742505370231,
+  "macro_f1": 0.6033087776852101,
+  "cohen_kappa": 0.4810618353098256,
+  "weighted_roc_auc_ovr": 0.8617322440497501,
+  "macro_roc_auc_ovr": 0.866279554946375,
+  "weighted_prc_auc": 0.7150285147282363,
+  "macro_prc_auc": 0.7158426687560504
+}

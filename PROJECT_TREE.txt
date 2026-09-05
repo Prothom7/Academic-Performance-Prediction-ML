@@ -1,0 +1,189 @@
+Academic_Performance_ML_Complete/
+├── archive
+│   ├── duplicates
+│   │   └── E1_Year1CGPA_FinalClean (1).arff
+│   ├── original_filenames
+│   │   └── academic_performance_raw.csv.csv
+│   └── previous_packages
+│       ├── academic-performance-ml-project.zip
+│       ├── final_evaluation_package.zip
+│       └── final_split_package.zip
+├── data
+│   ├── processed
+│   │   ├── final
+│   │   │   ├── E1_Year1CGPA_FinalClean.arff
+│   │   │   └── E1_Year1CGPA_FinalClean.csv
+│   │   └── intermediate
+│   │       ├── academic_performance_clean.csv
+│   │       ├── academic_performance_clean_v2.csv
+│   │       ├── academic_performance_clean_v3.csv
+│   │       ├── academic_performance_clean_weka.arff
+│   │       ├── academic_performance_clean_working.arff
+│   │       └── E1_Year1CGPA_EarlyPrediction.arff
+│   ├── raw
+│   │   ├── original_exports
+│   │   │   └── Academic Performance Evolution Dataset (Responses).csv
+│   │   └── academic_performance_raw.csv
+│   └── splits
+│       ├── test.csv
+│       ├── train.csv
+│       └── validation.csv
+├── data_generation
+│   ├── legacy_tools
+│   │   └── submit.py
+│   ├── quality_control
+│   │   ├── quality_control_report.md
+│   │   └── quality_control_report_updated.md
+│   └── synthetic
+│       ├── synthetic_survey_responses_800.csv
+│       └── synthetic_survey_responses_800_updated.csv
+├── docs
+│   ├── ARCHITECTURE.md
+│   ├── DATA_DICTIONARY.md
+│   ├── DATA_PROVENANCE_AND_INTEGRITY.md
+│   ├── HOW_TO_PRESENT_IN_ML_LAB.md
+│   ├── MODEL_CARD.md
+│   ├── PROJECT_HISTORY.md
+│   └── PROJECT_STATUS.md
+├── experiments
+│   └── weka
+│       ├── raw_logs
+│       │   ├── Pasted text(1).txt
+│       │   ├── Pasted text(10).txt
+│       │   ├── Pasted text(2).txt
+│       │   ├── Pasted text(20260905-064803).txt
+│       │   ├── Pasted text(20260905-065202).txt
+│       │   ├── Pasted text(20260905-065320).txt
+│       │   ├── Pasted text(20260905-065516).txt
+│       │   ├── Pasted text(20260905-070029).txt
+│       │   ├── Pasted text(20260905-070147).txt
+│       │   ├── Pasted text(20260905-070702).txt
+│       │   ├── Pasted text(20260905-071337).txt
+│       │   ├── Pasted text(5).txt
+│       │   ├── Pasted text(6).txt
+│       │   ├── Pasted text(7).txt
+│       │   ├── Pasted text(8).txt
+│       │   └── Pasted text(9).txt
+│       ├── screenshots
+│       │   ├── raw
+│       │   │   ├── weka_001_bbdea59a-acd0-4456-b73b-0ffdf029b13e.png
+│       │   │   ├── weka_002_3cd59948-95f9-4b72-ab98-d8ce27926879.png
+│       │   │   ├── weka_003_d25d5038-3241-4ec9-9459-419ea0d93ff4.png
+│       │   │   ├── weka_004_94d81160-6dc6-4568-8099-b1b29fb33be8.png
+│       │   │   ├── weka_005_09c98c1d-ab74-4393-ad10-7026918a873b.png
+│       │   │   ├── weka_006_36eed25f-0520-47c0-a994-89e021603088.png
+│       │   │   ├── weka_007_fb90f6e5-163c-4917-9b5e-900641daff56.png
+│       │   │   ├── weka_008_60e2361c-a0c0-4ae4-b206-c9fd89015eae.png
+│       │   │   ├── weka_009_7279154a-7f44-4511-8f51-ac758e349555.png
+│       │   │   ├── weka_010_f047673a-eb54-4995-adb7-6a65af0de317.png
+│       │   │   ├── weka_011_76a40f48-31a7-4dce-a8d0-742fa24edea2.png
+│       │   │   ├── weka_012_0a93eb28-5e92-4087-9497-f22d46f1066f.png
+│       │   │   ├── weka_013_f01f2905-f4f2-4230-b1d0-f6c66bd27ec3.png
+│       │   │   ├── weka_014_507e2c01-d67f-43ce-b3ef-f706e22d459a.png
+│       │   │   ├── weka_015_7cbb268a-fb05-4501-9818-6146ef9e0902.png
+│       │   │   ├── weka_016_5a7420e4-6275-43bf-8aad-35548de6080c.png
+│       │   │   ├── weka_017_1a2b2e84-c019-4a1e-81e8-9b406b9dd8e1.png
+│       │   │   ├── weka_018_8295597a-608c-4bcb-b822-78ec47e1bee0.png
+│       │   │   ├── weka_019_659efb31-72d5-457e-88ac-1a58c6e395b5.png
+│       │   │   ├── weka_020_f8709e8a-054a-4a85-8c71-8834b3fd609d.png
+│       │   │   ├── weka_021_aa75524a-0921-43c5-a451-816ac5adf52c.png
+│       │   │   ├── weka_022_98e98488-ac8f-4465-a8a8-7428689e38e9.png
+│       │   │   ├── weka_023_0b730531-bff4-4987-974e-aea1e90a10eb.png
+│       │   │   ├── weka_024_f098a0b0-dd40-4593-9d51-6336ce035f70.png
+│       │   │   ├── weka_025_b3174040-650c-4ce8-b1e9-259bce242e49.png
+│       │   │   ├── weka_026_60a467e0-fac8-4b0c-ac6b-cac6e23e6e55.png
+│       │   │   ├── weka_027_329c2815-5ad9-4574-abda-678274517517.png
+│       │   │   ├── weka_028_83452f32-c184-4348-bb0b-22fd3e220059.png
+│       │   │   ├── weka_029_edeec3b4-51d4-4a62-a6a1-46f8e61a482c.png
+│       │   │   ├── weka_030_86e779e9-9e0f-457c-8a0e-f892922962be.png
+│       │   │   ├── weka_031_427af540-e974-4f42-ab18-7e2c27dd1dab.png
+│       │   │   ├── weka_032_f1e50571-235d-46ee-9134-d9167abb9d4f.png
+│       │   │   ├── weka_033_338d3640-c060-4407-9098-212938f2b189.png
+│       │   │   ├── weka_034_50885727-be77-4add-aa1c-bbde30040003.png
+│       │   │   ├── weka_035_6b435991-ba6f-4381-87ee-a83fe9a29a5c.png
+│       │   │   ├── weka_036_694bf876-a9d7-4ab2-9221-36db65faf868.png
+│       │   │   ├── weka_037_47b17dda-c71c-4b66-bbd7-1b6c6f7dcbb8.png
+│       │   │   ├── weka_038_01ebd5d2-0df0-4da6-9b98-a24825eeae74.png
+│       │   │   ├── weka_039_6708eb07-fba3-44b7-b23e-e3c8ac33dca0.png
+│       │   │   ├── weka_040_9d122d42-03ed-4202-994c-777b82160d16.png
+│       │   │   ├── weka_041_36eb157c-039e-4388-a606-47c5c82d4e7e.png
+│       │   │   ├── weka_042_a47ead71-3bcb-4751-8a88-1b46b8cf3344.png
+│       │   │   ├── weka_043_a23cb81b-a09d-4d56-b5c3-892cb076e3b3.png
+│       │   │   ├── weka_044_cfd96f47-7d73-4038-ad79-803952b47368.png
+│       │   │   ├── weka_045_8541db3a-e862-45ee-a170-c73b23044a39.png
+│       │   │   ├── weka_046_f9b7dc1d-6c1b-4200-8d7c-893e78ea18fa.png
+│       │   │   ├── weka_047_377e998e-c58e-495e-a840-c039e0408bad.png
+│       │   │   ├── weka_048_c40c75a0-5776-411c-a683-2a93736b9245.png
+│       │   │   ├── weka_049_ef03a857-b830-4233-90b7-7f514c379c24.png
+│       │   │   ├── weka_050_5fedc753-2b02-4c99-ad33-8c35b1d70f99.png
+│       │   │   ├── weka_051_30917793-47e4-4f55-b16b-111d7f6ba267.png
+│       │   │   ├── weka_052_a4be23a2-44a2-4c12-beb5-a401ac60e91b.png
+│       │   │   ├── weka_053_7202cb03-2dc6-4413-9ae6-5e007cafb221.png
+│       │   │   ├── weka_054_18b4c23d-9ae3-4852-8058-dbeb99aa0381.png
+│       │   │   ├── weka_055_e9240fe8-f83f-483f-a34d-c3180d60eef8.png
+│       │   │   ├── weka_056_3ca60e7c-d7c0-4431-9d68-96db9ff524c9.png
+│       │   │   ├── weka_057_8e1fab80-ca28-47af-a252-4c0f1e1f1325.png
+│       │   │   ├── weka_058_755a4f2d-9d8c-4ec9-a32a-edeedc644370.png
+│       │   │   ├── weka_059_d969a11b-4c72-4f21-9628-a32a054a0ebb.png
+│       │   │   ├── weka_060_acdc9911-10dd-47f5-aca9-e2c5bc2dfb1d.png
+│       │   │   ├── weka_061_6039b6a3-a7f7-4f09-af0c-5301bfd38bc4.png
+│       │   │   ├── weka_062_35105ee0-1caa-4a9b-ba5a-ce8643fa9960.png
+│       │   │   ├── weka_063_a1f3de06-bec9-4253-a526-74db2a933219.png
+│       │   │   ├── weka_064_fd880cb4-8638-4224-9a2a-a545641c3c36.png
+│       │   │   ├── weka_065_a6467b22-8a84-4ad2-b795-935a7571ea95.png
+│       │   │   ├── weka_066_2e22f3cd-b2b7-40cf-a433-383ff5193994.png
+│       │   │   ├── weka_067_2060a7d1-9f46-41cc-aff3-26ca8d40fb51.png
+│       │   │   └── weka_068_e2e34f87-5c1f-4fc4-a11d-2c80b54a1dc5.png
+│       │   └── INDEX.md
+│       ├── RF_TUNING_AND_FEATURE_SELECTION.md
+│       ├── WEKA_MODEL_RESULTS.csv
+│       └── WEKA_MODEL_RESULTS.md
+├── models
+│   ├── final
+│   │   └── final_random_forest_pipeline.joblib
+│   ├── reproduction
+│   │   └── final_random_forest_pipeline.joblib
+│   └── validation
+│       └── best_validation_pipeline.joblib
+├── references
+│   ├── academic_performance_paper.pdf
+│   └── README.md
+├── results
+│   ├── final
+│   │   ├── final_classification_report.csv
+│   │   ├── final_confusion_matrix.csv
+│   │   ├── final_confusion_matrix_english.png
+│   │   ├── final_confusion_matrix_original.png
+│   │   └── final_test_metrics.json
+│   ├── reproduction
+│   │   ├── best_validation_config.json
+│   │   ├── final_classification_report.csv
+│   │   ├── final_confusion_matrix.csv
+│   │   ├── final_confusion_matrix.png
+│   │   ├── final_test_metrics.json
+│   │   └── validation_random_forest_results.csv
+│   └── validation
+│       ├── best_validation_config.json
+│       └── validation_random_forest_results.csv
+├── scripts
+│   └── standalone
+│       ├── final_test_evaluation.py
+│       ├── split_dataset.py
+│       └── train_validate_random_forest.py
+├── src
+│   ├── __init__.py
+│   ├── config.py
+│   ├── data.py
+│   ├── evaluation.py
+│   └── modeling.py
+├── verification
+│   └── PIPELINE_RUN_OUTPUT.txt
+├── .gitignore
+├── CHECKSUMS_SHA256.txt
+├── environment.txt
+├── main.py
+├── PROJECT_TREE.txt
+├── README.md
+├── requirements.txt
+├── RUN_LINUX_MAC.sh
+└── RUN_WINDOWS.bat
