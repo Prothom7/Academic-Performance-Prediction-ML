@@ -256,7 +256,6 @@ Academic_Performance_ML_Complete/
 │   │   └── research_participation/
 │   └── splits/
 │       └── research_participation/
-├── data_generation/
 ├── src/
 ├── scripts/
 │   └── standalone/
