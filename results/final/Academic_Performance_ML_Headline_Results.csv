@@ -1,0 +1,3 @@
+﻿Task,Final model,Test set,Accuracy,Main F1,ROC-AUC,PRC-AUC
+Year-1 CGPA,scikit-learn RandomForest,528,59.85%,0.598 weighted F1,~0.862 weighted,~0.715 weighted
+Research Participation,"WEKA RandomForest, 100 trees, K=12",522,81.03%,0.699 Participated F1,0.879,0.827
