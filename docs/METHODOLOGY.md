@@ -16,6 +16,8 @@ Current-population research prediction uses the historical 24 end-of-Year-1 feat
 
 All preprocessing is fitted inside the training pipeline. New Python analyses use training-fitted most-frequent categorical imputation and one-hot encoding with unseen levels ignored; graduation year is numeric. Historical Python reproductions keep the existing NaN encoding. Final models refit on Train+Validation before Test evaluation. Majority-class baselines, per-class and macro/weighted metrics, kappa, balanced accuracy, MCC, ROC AUC, average precision, confusion matrices and individual test predictions are exported. Accuracy CIs use Wilson; F1 CIs use 1,500 seeded row-bootstrap draws. C1/C2 difference intervals use the same sampled Test indices; exact McNemar assesses paired correctness. CIs are conditional on the fitted model and split, not uncertainty over model development.
 
+Forest fitting uses up to four workers with independently assigned fixed tree seeds. Prediction uses one worker to keep probability summation order deterministic; numerical linear algebra uses one thread. The actual worker settings and Patsy formula engine are recorded in the run manifest.
+
 ## Descriptive and unadjusted analyses
 
 Continuous descriptive statistics are used only for actual numeric measurements (graduation year). Banded variables are summarized by level and counts. Category percentages include explicit population and observed-value denominators. Proportions use Wilson CIs. Year comparisons are paired: transition counts, row percentages, Spearman correlation, bootstrap correlation CIs (1,000 full-population draws; 500 subgroup draws), signed-rank and exact direction sign tests are exported.

@@ -208,13 +208,13 @@ L 389.88 228.532324
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_11">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="106.78472" y="126.128201" transform="rotate(-0 106.78472 126.128201)">n=496</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="106.78472" y="113.027373" transform="rotate(-0 106.78472 113.027373)">n=496</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="221.981172" y="99.39741" transform="rotate(-0 221.981172 99.39741)">n=377</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="221.981172" y="83.788533" transform="rotate(-0 221.981172 83.788533)">n=377</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="337.177623" y="112.846969" transform="rotate(-0 337.177623 112.846969)">n=2606</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="337.177623" y="107.067965" transform="rotate(-0 337.177623 107.067965)">n=2606</text>
    </g>
    <g id="text_14">
     <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="221.981172" y="65.640234" transform="rotate(-0 221.981172 65.640234)">Unadjusted rates</text>
@@ -386,13 +386,13 @@ L 780.48 228.532324
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_25">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="497.38472" y="126.728695" transform="rotate(-0 497.38472 126.728695)">n=496</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="497.38472" y="114.347291" transform="rotate(-0 497.38472 114.347291)">n=496</text>
    </g>
    <g id="text_26">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="612.581172" y="114.516024" transform="rotate(-0 612.581172 114.516024)">n=2606</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="612.581172" y="109.149472" transform="rotate(-0 612.581172 109.149472)">n=2606</text>
    </g>
    <g id="text_27">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="727.777623" y="98.299829" transform="rotate(-0 727.777623 98.299829)">n=377</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="727.777623" y="83.835286" transform="rotate(-0 727.777623 83.835286)">n=377</text>
    </g>
    <g id="text_28">
     <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="612.581172" y="65.640234" transform="rotate(-0 612.581172 65.640234)">Adjusted standardized probabilities</text>

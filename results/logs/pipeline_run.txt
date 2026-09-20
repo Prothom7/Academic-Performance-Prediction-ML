@@ -30,7 +30,15 @@
 [8/10] Generate research documentation and final summary
 [9/10] Run meaningful validation tests
 .......................                                                  [100%]
-23 passed in 2.67s
+23 passed in 13.37s
+
+{
+  "compared_numeric_artifacts": 64,
+  "byte_identical": 64,
+  "differences": [],
+  "excluded": "Historical-checkpoint comparison extended to cover additional supplied raw rates and intervals between runs; engine timings/manifests/docs excluded.",
+  "status": "passed"
+}
 
 [10/10] Verify links, statistical intervals, preservation and output audit
-Complete: 57 tables, 21 figures, 1246 checks; 392.9s.
+Complete: 57 tables, 21 figures, 1261 checks; 289.9s.

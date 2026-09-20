@@ -1,7 +1,7 @@
 {
-  "run_timestamp_UTC": "2026-09-18T20:52:35.987166+00:00",
-  "git_commit": "ba2b8ee9292b776a102c3dd6039630525d22adcf",
-  "git_branch": "main",
+  "run_timestamp_UTC": "2026-09-20T15:27:35.507955+00:00",
+  "git_commit": "e14aaceaeacd832335781262ec8a6932d4d77759",
+  "git_branch": "research/year2-dataset-inference-complete",
   "git_dirty": true,
   "Python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
   "platform": "Windows-11-10.0.26200-SP0",
@@ -46,6 +46,13 @@
   "analysis_seed": 1,
   "row_count": 3516,
   "column_count": 32,
+  "execution_configuration": {
+    "training_workers": 4,
+    "prediction_workers": 1,
+    "linear_algebra_threads": 1,
+    "formula_engine": "patsy"
+  },
+  "validation_context": "fresh local clone of committed research branch",
   "dataset_filenames": [
     "data/processed/final/E1_Year1CGPA_FinalClean.arff",
     "data/processed/final/E1_Year1CGPA_FinalClean.csv",
@@ -323,7 +330,8 @@
     "results/tables/yearly_cgpa_distribution.csv",
     "results/tables/yearly_cgpa_distribution.md",
     "results/result_manifest.csv",
-    "results/run_manifest.json"
+    "results/run_manifest.json",
+    "results/logs/pipeline_run.txt"
   ],
   "self_hash_exclusions": [
     "results/result_manifest.csv",
