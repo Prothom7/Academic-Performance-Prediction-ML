@@ -1,0 +1,12 @@
+{
+  "CRLF_checkout_paths": 38,
+  "mixed_ending_artifacts_to_preserve_as_inspected_bytes": [
+    "archive/original_filenames/academic_performance_raw.csv.csv",
+    "data/processed/intermediate/E1_Year1CGPA_EarlyPrediction.arff",
+    "data/processed/intermediate/academic_performance_clean_working.arff",
+    "data/processed/research_participation/RP03_EXACT_DUPLICATE_GROUPS.csv",
+    "data/raw/academic_performance_raw.csv",
+    "data/raw/original_exports/Academic Performance Evolution Dataset (Responses).csv"
+  ],
+  "decision": "No local research inputs modified; pure historical CRLF restored by eol attributes; mixed endings preserved with -text and staged as inspected bytes. Prior Git representations remain in original history."
+}

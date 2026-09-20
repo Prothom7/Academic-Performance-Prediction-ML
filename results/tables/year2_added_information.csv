@@ -1,0 +1,2 @@
+delta_accuracy,delta_weighted_f1,delta_macro_f1,delta_accuracy_CI_low,delta_accuracy_CI_high,delta_weighted_f1_CI_low,delta_weighted_f1_CI_high,delta_macro_f1_CI_low,delta_macro_f1_CI_high,test_N,CI_method,discordant_gains,discordant_losses,exact_McNemar_p
+0.263257575758,0.266318210578,0.250377899726,0.221590909091,0.304024621212,0.224825122292,0.309050281583,0.209552338309,0.293614945564,528,paired percentile bootstrap; 1500 draws; seed=1,151,12,9.00230316027e-32

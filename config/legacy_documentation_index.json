@@ -1,0 +1,38 @@
+[
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "d858a42c837a073e103f4e2178af6700e5536a4965764b09e227d4fb7aa1b352",
+    "status": "preserved historical snapshot",
+    "current_replacement": "docs/METHODOLOGY.md"
+  },
+  {
+    "path": "docs/DATA_PROVENANCE_AND_INTEGRITY.md",
+    "sha256": "695d2b242da02dcf6d031ef164f8f4fb04ec16479018dc0d39308fce5a6dbe5d",
+    "status": "preserved historical snapshot",
+    "current_replacement": "docs/METHODOLOGY.md"
+  },
+  {
+    "path": "docs/HOW_TO_PRESENT_IN_ML_LAB.md",
+    "sha256": "0e4ce92fe47a4ba8105db27147409c412f09fae91f3561c12b9903e0ae311c71",
+    "status": "preserved historical snapshot",
+    "current_replacement": "docs/METHODOLOGY.md"
+  },
+  {
+    "path": "docs/MODEL_CARD.md",
+    "sha256": "0522042d8ebe3a8ef79a5a2a67de95ba052091488e5f3cc0da77844094ce0ff7",
+    "status": "preserved historical snapshot",
+    "current_replacement": "docs/METHODOLOGY.md"
+  },
+  {
+    "path": "docs/PROJECT_HISTORY.md",
+    "sha256": "2d0a5f00021c165b40684e0d2051bb17a9e8f624c55c773d3d637ac19b775e8d",
+    "status": "preserved historical snapshot",
+    "current_replacement": "docs/METHODOLOGY.md"
+  },
+  {
+    "path": "docs/PROJECT_STATUS.md",
+    "sha256": "71f941e864b0de00c2e9760e1095fa6a62997281da5809db98552b62ff71f790",
+    "status": "preserved historical snapshot",
+    "current_replacement": "docs/REPRODUCIBILITY_AUDIT.md"
+  }
+]

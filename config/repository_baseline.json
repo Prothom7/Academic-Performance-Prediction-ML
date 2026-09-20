@@ -1,0 +1,1959 @@
+{
+  "starting_commit": "ba2b8ee",
+  "starting_branch": "main",
+  "remote": "https://github.com/Prothom7/Academic-Performance-Prediction-ML.git",
+  "original_tracked_inventory": [
+    {
+      "path": ".gitignore",
+      "bytes": 62,
+      "sha256": "51fedbcd1849b034885ce4a6930619a28e75ad389a00ac0c896aefb722b87d7c"
+    },
+    {
+      "path": "CHECKSUMS_SHA256.txt",
+      "bytes": 19366,
+      "sha256": "185dd4fa68afbcd44bcf09a522d4d3624e31b7edb2020d3a10ce6e9b02353312"
+    },
+    {
+      "path": "PROJECT_TREE.txt",
+      "bytes": 10036,
+      "sha256": "13fdd8227bb75552f6cbb0c9ce3839d7d272babd84083a002d3eb0a40e37dafe"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11591,
+      "sha256": "8f9e36f7ab88936a68fb663e79436a2feaec93c2c806664b53901592d3adfc92"
+    },
+    {
+      "path": "RUN_LINUX_MAC.sh",
+      "bytes": 86,
+      "sha256": "8203b846297d13f839e91dc473e56e223b044639b5c7945f6939b11cc64f72be"
+    },
+    {
+      "path": "RUN_WINDOWS.bat",
+      "bytes": 73,
+      "sha256": "2c3fcc0626e281b6d6f6f7db08396818128ec9c92727e8ed1216687da342c092"
+    },
+    {
+      "path": "archive/duplicates/E1_Year1CGPA_FinalClean (1).arff",
+      "bytes": 3657950,
+      "sha256": "3eaf2cbb7df19efad83ba0adeef24fe17e2809281557597c48fb23b6b1a0b344"
+    },
+    {
+      "path": "archive/original_filenames/academic_performance_raw.csv.csv",
+      "bytes": 5079977,
+      "sha256": "56393fc46272e1f9f8a84837c0e3d6ff6a1894642ad23a556b9779dc2c8a8957"
+    },
+    {
+      "path": "archive/previous_packages/academic-performance-ml-project.zip",
+      "bytes": 3461333,
+      "sha256": "46a1c83c42e099e0f09d0d1fd819b73ea795c852a66e19bd1e810716265e4267"
+    },
+    {
+      "path": "archive/previous_packages/final_evaluation_package.zip",
+      "bytes": 3064987,
+      "sha256": "539bbb3b7a29d07a0d9ee6adb59753f6df067840a7c7691ef910c499b56dc913"
+    },
+    {
+      "path": "archive/previous_packages/final_split_package.zip",
+      "bytes": 108023,
+      "sha256": "2100fc0e7278cff1c0bbace597f2f21e90e0aa1aa91963896996cee101003d44"
+    },
+    {
+      "path": "data/processed/final/E1_Year1CGPA_FinalClean.arff",
+      "bytes": 3657950,
+      "sha256": "3eaf2cbb7df19efad83ba0adeef24fe17e2809281557597c48fb23b6b1a0b344"
+    },
+    {
+      "path": "data/processed/final/E1_Year1CGPA_FinalClean.csv",
+      "bytes": 3497955,
+      "sha256": "c8740978cd5efe017356d9271f6d8ee9088ca05cae07255a02ad134c25feaf69"
+    },
+    {
+      "path": "data/processed/intermediate/E1_Year1CGPA_EarlyPrediction.arff",
+      "bytes": 3649360,
+      "sha256": "fd5d6ee38cdccc60973dfb192f454f40483a5157853cdb01f968f786d792e28a"
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean.csv",
+      "bytes": 5075998,
+      "sha256": "15732a5a59fb84ed6d851fe3996790d09db89f0dcb70041981cc80cc44bc315c"
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_v2.csv",
+      "bytes": 5076102,
+      "sha256": "abe71adeda69461cfeec4cc2e79df9f861a4ac90819336302f74829745f47252"
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_v3.csv",
+      "bytes": 5076001,
+      "sha256": "117a2e9bdd4bc26be0cb4d6280fac6c7eb80967a3df0055dcd2e7247ede9e017"
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_weka.arff",
+      "bytes": 5279327,
+      "sha256": "f29448d6a0e5bb0ea40fa35fb7f0652ce5637a9743ef7a59ef72dd50ee41e568"
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_working.arff",
+      "bytes": 5214936,
+      "sha256": "3291a8d28f5edb5692675ea624feb1dbe9e7758aa47f723421702f12cb3ecaa6"
+    },
+    {
+      "path": "data/processed/research_participation/RP03_DATASET_AUDIT.txt",
+      "bytes": 3253,
+      "sha256": "469435bb55c2c9c682ff8c4228b02ceca52c8c1718d72aa87a44693f70aaf6c2"
+    },
+    {
+      "path": "data/processed/research_participation/RP03_EXACT_DUPLICATE_GROUPS.csv",
+      "bytes": 16002,
+      "sha256": "7b18d1a0f2b8f719a6b519fbe2c773a78d5edd4e2173f1ec8b13b1666c4ac138"
+    },
+    {
+      "path": "data/processed/research_participation/ResearchParticipation_Binary_FinalClean.arff",
+      "bytes": 3674943,
+      "sha256": "352bcb3e5b8a1514c1164864f7aff3c917699b4151b806e337e191256f95add7"
+    },
+    {
+      "path": "data/processed/research_participation/ResearchParticipation_Binary_FinalClean.csv",
+      "bytes": 3509734,
+      "sha256": "20ffa555a429fb34d5b5d0e450cf40c249db063540124fb274019f6d031a0ebb"
+    },
+    {
+      "path": "data/raw/academic_performance_raw.csv",
+      "bytes": 5079977,
+      "sha256": "56393fc46272e1f9f8a84837c0e3d6ff6a1894642ad23a556b9779dc2c8a8957"
+    },
+    {
+      "path": "data/raw/original_exports/Academic Performance Evolution Dataset (Responses).csv",
+      "bytes": 5080081,
+      "sha256": "29f0f953153e8c83935f5b0a7038159f6cf5a9f42a32f755918c561ea2b40036"
+    },
+    {
+      "path": "data/splits/research_participation/RP04_SPLIT_AUDIT.txt",
+      "bytes": 2445,
+      "sha256": "7557c07f9156df893048a6dbf59eb59b910149995bb867d525f997fcbd5b8dbb"
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_TrainValidation_2953.arff",
+      "bytes": 3126295,
+      "sha256": "9023868c0db1448252667ab79db0a81d2e94b0061f71f5c381d51ba0fdda3d4a"
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_TrainValidation_2953.csv",
+      "bytes": 2983803,
+      "sha256": "3e5313aedd3a6ad3eca3039ce6f0f5a5fb1cff0f09f78ae96dd8135606e708da"
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_test.arff",
+      "bytes": 555953,
+      "sha256": "117c6d30957b8688a9cba84099bab5f8dab433e6105232bd840e8836df46d4ef"
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_train.arff",
+      "bytes": 2575269,
+      "sha256": "4567c4762ccd893a4c81f77c77b8a53c652ca1d16579f3c412bf69324664abe4"
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_validation.arff",
+      "bytes": 556800,
+      "sha256": "f855892f8b7daa16928ff303bec230e07155ee87891ee71d4b4d941dc6ab8efe"
+    },
+    {
+      "path": "data/splits/research_participation/SHA256SUMS.txt",
+      "bytes": 342,
+      "sha256": "80ae120f7212953af81480a377a802ee5fc364528101501f8d0b67912293a0a4"
+    },
+    {
+      "path": "data/splits/research_participation/SPLIT_MANIFEST.json",
+      "bytes": 2237,
+      "sha256": "b940c9dcc88004a21de096c419250ed9f084119e6722bf4ce078c8c19e4bb78c"
+    },
+    {
+      "path": "data/splits/research_participation/TEST_SET_LOCKED.txt",
+      "bytes": 757,
+      "sha256": "e42bd2d9404c5445518b1b4e08048cea3e801ca7d49253a2ef8e010b8b85a845"
+    },
+    {
+      "path": "data/splits/research_participation/test.csv",
+      "bytes": 526365,
+      "sha256": "d77af29304db4ed72fa5ffcce270ec88ef6f05595975b32400a220520ceee776"
+    },
+    {
+      "path": "data/splits/research_participation/train.csv",
+      "bytes": 2456994,
+      "sha256": "d7b0c257c54ff1c8bb84c5aed12dda4e75a5cf0d2e27651a6f2851b5e926c5bd"
+    },
+    {
+      "path": "data/splits/research_participation/validation.csv",
+      "bytes": 527243,
+      "sha256": "34be0768b99bbd454997a803a2d3f04398ab69c4b2c8a448084b80270a61f3b8"
+    },
+    {
+      "path": "data/splits/test.csv",
+      "bytes": 527224,
+      "sha256": "4c3072c82f3b762c547925570b16a6e0d555d09fe665b4da6716c98b8333771f"
+    },
+    {
+      "path": "data/splits/train.csv",
+      "bytes": 2445876,
+      "sha256": "22dbcf3719ad26b509214c4e79a9383f279af4b9fe67f93a02c0f95778d99c4c"
+    },
+    {
+      "path": "data/splits/validation.csv",
+      "bytes": 525667,
+      "sha256": "1a29ba94a896cad729d5911021591a7f900eca5a1256dd78f53cad222c104613"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1787,
+      "sha256": "d858a42c837a073e103f4e2178af6700e5536a4965764b09e227d4fb7aa1b352"
+    },
+    {
+      "path": "docs/DATA_DICTIONARY.md",
+      "bytes": 2252,
+      "sha256": "0b66205201aa20092d5c24c1eb3576a86f21f8538f3a56550fb6feab344d7bed"
+    },
+    {
+      "path": "docs/DATA_PROVENANCE_AND_INTEGRITY.md",
+      "bytes": 1146,
+      "sha256": "695d2b242da02dcf6d031ef164f8f4fb04ec16479018dc0d39308fce5a6dbe5d"
+    },
+    {
+      "path": "docs/HOW_TO_PRESENT_IN_ML_LAB.md",
+      "bytes": 2816,
+      "sha256": "0e4ce92fe47a4ba8105db27147409c412f09fae91f3561c12b9903e0ae311c71"
+    },
+    {
+      "path": "docs/MODEL_CARD.md",
+      "bytes": 1735,
+      "sha256": "0522042d8ebe3a8ef79a5a2a67de95ba052091488e5f3cc0da77844094ce0ff7"
+    },
+    {
+      "path": "docs/PROJECT_HISTORY.md",
+      "bytes": 3357,
+      "sha256": "2d0a5f00021c165b40684e0d2051bb17a9e8f624c55c773d3d637ac19b775e8d"
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "bytes": 1743,
+      "sha256": "71f941e864b0de00c2e9760e1095fa6a62997281da5809db98552b62ff71f790"
+    },
+    {
+      "path": "docs/report/Report.docx",
+      "bytes": 68303,
+      "sha256": "8d01cbd91eeef87309bec9fd127d0205176ceaf4abdb11deba8d6579d81ba77b"
+    },
+    {
+      "path": "docs/research_participation/ResearchParticipation_Phase2_Methodology_and_Results.docx",
+      "bytes": 47763,
+      "sha256": "16273104fc3776843f63875332827df9675e0948e67787c3bd747debc17f9b45"
+    },
+    {
+      "path": "environment.txt",
+      "bytes": 184,
+      "sha256": "cf29f1066c01f63899f23c04300cc4eab9ee51a91d9142849ec7392c4ad91dc8"
+    },
+    {
+      "path": "experiments/weka/RF_TUNING_AND_FEATURE_SELECTION.md",
+      "bytes": 2151,
+      "sha256": "58a31fa1b9f22665cffa7b7d6ceb9c9a15c10e677e4b46133ecfbccf8aaa7445"
+    },
+    {
+      "path": "experiments/weka/WEKA_MODEL_RESULTS.csv",
+      "bytes": 1946,
+      "sha256": "841ba8ecd4a6110d0d14bbeb5ab1f9c6e0b67ec3e27fe2461a2a1b7208527d5f"
+    },
+    {
+      "path": "experiments/weka/WEKA_MODEL_RESULTS.md",
+      "bytes": 2500,
+      "sha256": "294cb27f1dd37af1597dc9768c7ab825f94402b351d530a19eaf41501a794241"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(1).txt",
+      "bytes": 55292,
+      "sha256": "1ce0349d60d56a396131e984897b3165d55f5496f4fac8c8a4fddb345ae17b27"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(10).txt",
+      "bytes": 884381,
+      "sha256": "0086119b61186d8945e4ab90b320c9b2f55da89fddb853ab3559afc356cde6e5"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(2).txt",
+      "bytes": 54848,
+      "sha256": "aed40a2f06372f11497cf9062cd94dcacc359546f3754b45647072394b8c7d5b"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-064803).txt",
+      "bytes": 132215,
+      "sha256": "562e10d71d629952759d4b3f436959ada9e75665aaacb84eaf55c4845f42e5aa"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-065202).txt",
+      "bytes": 21966,
+      "sha256": "fd5394436b7a34481e2996b931ce705374302762f90ea553be5dabc37d19bd2b"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-065320).txt",
+      "bytes": 8556494,
+      "sha256": "77b69b4f311c17223eaea73cacf606c2a3bab8c12301b0e70c9d95b76f39f58b"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-065516).txt",
+      "bytes": 1287750,
+      "sha256": "94031ca45ca41f1eaaac166e5d184fa4be544812bf06311f3b338f9213835812"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-070029).txt",
+      "bytes": 204791,
+      "sha256": "a304639f5ccf3b104d380d22f75b953a6de23f07b155e569000a399cfb5bab2d"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-070147).txt",
+      "bytes": 36812,
+      "sha256": "dbfdfeadfe83edc13d8003c34aeab9800e03ad5106849d7be67d090ef8805f7e"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-070702).txt",
+      "bytes": 6461914,
+      "sha256": "6b3f5b73c2c379cc85e7146b09cc4405bb88eba5e9553fffebb336afb13a4c41"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-071337).txt",
+      "bytes": 6789684,
+      "sha256": "d93ff9e53e74ca564524c79567eff378ffe4369252b28425c5979dba82afde36"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(5).txt",
+      "bytes": 80619,
+      "sha256": "b4b2b0294b12e32a016d368ab3ed4e75353c3e4a59b82ff0284af69464421fc2"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(6).txt",
+      "bytes": 18918,
+      "sha256": "f30d5a3f61b83786adb72278fa96bcfa7c57fdd599030eae843740b20af5a56f"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(7).txt",
+      "bytes": 132117,
+      "sha256": "28e732f4b272965dfc8bbd1e19e811a23e149f1164201dda5d7dd5ab19efd43e"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(8).txt",
+      "bytes": 749865,
+      "sha256": "d1a3395b0eb381cbe2b279ec27ea5e2c259ae2077a6dce64fe61781496115e2e"
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(9).txt",
+      "bytes": 307817,
+      "sha256": "a23b737fce7c2ceec7ca79ea19619b0c8fd1caad5745037c1b0974189d57d081"
+    },
+    {
+      "path": "experiments/weka/research_participation/ResearchParticipation_Benchmark_28_Reconstructed.csv",
+      "bytes": 3599,
+      "sha256": "535fa5a572c21177c82c451525910c22c56727eb70045d660b85ed50d58c3d0b"
+    },
+    {
+      "path": "experiments/weka/research_participation/ResearchParticipation_Benchmark_28_Reconstructed.xlsx",
+      "bytes": 16233,
+      "sha256": "c7829a01f1f165b49cd2d9439368053ca27df2c7f3f741d34a1d86398ff080d1"
+    },
+    {
+      "path": "experiments/weka/screenshots/INDEX.md",
+      "bytes": 8778,
+      "sha256": "0e2b9415ad3130a35851c9918c072927e3256015af4212cc0f9e0efeb233c435"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_001_bbdea59a-acd0-4456-b73b-0ffdf029b13e.png",
+      "bytes": 90701,
+      "sha256": "2710503f886d314a133391e0c9a8162e068d825d6ea7b063eab025e853245e93"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_002_3cd59948-95f9-4b72-ab98-d8ce27926879.png",
+      "bytes": 151333,
+      "sha256": "c38bd3e4a28fd93078583c1f79eabfafcc64e4f600c54363e6267a92f94187f4"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_003_d25d5038-3241-4ec9-9459-419ea0d93ff4.png",
+      "bytes": 196132,
+      "sha256": "0caf8ba3b8d4c9861f7bdddc657d2364e58e22055efa6f32351cec630f0cd18d"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_004_94d81160-6dc6-4568-8099-b1b29fb33be8.png",
+      "bytes": 165055,
+      "sha256": "13657044296562955a2c3518a84194d45672ea056930712089cab7cd74abe9ad"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_005_09c98c1d-ab74-4393-ad10-7026918a873b.png",
+      "bytes": 87466,
+      "sha256": "03ebabafcf0f3d5e5307f5435fbed9a0d55e6986d4cf85221581de522748306f"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_006_36eed25f-0520-47c0-a994-89e021603088.png",
+      "bytes": 31187,
+      "sha256": "c1033da64fd89fe08fd65b32a0be40bb343632ff537dc725c674928743a53dbf"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_007_fb90f6e5-163c-4917-9b5e-900641daff56.png",
+      "bytes": 71079,
+      "sha256": "b51c7a207508bf3cada575d274745a4c9e83377933aa602aa00a7d42174b97e3"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_008_60e2361c-a0c0-4ae4-b206-c9fd89015eae.png",
+      "bytes": 103614,
+      "sha256": "797541a4bd04c68757998cf7c62fbd17571f414c4682b8dcfa35f097bb1196b6"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_009_7279154a-7f44-4511-8f51-ac758e349555.png",
+      "bytes": 150252,
+      "sha256": "faa17cdf115b2e62cd801dab2b16a7ddec547f786afe478b895698e66edf4615"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_010_f047673a-eb54-4995-adb7-6a65af0de317.png",
+      "bytes": 179878,
+      "sha256": "546e22a6133c54f553c933e18c2ef602bcddad2884afb62a2321fbff7f4ce70c"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_011_76a40f48-31a7-4dce-a8d0-742fa24edea2.png",
+      "bytes": 181121,
+      "sha256": "20fbc21a37ba2d54eaa2ea1d66c29fa93fa99f004535c222cfc3da80eb8f8a60"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_012_0a93eb28-5e92-4087-9497-f22d46f1066f.png",
+      "bytes": 177075,
+      "sha256": "d7a76300101a18c87740f938c2a6c61e10473cd702f9512cca8e03412ec75a1d"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_013_f01f2905-f4f2-4230-b1d0-f6c66bd27ec3.png",
+      "bytes": 177678,
+      "sha256": "8d94e08cb1f24955479ea20f18d4340f8862b10bed070cacff8c0710ef63a038"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_014_507e2c01-d67f-43ce-b3ef-f706e22d459a.png",
+      "bytes": 208453,
+      "sha256": "4ab198a9dcf998d3b65cf43430f0745ae1680b96027d188101761ba99221c773"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_015_7cbb268a-fb05-4501-9818-6146ef9e0902.png",
+      "bytes": 191368,
+      "sha256": "583e1dd5195a16091cdadc399ccf5cc7312b620ebfb517c92c0f9338d6ab0744"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_016_5a7420e4-6275-43bf-8aad-35548de6080c.png",
+      "bytes": 108153,
+      "sha256": "b90fd5a92fc4aa2093eb639a6473bdd9b9d97f181bcd3e57fa1a5307bfc2b5da"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_017_1a2b2e84-c019-4a1e-81e8-9b406b9dd8e1.png",
+      "bytes": 152617,
+      "sha256": "dbdef6b818e228f1c4e4227a80356a41d1f7af6a63aea42dac886db62ac01138"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_018_8295597a-608c-4bcb-b822-78ec47e1bee0.png",
+      "bytes": 179190,
+      "sha256": "d1e84d8d1c961a4feb8dcd9233914f649e501f0ef654ba27ef22d9e69589c859"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_019_659efb31-72d5-457e-88ac-1a58c6e395b5.png",
+      "bytes": 175618,
+      "sha256": "e508cffcd632b8ea9449e75b1d8161276c6864fb1efeab71a66847d63180f7af"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_020_f8709e8a-054a-4a85-8c71-8834b3fd609d.png",
+      "bytes": 161868,
+      "sha256": "400a44b1b0e7fba25a35ccb4076b35ca3f7247bb97a3e7ccc4118f67bdfb2315"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_021_aa75524a-0921-43c5-a451-816ac5adf52c.png",
+      "bytes": 159429,
+      "sha256": "4fd4f1c4252a2e36c166f3e2e82f5afbab80b5380fd2138ffcd662f33b411546"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_022_98e98488-ac8f-4465-a8a8-7428689e38e9.png",
+      "bytes": 211364,
+      "sha256": "c9859810a4a51b6f57425608eadab59d5055f909fce7ee6e0cde1b57aef45305"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_023_0b730531-bff4-4987-974e-aea1e90a10eb.png",
+      "bytes": 220607,
+      "sha256": "bc49d1a0b14a19c884366cf08dfff862457ee654b33c8e0f6f33907220df06fa"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_024_f098a0b0-dd40-4593-9d51-6336ce035f70.png",
+      "bytes": 149887,
+      "sha256": "53391e02aefb5a70b5ed378b1e352d0685b3886b8b1f524b29b9173af5d02ceb"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_025_b3174040-650c-4ce8-b1e9-259bce242e49.png",
+      "bytes": 240596,
+      "sha256": "ba2d214aa231a9818c540b7cdf3e89788f4b62bc4efc7deb777e2b2fb9c12eb1"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_026_60a467e0-fac8-4b0c-ac6b-cac6e23e6e55.png",
+      "bytes": 184241,
+      "sha256": "e0ec17887684556d2244d744f8fa1542f4bb403374af2d9aea15f307875fca36"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_027_329c2815-5ad9-4574-abda-678274517517.png",
+      "bytes": 149766,
+      "sha256": "37b22d5b5d405ea6711a66c00ec183da6a36b3144e794c253bb1f10a28819981"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_028_83452f32-c184-4348-bb0b-22fd3e220059.png",
+      "bytes": 143799,
+      "sha256": "d64480dc66bec00d61115853157c2e19580acc1fa637c36b95cda00d26567e5e"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_029_edeec3b4-51d4-4a62-a6a1-46f8e61a482c.png",
+      "bytes": 149644,
+      "sha256": "01d45e1034ba4bb5e0c43a8ca8004c7f949af74cbaf2576fc166ee8b0151d8bf"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_030_86e779e9-9e0f-457c-8a0e-f892922962be.png",
+      "bytes": 227073,
+      "sha256": "3292c356bd075d0b0facace3f1feedd07517911b7a5a1f957bc3d987e01547d5"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_031_427af540-e974-4f42-ab18-7e2c27dd1dab.png",
+      "bytes": 197812,
+      "sha256": "366aa2b0a3a3754908114f83dc97c89a7913a51a3b9fd752b72420d3b59008e0"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_032_f1e50571-235d-46ee-9134-d9167abb9d4f.png",
+      "bytes": 145362,
+      "sha256": "d8c1468c768352504c16e5156f58aafa75863015d8824acbaf574f1c001c386d"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_033_338d3640-c060-4407-9098-212938f2b189.png",
+      "bytes": 147658,
+      "sha256": "1b3ad71b73b5e73c2f19eeb71e0ae7ac98d7f3c5583504f6e0374e6ee89f49be"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_034_50885727-be77-4add-aa1c-bbde30040003.png",
+      "bytes": 141209,
+      "sha256": "8d1048d26c161632c0a55ad8ee99d1d6998c4c4a79d4776f77551c446fe8a19e"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_035_6b435991-ba6f-4381-87ee-a83fe9a29a5c.png",
+      "bytes": 211339,
+      "sha256": "5c60d0f9fa4a5c442f185c0d8e6ac451d1f809b20f0994123c1533b681cc77de"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_036_694bf876-a9d7-4ab2-9221-36db65faf868.png",
+      "bytes": 218163,
+      "sha256": "a775c56b3cbbbec3928d85c9254e3f66315efb2d45dd1e0f9fe76b9467677d23"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_037_47b17dda-c71c-4b66-bbd7-1b6c6f7dcbb8.png",
+      "bytes": 133457,
+      "sha256": "3834ba68256d03f58b7947ef1e5d22cddc15db662421484484b86c8364eb7a00"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_038_01ebd5d2-0df0-4da6-9b98-a24825eeae74.png",
+      "bytes": 183523,
+      "sha256": "728cecfaba0ef052aa9a4bff481e1f852bdead0ba479ad402a1a6a4f103d075d"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_039_6708eb07-fba3-44b7-b23e-e3c8ac33dca0.png",
+      "bytes": 195709,
+      "sha256": "d17cbc4ce3ea644e5ab2122adb2af09990620d14cc471ffe2e899878950cb3c2"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_040_9d122d42-03ed-4202-994c-777b82160d16.png",
+      "bytes": 206763,
+      "sha256": "00c97d73d7e375fca34b8f25b64e82b3ce983173f831c900d251953774db4307"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_041_36eb157c-039e-4388-a606-47c5c82d4e7e.png",
+      "bytes": 130208,
+      "sha256": "a813b611d2c435b524f5c5eb9bb6f21f5b68eb2344dfd3337fb61b302cde6fb6"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_042_a47ead71-3bcb-4751-8a88-1b46b8cf3344.png",
+      "bytes": 156333,
+      "sha256": "ba961b76c9ec0739c1757bd8619008360c5d7f43c2960995f19637a0c82fd2d8"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_043_a23cb81b-a09d-4d56-b5c3-892cb076e3b3.png",
+      "bytes": 134003,
+      "sha256": "cf8dea94f5ca20128bb5a0a16ec49b4e244e5b087de21862d90f19dbf8c56126"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_044_cfd96f47-7d73-4038-ad79-803952b47368.png",
+      "bytes": 92305,
+      "sha256": "20d1982ae1a10fc9745e6257e254dd5d37e061baacd1cd70005b377588ce0b90"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_045_8541db3a-e862-45ee-a170-c73b23044a39.png",
+      "bytes": 117616,
+      "sha256": "20e34f600501cab067278c1429f888ac660b9d54746c9845e7d995cec5b0583d"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_046_f9b7dc1d-6c1b-4200-8d7c-893e78ea18fa.png",
+      "bytes": 74714,
+      "sha256": "a64baaf7606f8ca5a8cc270476d5094ad9d2f30c1392ca4f1e8d2600934b72fb"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_047_377e998e-c58e-495e-a840-c039e0408bad.png",
+      "bytes": 127576,
+      "sha256": "6b9f3ab872620340a848fd678fc0f2fc6908215c37de896dbd3b6c1795a24006"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_048_c40c75a0-5776-411c-a683-2a93736b9245.png",
+      "bytes": 71002,
+      "sha256": "34a21cd7455c33d0cd36ac1c5c94f83d5e1ed117ee1eeceb47b386a71e693407"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_049_ef03a857-b830-4233-90b7-7f514c379c24.png",
+      "bytes": 86845,
+      "sha256": "1f724867c9e006b73b28b1d816973fd74e57696db57347ed19e3e755c952d977"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_050_5fedc753-2b02-4c99-ad33-8c35b1d70f99.png",
+      "bytes": 115908,
+      "sha256": "01b0ca1fafcfe216d9aacf9404b4fcd8c36cd997f86fa2f83cd8b05b6a360fed"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_051_30917793-47e4-4f55-b16b-111d7f6ba267.png",
+      "bytes": 124477,
+      "sha256": "b0a598a24f9ad6a90c8b225e2724eb02dce1a491ddba9199b5c39802a3f144ce"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_052_a4be23a2-44a2-4c12-beb5-a401ac60e91b.png",
+      "bytes": 36035,
+      "sha256": "b6ab79e969af425362d2b546a78eb062eef588bd2bdb89fbf5831d0fed628417"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_053_7202cb03-2dc6-4413-9ae6-5e007cafb221.png",
+      "bytes": 73188,
+      "sha256": "f1acfc8e229449e9515a4f81cabb9c6c8f7ceced2f824141d42fc6e3726beb08"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_054_18b4c23d-9ae3-4852-8058-dbeb99aa0381.png",
+      "bytes": 65567,
+      "sha256": "dcff4d8a809f8035cdd5b67a2e7b84af6e4787fdcd9d1435b74679a0cbe22649"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_055_e9240fe8-f83f-483f-a34d-c3180d60eef8.png",
+      "bytes": 65256,
+      "sha256": "18cbb708226899ac95833332dc1295c24f63a316983e7995b4dcacac7008c8b4"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_056_3ca60e7c-d7c0-4431-9d68-96db9ff524c9.png",
+      "bytes": 78780,
+      "sha256": "65404c28ae080b6fae35fca36185435b4a6fba23704abface32dd83fbea269b1"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_057_8e1fab80-ca28-47af-a252-4c0f1e1f1325.png",
+      "bytes": 72967,
+      "sha256": "85ab04067aa4dc7a5753e657566557c778ecf24b6f7633fffa34caee1e233ae3"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_058_755a4f2d-9d8c-4ec9-a32a-edeedc644370.png",
+      "bytes": 76277,
+      "sha256": "a31208807662439465db7f9665ce004d6f7ad771ff7fe0be1b60f95a17d8a486"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_059_d969a11b-4c72-4f21-9628-a32a054a0ebb.png",
+      "bytes": 77931,
+      "sha256": "a130e80b90ef895f78d636282091bef772b6fdd5d76ad792be6e3eb6291ee2cd"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_060_acdc9911-10dd-47f5-aca9-e2c5bc2dfb1d.png",
+      "bytes": 59847,
+      "sha256": "8ec12f5d7ce3250280cb392ca3f6359fabde587dbd6d9f9dfca8369fc6cf6500"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_061_6039b6a3-a7f7-4f09-af0c-5301bfd38bc4.png",
+      "bytes": 40922,
+      "sha256": "6a8b2037d4383e07a5ff3ef2275841710e9080e8b23f71b1a7d1699084c98454"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_062_35105ee0-1caa-4a9b-ba5a-ce8643fa9960.png",
+      "bytes": 53339,
+      "sha256": "9e10f25b9c416e0cc1e87b0a19379bc8e00ea72966ba2abfc703f3298f208997"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_063_a1f3de06-bec9-4253-a526-74db2a933219.png",
+      "bytes": 31171,
+      "sha256": "000b3babcd34e23aeb13fe1cd384f1ed37a37e991113a88a0a0411b2552ca92e"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_064_fd880cb4-8638-4224-9a2a-a545641c3c36.png",
+      "bytes": 69831,
+      "sha256": "639acc1071de82a2974a2195ade64e910faec6171601a469aefc7fa11a1009a4"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_065_a6467b22-8a84-4ad2-b795-935a7571ea95.png",
+      "bytes": 47699,
+      "sha256": "9cdfb5073a38fe63372711ea67c5f4d100f5ac597a0d10a89338e0542b370ec1"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_066_2e22f3cd-b2b7-40cf-a433-383ff5193994.png",
+      "bytes": 46772,
+      "sha256": "e91c5524011c3079aeb51ec0fc11fc0f1419fdf18a044bf562616b0323cce168"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_067_2060a7d1-9f46-41cc-aff3-26ca8d40fb51.png",
+      "bytes": 73483,
+      "sha256": "c1686d8bd68f1c84f7db15b2dc92d8e7efae7c9d89ac89d1f8a148afad47056d"
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_068_e2e34f87-5c1f-4fc4-a11d-2c80b54a1dc5.png",
+      "bytes": 36694,
+      "sha256": "fda92a41a632291487c29a3d60b5a7b3dc035ea9f4c5e4441b769b4786bffb1a"
+    },
+    {
+      "path": "main.py",
+      "bytes": 10033,
+      "sha256": "8c76b7e2ccf5581975dde07bfaeec4448045533672b3121b772eed7245a844c4"
+    },
+    {
+      "path": "models/final/ResearchParticipation_Final_RandomForest_K12.model",
+      "bytes": 9019410,
+      "sha256": "ef4fa352cbbf0a0d8bb566fc29912735a3d00b14433764d55dc34f3346ed5075"
+    },
+    {
+      "path": "models/final/final_random_forest_pipeline.joblib",
+      "bytes": 22532954,
+      "sha256": "12aaf80cfbb3373657cc8d2a992bea87dffcc48b1b3ca64b7b088224d3d13e47"
+    },
+    {
+      "path": "models/reproduction/final_random_forest_pipeline.joblib",
+      "bytes": 22532986,
+      "sha256": "4f4df42583566f21e358011c846699f5ae90b1a750bced9f34769f89ec986169"
+    },
+    {
+      "path": "models/validation/best_validation_pipeline.joblib",
+      "bytes": 18857386,
+      "sha256": "fdc764fd91fcd3e714ac9bd88321e3be07f5979967c93fd951d332af1b2a6419"
+    },
+    {
+      "path": "presentation/Academic_Performance_ML_Reference_Based_Final_Presentation.pptx",
+      "bytes": 258134,
+      "sha256": "abf2f3fe5ed8ffd54155235cbdce307af65ccbc8ad26f053aeeaf9910f2c332d"
+    },
+    {
+      "path": "references/README.md",
+      "bytes": 778,
+      "sha256": "a6605fee94abbd62cb31885363afcaa21e4c65ff1f5b7578ab34f2e004c1dafa"
+    },
+    {
+      "path": "references/academic_performance_paper.pdf",
+      "bytes": 259258,
+      "sha256": "adb4c9f2bd21bb41d1d3b493dd7f1a0f2ca42fb796dc07e81d513becc079d5b2"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 70,
+      "sha256": "2324df82af6d4291d2f78937fc2f67c8a18d538b09cafea8dae7984a6ca59497"
+    },
+    {
+      "path": "results/final/Academic_Performance_ML_Headline_Results.csv",
+      "bytes": 266,
+      "sha256": "85d3eef841e7f809648a34931262ea6f3e01520d6a008daf93d0cb10dcef8edf"
+    },
+    {
+      "path": "results/final/ResearchParticipation_Final_RandomForest_FeatureImportance.txt",
+      "bytes": 3456,
+      "sha256": "3e4690d76ca8113bd94c1dec51e09b52b8a90e3f407de52d64c063ec7ebc7965"
+    },
+    {
+      "path": "results/final/final_classification_report.csv",
+      "bytes": 756,
+      "sha256": "373c4e5a81effaae4db18ec79ebbcbec8057471c0d6866c6588fa1f7fe4e44f8"
+    },
+    {
+      "path": "results/final/final_confusion_matrix.csv",
+      "bytes": 562,
+      "sha256": "334a9c2c5cb9e0a532b6972feced991d7d7129268a0c35686d607b1d366a93a8"
+    },
+    {
+      "path": "results/final/final_confusion_matrix_english.png",
+      "bytes": 75404,
+      "sha256": "c7aea9d387c3d3c061c552d7e5263820f50e97c75fec61d3389b4f14af7ab6ec"
+    },
+    {
+      "path": "results/final/final_confusion_matrix_original.png",
+      "bytes": 119770,
+      "sha256": "abdb6fc5fd51327829f57cdd6b5d8c0bfbf883520080358aec8823baf0ff8dd1"
+    },
+    {
+      "path": "results/final/final_test_metrics.json",
+      "bytes": 728,
+      "sha256": "22ddc043db183c83865c49e708d0c5a88859705ba3d5bbb6a5a264730a3e27b6"
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Complete_Experiment_Summary.xlsx",
+      "bytes": 17560,
+      "sha256": "ccd2cc4899ccac846287e14f435a4a4569ab46ae6c9e4cab4ff34bb3b5b52f1e"
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Final_Classification_Report.xlsx",
+      "bytes": 5225,
+      "sha256": "ff9e14688c18b35c2087f20b6e3b62607bb201aa4a678bfc6be283aec376ba10"
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Final_Confusion_Matrix.xlsx",
+      "bytes": 5135,
+      "sha256": "7795834789c06decfa15d3d879e4cc60a165ecbb7c94d2737c37ffa611f6c36a"
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Final_Feature_Importance.xlsx",
+      "bytes": 9373,
+      "sha256": "fd416061c1f984054a2462bc682a58c61de665e32e5ced78877d58c40d4ae7f2"
+    },
+    {
+      "path": "results/reproduction/best_validation_config.json",
+      "bytes": 720,
+      "sha256": "915b1bf9f3969747773071c9d738e0ba7137a0e06abf092e96b1ae172ca81a28"
+    },
+    {
+      "path": "results/reproduction/final_classification_report.csv",
+      "bytes": 756,
+      "sha256": "373c4e5a81effaae4db18ec79ebbcbec8057471c0d6866c6588fa1f7fe4e44f8"
+    },
+    {
+      "path": "results/reproduction/final_confusion_matrix.csv",
+      "bytes": 266,
+      "sha256": "84d14903e6a26e938da16b595fc2d46ddde3f6d29754dfd0d1e2f5f84c068ff3"
+    },
+    {
+      "path": "results/reproduction/final_confusion_matrix.png",
+      "bytes": 75404,
+      "sha256": "c7aea9d387c3d3c061c552d7e5263820f50e97c75fec61d3389b4f14af7ab6ec"
+    },
+    {
+      "path": "results/reproduction/final_test_metrics.json",
+      "bytes": 643,
+      "sha256": "45b0a362cdd5728bf3fc89bdeb1ea296a8d17a2eb7bbd5db94f5dbb544376f44"
+    },
+    {
+      "path": "results/reproduction/validation_random_forest_results.csv",
+      "bytes": 6620,
+      "sha256": "d3308fb88c49bea358d4fa0583b23b88b0874bb009e49eadbc728eed4e18b28f"
+    },
+    {
+      "path": "results/validation/best_validation_config.json",
+      "bytes": 708,
+      "sha256": "56aa11a2ebba36bdf96effe14bcdedafbe13ac112a4f2a5823188f7396ce632e"
+    },
+    {
+      "path": "results/validation/validation_random_forest_results.csv",
+      "bytes": 4511,
+      "sha256": "cd66824905141a7cb68b9aebde815bb0ae48d1be14b1eaec6b270da3f1eabc89"
+    },
+    {
+      "path": "scripts/standalone/final_test_evaluation.py",
+      "bytes": 3797,
+      "sha256": "e186ec9bebc3485fc945dd80652498f18625e1027013fee3db1749767fb40395"
+    },
+    {
+      "path": "scripts/standalone/research_participation/build_binary_dataset.py",
+      "bytes": 16251,
+      "sha256": "732fe406644ec54c62ff355ca30e4617226f7cafd832847cbdabe744817bd127"
+    },
+    {
+      "path": "scripts/standalone/research_participation/split_dataset.py",
+      "bytes": 14353,
+      "sha256": "4465c164ba7b37614517143afe848005f0a399819fde265e23cdcfd7a7dfaf9d"
+    },
+    {
+      "path": "scripts/standalone/split_dataset.py",
+      "bytes": 1599,
+      "sha256": "d5f114296d6977a7b7f27434c5f3bcbce862bd1c6ff86947f712e574b21d0fa1"
+    },
+    {
+      "path": "scripts/standalone/train_validate_random_forest.py",
+      "bytes": 4752,
+      "sha256": "fa515f482673e33121d945df3bae99b724794bd1309b5a148453eede7035310f"
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/config.py",
+      "bytes": 717,
+      "sha256": "3f914cdb1a9c31f571e24b509e8e737bf1717fefbfcdd9a9e6be2ec6741f0142"
+    },
+    {
+      "path": "src/data.py",
+      "bytes": 3213,
+      "sha256": "efce4ffa7f5e7e791a4b1f7ff1c713dd5d5d7b72d58992120046881bb9e7156e"
+    },
+    {
+      "path": "src/evaluation.py",
+      "bytes": 3124,
+      "sha256": "51b9c0f3d770d8b625de5896da1fe90b6bb59c85e1721002adc53b6f19c33e7a"
+    },
+    {
+      "path": "src/modeling.py",
+      "bytes": 3976,
+      "sha256": "74e34c59134416e8682ac4c457e1fd408c64aa1ec789bf3781dbaa7746ec5807"
+    },
+    {
+      "path": "verification/PIPELINE_RUN_OUTPUT.txt",
+      "bytes": 1263,
+      "sha256": "bc1fa1008b94f3419175fcae7ed857cb82d6872e43429f5828d68a4bec9b01ad"
+    }
+  ],
+  "protected_artifacts": [
+    {
+      "path": "CHECKSUMS_SHA256.txt",
+      "sha256": "185dd4fa68afbcd44bcf09a522d4d3624e31b7edb2020d3a10ce6e9b02353312",
+      "bytes": 19366,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "PROJECT_TREE.txt",
+      "sha256": "13fdd8227bb75552f6cbb0c9ce3839d7d272babd84083a002d3eb0a40e37dafe",
+      "bytes": 10036,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "RUN_LINUX_MAC.sh",
+      "sha256": "8203b846297d13f839e91dc473e56e223b044639b5c7945f6939b11cc64f72be",
+      "bytes": 86,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "RUN_WINDOWS.bat",
+      "sha256": "2c3fcc0626e281b6d6f6f7db08396818128ec9c92727e8ed1216687da342c092",
+      "bytes": 73,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "archive/duplicates/E1_Year1CGPA_FinalClean (1).arff",
+      "sha256": "3eaf2cbb7df19efad83ba0adeef24fe17e2809281557597c48fb23b6b1a0b344",
+      "bytes": 3657950,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "archive/original_filenames/academic_performance_raw.csv.csv",
+      "sha256": "aa6aa8e783bc84324ca8e50e890ca1011fe9f6be5bc8cf0d3ffe180245813c17",
+      "bytes": 5083493,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "archive/previous_packages/academic-performance-ml-project.zip",
+      "sha256": "46a1c83c42e099e0f09d0d1fd819b73ea795c852a66e19bd1e810716265e4267",
+      "bytes": 3461333,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "archive/previous_packages/final_evaluation_package.zip",
+      "sha256": "539bbb3b7a29d07a0d9ee6adb59753f6df067840a7c7691ef910c499b56dc913",
+      "bytes": 3064987,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "archive/previous_packages/final_split_package.zip",
+      "sha256": "2100fc0e7278cff1c0bbace597f2f21e90e0aa1aa91963896996cee101003d44",
+      "bytes": 108023,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/final/E1_Year1CGPA_FinalClean.arff",
+      "sha256": "3eaf2cbb7df19efad83ba0adeef24fe17e2809281557597c48fb23b6b1a0b344",
+      "bytes": 3657950,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/final/E1_Year1CGPA_FinalClean.csv",
+      "sha256": "553e7e50f1ba473b081e3abdd271ac3c678e5b84685b625570f78e0fec2bcfdf",
+      "bytes": 3501472,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/intermediate/E1_Year1CGPA_EarlyPrediction.arff",
+      "sha256": "bfef7e151f5fc99dbc9dab627786540aea6fc9014d3a658772820894e10e2bf1",
+      "bytes": 3652876,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean.csv",
+      "sha256": "bd734cdc42e18d213ac9278693c8d055a558b4dec29a32639d1b949e15ea73ea",
+      "bytes": 5079514,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_v2.csv",
+      "sha256": "fd81abda85f60cb90a0ba8f04d4f624f0d86119e284047f02f0ab0ac80eaab9c",
+      "bytes": 5079618,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_v3.csv",
+      "sha256": "7cb8520f8d2b97a2f4baf13b93de8cc93ed7c7bcc26a99d4153eb027ea8bbc80",
+      "bytes": 5079518,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_weka.arff",
+      "sha256": "f29448d6a0e5bb0ea40fa35fb7f0652ce5637a9743ef7a59ef72dd50ee41e568",
+      "bytes": 5279327,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/intermediate/academic_performance_clean_working.arff",
+      "sha256": "3f9b8d10016750d1e70b8b24db86f5d5f45bdee9c0553db1629b3db2e4f1e072",
+      "bytes": 5218452,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/research_participation/RP03_DATASET_AUDIT.txt",
+      "sha256": "13b7769ace32d6aadc31686d19071732aec369b6da94be47b80fb0ece17143df",
+      "bytes": 3414,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/research_participation/RP03_EXACT_DUPLICATE_GROUPS.csv",
+      "sha256": "1301fed2f22dc955a9261bf595ab7c8a875707bb9e5bde210ac7b65897de25da",
+      "bytes": 16011,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/research_participation/ResearchParticipation_Binary_FinalClean.arff",
+      "sha256": "a6daf859f95541f87bb806c9e1e8114ec411552cc6abd5ef072db4aa41a1574e",
+      "bytes": 3678447,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/processed/research_participation/ResearchParticipation_Binary_FinalClean.csv",
+      "sha256": "e6b927a92ef1168e30e9350cad54397ee21069870565f074b74c6ed0f629cc77",
+      "bytes": 3513210,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/raw/academic_performance_raw.csv",
+      "sha256": "aa6aa8e783bc84324ca8e50e890ca1011fe9f6be5bc8cf0d3ffe180245813c17",
+      "bytes": 5083493,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/raw/original_exports/Academic Performance Evolution Dataset (Responses).csv",
+      "sha256": "87752b6048ce14587ea735cdf251503ecbcc92ab5b639f3953d56ae9b206c2b7",
+      "bytes": 5083597,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/RP04_SPLIT_AUDIT.txt",
+      "sha256": "45c3234c7eec993670af21c0eda5dbeadecbc8c417f82c9a9f06c8eb8003e87a",
+      "bytes": 2577,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_TrainValidation_2953.arff",
+      "sha256": "9023868c0db1448252667ab79db0a81d2e94b0061f71f5c381d51ba0fdda3d4a",
+      "bytes": 3126295,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_TrainValidation_2953.csv",
+      "sha256": "3e5313aedd3a6ad3eca3039ce6f0f5a5fb1cff0f09f78ae96dd8135606e708da",
+      "bytes": 2983803,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_test.arff",
+      "sha256": "117c6d30957b8688a9cba84099bab5f8dab433e6105232bd840e8836df46d4ef",
+      "bytes": 555953,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_train.arff",
+      "sha256": "4567c4762ccd893a4c81f77c77b8a53c652ca1d16579f3c412bf69324664abe4",
+      "bytes": 2575269,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/ResearchParticipation_validation.arff",
+      "sha256": "f855892f8b7daa16928ff303bec230e07155ee87891ee71d4b4d941dc6ab8efe",
+      "bytes": 556800,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/SHA256SUMS.txt",
+      "sha256": "7c46aca902929de19c0c23d36eecee0bc852db145abfc43f0f406923b95fd41b",
+      "bytes": 346,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/SPLIT_MANIFEST.json",
+      "sha256": "c9c3021c480bb1c0d895a9165e679ad67e78afa6fa66e09536628e02313ae3ad",
+      "bytes": 2284,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/TEST_SET_LOCKED.txt",
+      "sha256": "39dd151d97b2d110832a94c6453c2f6e4389f4c8941a165d89a02bceb6d81dda",
+      "bytes": 793,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/test.csv",
+      "sha256": "9998fecc46ca7a08a0b452967f16a0ae9f013c08b3cfaedf520f7d2a88795a31",
+      "bytes": 526888,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/train.csv",
+      "sha256": "72b2dd00e38aa98abd1ef5b9b19def706ee1914c81d8cfc5e455824dd81399e8",
+      "bytes": 2459427,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/research_participation/validation.csv",
+      "sha256": "048f96a972ab3900a000cbcb7c63d9d877f0c769a8b518a336797067f74cf163",
+      "bytes": 527765,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/test.csv",
+      "sha256": "cc91421693b47cd044746b7c8e12d3a8b76b2f2ef407975d4e925e1d22557377",
+      "bytes": 527753,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/train.csv",
+      "sha256": "956a6784fda16c3deea1402e2f87fef337eff60d9a43ed85a5602d9db2dac2d5",
+      "bytes": 2448338,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "data/splits/validation.csv",
+      "sha256": "d0a3c16c9a186e68023bc2a584856c246981316f9f1cac9b6b29e985c070db7a",
+      "bytes": 526195,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "d858a42c837a073e103f4e2178af6700e5536a4965764b09e227d4fb7aa1b352",
+      "bytes": 1787,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/DATA_PROVENANCE_AND_INTEGRITY.md",
+      "sha256": "695d2b242da02dcf6d031ef164f8f4fb04ec16479018dc0d39308fce5a6dbe5d",
+      "bytes": 1146,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/HOW_TO_PRESENT_IN_ML_LAB.md",
+      "sha256": "0e4ce92fe47a4ba8105db27147409c412f09fae91f3561c12b9903e0ae311c71",
+      "bytes": 2816,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/MODEL_CARD.md",
+      "sha256": "0522042d8ebe3a8ef79a5a2a67de95ba052091488e5f3cc0da77844094ce0ff7",
+      "bytes": 1735,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/PROJECT_HISTORY.md",
+      "sha256": "2d0a5f00021c165b40684e0d2051bb17a9e8f624c55c773d3d637ac19b775e8d",
+      "bytes": 3357,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/PROJECT_STATUS.md",
+      "sha256": "71f941e864b0de00c2e9760e1095fa6a62997281da5809db98552b62ff71f790",
+      "bytes": 1743,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/report/Report.docx",
+      "sha256": "8d01cbd91eeef87309bec9fd127d0205176ceaf4abdb11deba8d6579d81ba77b",
+      "bytes": 68303,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "docs/research_participation/ResearchParticipation_Phase2_Methodology_and_Results.docx",
+      "sha256": "16273104fc3776843f63875332827df9675e0948e67787c3bd747debc17f9b45",
+      "bytes": 47763,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "environment.txt",
+      "sha256": "cf29f1066c01f63899f23c04300cc4eab9ee51a91d9142849ec7392c4ad91dc8",
+      "bytes": 184,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/RF_TUNING_AND_FEATURE_SELECTION.md",
+      "sha256": "58a31fa1b9f22665cffa7b7d6ceb9c9a15c10e677e4b46133ecfbccf8aaa7445",
+      "bytes": 2151,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/WEKA_MODEL_RESULTS.csv",
+      "sha256": "9f0f1249c248ffa607a356074e1d024a3a136d1d7c5bf58caa59c3da6243ceb9",
+      "bytes": 1974,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/WEKA_MODEL_RESULTS.md",
+      "sha256": "294cb27f1dd37af1597dc9768c7ab825f94402b351d530a19eaf41501a794241",
+      "bytes": 2500,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(1).txt",
+      "sha256": "f107c1c42eae629bfb83d5a435666774ebbb5fb6a0376be86654e58c1a5eea12",
+      "bytes": 55550,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(10).txt",
+      "sha256": "818235393fc1878f4a7ea8e98fe31dc9d5f2b5891ca39357c57eb604d1a94383",
+      "bytes": 889932,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(2).txt",
+      "sha256": "67ed5f7d54541f1a2c1585b00b23d02b8f543e118044fbc1af6da2089d3be205",
+      "bytes": 55104,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-064803).txt",
+      "sha256": "5f1849538db34411c7c2e797fb89e54bee36e18b25f364b0332b4350eb488201",
+      "bytes": 133023,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-065202).txt",
+      "sha256": "738dcc8fa990df6fbb8bb5937d6fcfa793cde737d081cc4c086c1a8678d5f42f",
+      "bytes": 22597,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-065320).txt",
+      "sha256": "306e30a4de45c5f74d6d163f06076d57b6c4c27427947017cdb058e8c9f8837d",
+      "bytes": 8609635,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-065516).txt",
+      "sha256": "4fb25bd0df5fb4560eb289b2566e2eea425e69ea04ffc9dc8f656b8b48a56aa3",
+      "bytes": 1295268,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-070029).txt",
+      "sha256": "40b6c2c40042d3787dcefa415a5b7b4319ff6997d5a2b48cb9fd2bbd440ccd81",
+      "bytes": 207589,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-070147).txt",
+      "sha256": "01488bdf23a52efff10c8fb44defc0014cc1856bc79458bab9c7b4c116eefea9",
+      "bytes": 36962,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-070702).txt",
+      "sha256": "b49053f3d599d6f25e5d2bf81f108bd30f42504badba225382bef643ff822a83",
+      "bytes": 6530975,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(20260905-071337).txt",
+      "sha256": "5f48568e49f76456371d82c9d4e431e3f3cdd87627a8a6871f2d68b1d10a7289",
+      "bytes": 6828311,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(5).txt",
+      "sha256": "52084dc74a3cde8cf526e64ed40e2bf2fdd81b755d4512096f342b0b71cc7616",
+      "bytes": 80916,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(6).txt",
+      "sha256": "fb0248904ebb0c937334d9cc9c10f20d07e243b2c421174f657b580a87447d73",
+      "bytes": 19169,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(7).txt",
+      "sha256": "c2cc70d4c965ca2f163250eabeabe43af24cc4df6b779fa8d4c4708ef829b932",
+      "bytes": 133376,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(8).txt",
+      "sha256": "ed47fca695c17542ede60915795fe377a42690949bc7a9cd13e8499753695b2d",
+      "bytes": 756631,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/raw_logs/Pasted text(9).txt",
+      "sha256": "cd09074da65e5cbc76d62d47ad96865df4e9b0e768df702aad5dcb6a2ee6ed37",
+      "bytes": 309793,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/research_participation/ResearchParticipation_Benchmark_28_Reconstructed.csv",
+      "sha256": "908eb8daf4575f98d8891a5d1cf91625f37e44889180f4cedfc2cb253a868b48",
+      "bytes": 3628,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/research_participation/ResearchParticipation_Benchmark_28_Reconstructed.xlsx",
+      "sha256": "c7829a01f1f165b49cd2d9439368053ca27df2c7f3f741d34a1d86398ff080d1",
+      "bytes": 16233,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/INDEX.md",
+      "sha256": "0e2b9415ad3130a35851c9918c072927e3256015af4212cc0f9e0efeb233c435",
+      "bytes": 8778,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_001_bbdea59a-acd0-4456-b73b-0ffdf029b13e.png",
+      "sha256": "2710503f886d314a133391e0c9a8162e068d825d6ea7b063eab025e853245e93",
+      "bytes": 90701,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_002_3cd59948-95f9-4b72-ab98-d8ce27926879.png",
+      "sha256": "c38bd3e4a28fd93078583c1f79eabfafcc64e4f600c54363e6267a92f94187f4",
+      "bytes": 151333,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_003_d25d5038-3241-4ec9-9459-419ea0d93ff4.png",
+      "sha256": "0caf8ba3b8d4c9861f7bdddc657d2364e58e22055efa6f32351cec630f0cd18d",
+      "bytes": 196132,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_004_94d81160-6dc6-4568-8099-b1b29fb33be8.png",
+      "sha256": "13657044296562955a2c3518a84194d45672ea056930712089cab7cd74abe9ad",
+      "bytes": 165055,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_005_09c98c1d-ab74-4393-ad10-7026918a873b.png",
+      "sha256": "03ebabafcf0f3d5e5307f5435fbed9a0d55e6986d4cf85221581de522748306f",
+      "bytes": 87466,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_006_36eed25f-0520-47c0-a994-89e021603088.png",
+      "sha256": "c1033da64fd89fe08fd65b32a0be40bb343632ff537dc725c674928743a53dbf",
+      "bytes": 31187,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_007_fb90f6e5-163c-4917-9b5e-900641daff56.png",
+      "sha256": "b51c7a207508bf3cada575d274745a4c9e83377933aa602aa00a7d42174b97e3",
+      "bytes": 71079,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_008_60e2361c-a0c0-4ae4-b206-c9fd89015eae.png",
+      "sha256": "797541a4bd04c68757998cf7c62fbd17571f414c4682b8dcfa35f097bb1196b6",
+      "bytes": 103614,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_009_7279154a-7f44-4511-8f51-ac758e349555.png",
+      "sha256": "faa17cdf115b2e62cd801dab2b16a7ddec547f786afe478b895698e66edf4615",
+      "bytes": 150252,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_010_f047673a-eb54-4995-adb7-6a65af0de317.png",
+      "sha256": "546e22a6133c54f553c933e18c2ef602bcddad2884afb62a2321fbff7f4ce70c",
+      "bytes": 179878,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_011_76a40f48-31a7-4dce-a8d0-742fa24edea2.png",
+      "sha256": "20fbc21a37ba2d54eaa2ea1d66c29fa93fa99f004535c222cfc3da80eb8f8a60",
+      "bytes": 181121,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_012_0a93eb28-5e92-4087-9497-f22d46f1066f.png",
+      "sha256": "d7a76300101a18c87740f938c2a6c61e10473cd702f9512cca8e03412ec75a1d",
+      "bytes": 177075,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_013_f01f2905-f4f2-4230-b1d0-f6c66bd27ec3.png",
+      "sha256": "8d94e08cb1f24955479ea20f18d4340f8862b10bed070cacff8c0710ef63a038",
+      "bytes": 177678,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_014_507e2c01-d67f-43ce-b3ef-f706e22d459a.png",
+      "sha256": "4ab198a9dcf998d3b65cf43430f0745ae1680b96027d188101761ba99221c773",
+      "bytes": 208453,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_015_7cbb268a-fb05-4501-9818-6146ef9e0902.png",
+      "sha256": "583e1dd5195a16091cdadc399ccf5cc7312b620ebfb517c92c0f9338d6ab0744",
+      "bytes": 191368,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_016_5a7420e4-6275-43bf-8aad-35548de6080c.png",
+      "sha256": "b90fd5a92fc4aa2093eb639a6473bdd9b9d97f181bcd3e57fa1a5307bfc2b5da",
+      "bytes": 108153,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_017_1a2b2e84-c019-4a1e-81e8-9b406b9dd8e1.png",
+      "sha256": "dbdef6b818e228f1c4e4227a80356a41d1f7af6a63aea42dac886db62ac01138",
+      "bytes": 152617,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_018_8295597a-608c-4bcb-b822-78ec47e1bee0.png",
+      "sha256": "d1e84d8d1c961a4feb8dcd9233914f649e501f0ef654ba27ef22d9e69589c859",
+      "bytes": 179190,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_019_659efb31-72d5-457e-88ac-1a58c6e395b5.png",
+      "sha256": "e508cffcd632b8ea9449e75b1d8161276c6864fb1efeab71a66847d63180f7af",
+      "bytes": 175618,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_020_f8709e8a-054a-4a85-8c71-8834b3fd609d.png",
+      "sha256": "400a44b1b0e7fba25a35ccb4076b35ca3f7247bb97a3e7ccc4118f67bdfb2315",
+      "bytes": 161868,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_021_aa75524a-0921-43c5-a451-816ac5adf52c.png",
+      "sha256": "4fd4f1c4252a2e36c166f3e2e82f5afbab80b5380fd2138ffcd662f33b411546",
+      "bytes": 159429,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_022_98e98488-ac8f-4465-a8a8-7428689e38e9.png",
+      "sha256": "c9859810a4a51b6f57425608eadab59d5055f909fce7ee6e0cde1b57aef45305",
+      "bytes": 211364,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_023_0b730531-bff4-4987-974e-aea1e90a10eb.png",
+      "sha256": "bc49d1a0b14a19c884366cf08dfff862457ee654b33c8e0f6f33907220df06fa",
+      "bytes": 220607,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_024_f098a0b0-dd40-4593-9d51-6336ce035f70.png",
+      "sha256": "53391e02aefb5a70b5ed378b1e352d0685b3886b8b1f524b29b9173af5d02ceb",
+      "bytes": 149887,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_025_b3174040-650c-4ce8-b1e9-259bce242e49.png",
+      "sha256": "ba2d214aa231a9818c540b7cdf3e89788f4b62bc4efc7deb777e2b2fb9c12eb1",
+      "bytes": 240596,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_026_60a467e0-fac8-4b0c-ac6b-cac6e23e6e55.png",
+      "sha256": "e0ec17887684556d2244d744f8fa1542f4bb403374af2d9aea15f307875fca36",
+      "bytes": 184241,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_027_329c2815-5ad9-4574-abda-678274517517.png",
+      "sha256": "37b22d5b5d405ea6711a66c00ec183da6a36b3144e794c253bb1f10a28819981",
+      "bytes": 149766,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_028_83452f32-c184-4348-bb0b-22fd3e220059.png",
+      "sha256": "d64480dc66bec00d61115853157c2e19580acc1fa637c36b95cda00d26567e5e",
+      "bytes": 143799,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_029_edeec3b4-51d4-4a62-a6a1-46f8e61a482c.png",
+      "sha256": "01d45e1034ba4bb5e0c43a8ca8004c7f949af74cbaf2576fc166ee8b0151d8bf",
+      "bytes": 149644,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_030_86e779e9-9e0f-457c-8a0e-f892922962be.png",
+      "sha256": "3292c356bd075d0b0facace3f1feedd07517911b7a5a1f957bc3d987e01547d5",
+      "bytes": 227073,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_031_427af540-e974-4f42-ab18-7e2c27dd1dab.png",
+      "sha256": "366aa2b0a3a3754908114f83dc97c89a7913a51a3b9fd752b72420d3b59008e0",
+      "bytes": 197812,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_032_f1e50571-235d-46ee-9134-d9167abb9d4f.png",
+      "sha256": "d8c1468c768352504c16e5156f58aafa75863015d8824acbaf574f1c001c386d",
+      "bytes": 145362,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_033_338d3640-c060-4407-9098-212938f2b189.png",
+      "sha256": "1b3ad71b73b5e73c2f19eeb71e0ae7ac98d7f3c5583504f6e0374e6ee89f49be",
+      "bytes": 147658,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_034_50885727-be77-4add-aa1c-bbde30040003.png",
+      "sha256": "8d1048d26c161632c0a55ad8ee99d1d6998c4c4a79d4776f77551c446fe8a19e",
+      "bytes": 141209,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_035_6b435991-ba6f-4381-87ee-a83fe9a29a5c.png",
+      "sha256": "5c60d0f9fa4a5c442f185c0d8e6ac451d1f809b20f0994123c1533b681cc77de",
+      "bytes": 211339,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_036_694bf876-a9d7-4ab2-9221-36db65faf868.png",
+      "sha256": "a775c56b3cbbbec3928d85c9254e3f66315efb2d45dd1e0f9fe76b9467677d23",
+      "bytes": 218163,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_037_47b17dda-c71c-4b66-bbd7-1b6c6f7dcbb8.png",
+      "sha256": "3834ba68256d03f58b7947ef1e5d22cddc15db662421484484b86c8364eb7a00",
+      "bytes": 133457,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_038_01ebd5d2-0df0-4da6-9b98-a24825eeae74.png",
+      "sha256": "728cecfaba0ef052aa9a4bff481e1f852bdead0ba479ad402a1a6a4f103d075d",
+      "bytes": 183523,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_039_6708eb07-fba3-44b7-b23e-e3c8ac33dca0.png",
+      "sha256": "d17cbc4ce3ea644e5ab2122adb2af09990620d14cc471ffe2e899878950cb3c2",
+      "bytes": 195709,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_040_9d122d42-03ed-4202-994c-777b82160d16.png",
+      "sha256": "00c97d73d7e375fca34b8f25b64e82b3ce983173f831c900d251953774db4307",
+      "bytes": 206763,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_041_36eb157c-039e-4388-a606-47c5c82d4e7e.png",
+      "sha256": "a813b611d2c435b524f5c5eb9bb6f21f5b68eb2344dfd3337fb61b302cde6fb6",
+      "bytes": 130208,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_042_a47ead71-3bcb-4751-8a88-1b46b8cf3344.png",
+      "sha256": "ba961b76c9ec0739c1757bd8619008360c5d7f43c2960995f19637a0c82fd2d8",
+      "bytes": 156333,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_043_a23cb81b-a09d-4d56-b5c3-892cb076e3b3.png",
+      "sha256": "cf8dea94f5ca20128bb5a0a16ec49b4e244e5b087de21862d90f19dbf8c56126",
+      "bytes": 134003,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_044_cfd96f47-7d73-4038-ad79-803952b47368.png",
+      "sha256": "20d1982ae1a10fc9745e6257e254dd5d37e061baacd1cd70005b377588ce0b90",
+      "bytes": 92305,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_045_8541db3a-e862-45ee-a170-c73b23044a39.png",
+      "sha256": "20e34f600501cab067278c1429f888ac660b9d54746c9845e7d995cec5b0583d",
+      "bytes": 117616,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_046_f9b7dc1d-6c1b-4200-8d7c-893e78ea18fa.png",
+      "sha256": "a64baaf7606f8ca5a8cc270476d5094ad9d2f30c1392ca4f1e8d2600934b72fb",
+      "bytes": 74714,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_047_377e998e-c58e-495e-a840-c039e0408bad.png",
+      "sha256": "6b9f3ab872620340a848fd678fc0f2fc6908215c37de896dbd3b6c1795a24006",
+      "bytes": 127576,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_048_c40c75a0-5776-411c-a683-2a93736b9245.png",
+      "sha256": "34a21cd7455c33d0cd36ac1c5c94f83d5e1ed117ee1eeceb47b386a71e693407",
+      "bytes": 71002,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_049_ef03a857-b830-4233-90b7-7f514c379c24.png",
+      "sha256": "1f724867c9e006b73b28b1d816973fd74e57696db57347ed19e3e755c952d977",
+      "bytes": 86845,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_050_5fedc753-2b02-4c99-ad33-8c35b1d70f99.png",
+      "sha256": "01b0ca1fafcfe216d9aacf9404b4fcd8c36cd997f86fa2f83cd8b05b6a360fed",
+      "bytes": 115908,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_051_30917793-47e4-4f55-b16b-111d7f6ba267.png",
+      "sha256": "b0a598a24f9ad6a90c8b225e2724eb02dce1a491ddba9199b5c39802a3f144ce",
+      "bytes": 124477,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_052_a4be23a2-44a2-4c12-beb5-a401ac60e91b.png",
+      "sha256": "b6ab79e969af425362d2b546a78eb062eef588bd2bdb89fbf5831d0fed628417",
+      "bytes": 36035,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_053_7202cb03-2dc6-4413-9ae6-5e007cafb221.png",
+      "sha256": "f1acfc8e229449e9515a4f81cabb9c6c8f7ceced2f824141d42fc6e3726beb08",
+      "bytes": 73188,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_054_18b4c23d-9ae3-4852-8058-dbeb99aa0381.png",
+      "sha256": "dcff4d8a809f8035cdd5b67a2e7b84af6e4787fdcd9d1435b74679a0cbe22649",
+      "bytes": 65567,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_055_e9240fe8-f83f-483f-a34d-c3180d60eef8.png",
+      "sha256": "18cbb708226899ac95833332dc1295c24f63a316983e7995b4dcacac7008c8b4",
+      "bytes": 65256,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_056_3ca60e7c-d7c0-4431-9d68-96db9ff524c9.png",
+      "sha256": "65404c28ae080b6fae35fca36185435b4a6fba23704abface32dd83fbea269b1",
+      "bytes": 78780,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_057_8e1fab80-ca28-47af-a252-4c0f1e1f1325.png",
+      "sha256": "85ab04067aa4dc7a5753e657566557c778ecf24b6f7633fffa34caee1e233ae3",
+      "bytes": 72967,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_058_755a4f2d-9d8c-4ec9-a32a-edeedc644370.png",
+      "sha256": "a31208807662439465db7f9665ce004d6f7ad771ff7fe0be1b60f95a17d8a486",
+      "bytes": 76277,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_059_d969a11b-4c72-4f21-9628-a32a054a0ebb.png",
+      "sha256": "a130e80b90ef895f78d636282091bef772b6fdd5d76ad792be6e3eb6291ee2cd",
+      "bytes": 77931,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_060_acdc9911-10dd-47f5-aca9-e2c5bc2dfb1d.png",
+      "sha256": "8ec12f5d7ce3250280cb392ca3f6359fabde587dbd6d9f9dfca8369fc6cf6500",
+      "bytes": 59847,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_061_6039b6a3-a7f7-4f09-af0c-5301bfd38bc4.png",
+      "sha256": "6a8b2037d4383e07a5ff3ef2275841710e9080e8b23f71b1a7d1699084c98454",
+      "bytes": 40922,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_062_35105ee0-1caa-4a9b-ba5a-ce8643fa9960.png",
+      "sha256": "9e10f25b9c416e0cc1e87b0a19379bc8e00ea72966ba2abfc703f3298f208997",
+      "bytes": 53339,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_063_a1f3de06-bec9-4253-a526-74db2a933219.png",
+      "sha256": "000b3babcd34e23aeb13fe1cd384f1ed37a37e991113a88a0a0411b2552ca92e",
+      "bytes": 31171,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_064_fd880cb4-8638-4224-9a2a-a545641c3c36.png",
+      "sha256": "639acc1071de82a2974a2195ade64e910faec6171601a469aefc7fa11a1009a4",
+      "bytes": 69831,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_065_a6467b22-8a84-4ad2-b795-935a7571ea95.png",
+      "sha256": "9cdfb5073a38fe63372711ea67c5f4d100f5ac597a0d10a89338e0542b370ec1",
+      "bytes": 47699,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_066_2e22f3cd-b2b7-40cf-a433-383ff5193994.png",
+      "sha256": "e91c5524011c3079aeb51ec0fc11fc0f1419fdf18a044bf562616b0323cce168",
+      "bytes": 46772,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_067_2060a7d1-9f46-41cc-aff3-26ca8d40fb51.png",
+      "sha256": "c1686d8bd68f1c84f7db15b2dc92d8e7efae7c9d89ac89d1f8a148afad47056d",
+      "bytes": 73483,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "experiments/weka/screenshots/raw/weka_068_e2e34f87-5c1f-4fc4-a11d-2c80b54a1dc5.png",
+      "sha256": "fda92a41a632291487c29a3d60b5a7b3dc035ea9f4c5e4441b769b4786bffb1a",
+      "bytes": 36694,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "main.py",
+      "sha256": "8c76b7e2ccf5581975dde07bfaeec4448045533672b3121b772eed7245a844c4",
+      "bytes": 10033,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "models/final/ResearchParticipation_Final_RandomForest_K12.model",
+      "sha256": "ef4fa352cbbf0a0d8bb566fc29912735a3d00b14433764d55dc34f3346ed5075",
+      "bytes": 9019410,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "models/final/final_random_forest_pipeline.joblib",
+      "sha256": "12aaf80cfbb3373657cc8d2a992bea87dffcc48b1b3ca64b7b088224d3d13e47",
+      "bytes": 22532954,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "models/reproduction/final_random_forest_pipeline.joblib",
+      "sha256": "4f4df42583566f21e358011c846699f5ae90b1a750bced9f34769f89ec986169",
+      "bytes": 22532986,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "models/validation/best_validation_pipeline.joblib",
+      "sha256": "fdc764fd91fcd3e714ac9bd88321e3be07f5979967c93fd951d332af1b2a6419",
+      "bytes": 18857386,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "presentation/Academic_Performance_ML_Reference_Based_Final_Presentation.pptx",
+      "sha256": "ea24a3ab334efcf0692081bafb21e1dc36a955538d2dc4648c893fcb5c9ef889",
+      "bytes": 258141,
+      "preexisting_user_modified": true
+    },
+    {
+      "path": "references/README.md",
+      "sha256": "a6605fee94abbd62cb31885363afcaa21e4c65ff1f5b7578ab34f2e004c1dafa",
+      "bytes": 778,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "references/academic_performance_paper.pdf",
+      "sha256": "adb4c9f2bd21bb41d1d3b493dd7f1a0f2ca42fb796dc07e81d513becc079d5b2",
+      "bytes": 259258,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/Academic_Performance_ML_Headline_Results.csv",
+      "sha256": "127607487d0f0e46e292906e5df7847d8983e8ac3b975984254d3743d38c7e2d",
+      "bytes": 269,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/ResearchParticipation_Final_RandomForest_FeatureImportance.txt",
+      "sha256": "3e4690d76ca8113bd94c1dec51e09b52b8a90e3f407de52d64c063ec7ebc7965",
+      "bytes": 3456,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/final_classification_report.csv",
+      "sha256": "373c4e5a81effaae4db18ec79ebbcbec8057471c0d6866c6588fa1f7fe4e44f8",
+      "bytes": 756,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/final_confusion_matrix.csv",
+      "sha256": "334a9c2c5cb9e0a532b6972feced991d7d7129268a0c35686d607b1d366a93a8",
+      "bytes": 562,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/final_confusion_matrix_english.png",
+      "sha256": "c7aea9d387c3d3c061c552d7e5263820f50e97c75fec61d3389b4f14af7ab6ec",
+      "bytes": 75404,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/final_confusion_matrix_original.png",
+      "sha256": "abdb6fc5fd51327829f57cdd6b5d8c0bfbf883520080358aec8823baf0ff8dd1",
+      "bytes": 119770,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/final_test_metrics.json",
+      "sha256": "22ddc043db183c83865c49e708d0c5a88859705ba3d5bbb6a5a264730a3e27b6",
+      "bytes": 728,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Complete_Experiment_Summary.xlsx",
+      "sha256": "ccd2cc4899ccac846287e14f435a4a4569ab46ae6c9e4cab4ff34bb3b5b52f1e",
+      "bytes": 17560,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Final_Classification_Report.xlsx",
+      "sha256": "ff9e14688c18b35c2087f20b6e3b62607bb201aa4a678bfc6be283aec376ba10",
+      "bytes": 5225,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Final_Confusion_Matrix.xlsx",
+      "sha256": "7795834789c06decfa15d3d879e4cc60a165ecbb7c94d2737c37ffa611f6c36a",
+      "bytes": 5135,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/final/research_participation/ResearchParticipation_Final_Feature_Importance.xlsx",
+      "sha256": "fd416061c1f984054a2462bc682a58c61de665e32e5ced78877d58c40d4ae7f2",
+      "bytes": 9373,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/reproduction/best_validation_config.json",
+      "sha256": "915b1bf9f3969747773071c9d738e0ba7137a0e06abf092e96b1ae172ca81a28",
+      "bytes": 720,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/reproduction/final_classification_report.csv",
+      "sha256": "373c4e5a81effaae4db18ec79ebbcbec8057471c0d6866c6588fa1f7fe4e44f8",
+      "bytes": 756,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/reproduction/final_confusion_matrix.csv",
+      "sha256": "84d14903e6a26e938da16b595fc2d46ddde3f6d29754dfd0d1e2f5f84c068ff3",
+      "bytes": 266,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/reproduction/final_confusion_matrix.png",
+      "sha256": "c7aea9d387c3d3c061c552d7e5263820f50e97c75fec61d3389b4f14af7ab6ec",
+      "bytes": 75404,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/reproduction/final_test_metrics.json",
+      "sha256": "45b0a362cdd5728bf3fc89bdeb1ea296a8d17a2eb7bbd5db94f5dbb544376f44",
+      "bytes": 643,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/reproduction/validation_random_forest_results.csv",
+      "sha256": "d3308fb88c49bea358d4fa0583b23b88b0874bb009e49eadbc728eed4e18b28f",
+      "bytes": 6620,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/validation/best_validation_config.json",
+      "sha256": "56aa11a2ebba36bdf96effe14bcdedafbe13ac112a4f2a5823188f7396ce632e",
+      "bytes": 708,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "results/validation/validation_random_forest_results.csv",
+      "sha256": "cd66824905141a7cb68b9aebde815bb0ae48d1be14b1eaec6b270da3f1eabc89",
+      "bytes": 4511,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "scripts/standalone/final_test_evaluation.py",
+      "sha256": "e186ec9bebc3485fc945dd80652498f18625e1027013fee3db1749767fb40395",
+      "bytes": 3797,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "scripts/standalone/research_participation/build_binary_dataset.py",
+      "sha256": "ae2d95760ef995c5406888446f4d9b2b9b034d9ed17ea3465dc6ce40c74649b9",
+      "bytes": 17052,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "scripts/standalone/research_participation/split_dataset.py",
+      "sha256": "ed28d66f9e478b120fcd283f63af3032a18a50675e46c582bae035de6f55f8b9",
+      "bytes": 15062,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "scripts/standalone/split_dataset.py",
+      "sha256": "d5f114296d6977a7b7f27434c5f3bcbce862bd1c6ff86947f712e574b21d0fa1",
+      "bytes": 1599,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "scripts/standalone/train_validate_random_forest.py",
+      "sha256": "fa515f482673e33121d945df3bae99b724794bd1309b5a148453eede7035310f",
+      "bytes": 4752,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "src/config.py",
+      "sha256": "3f914cdb1a9c31f571e24b509e8e737bf1717fefbfcdd9a9e6be2ec6741f0142",
+      "bytes": 717,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "src/data.py",
+      "sha256": "efce4ffa7f5e7e791a4b1f7ff1c713dd5d5d7b72d58992120046881bb9e7156e",
+      "bytes": 3213,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "src/evaluation.py",
+      "sha256": "51b9c0f3d770d8b625de5896da1fe90b6bb59c85e1721002adc53b6f19c33e7a",
+      "bytes": 3124,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "src/modeling.py",
+      "sha256": "74e34c59134416e8682ac4c457e1fd408c64aa1ec789bf3781dbaa7746ec5807",
+      "bytes": 3976,
+      "preexisting_user_modified": false
+    },
+    {
+      "path": "verification/PIPELINE_RUN_OUTPUT.txt",
+      "sha256": "bc1fa1008b94f3419175fcae7ed857cb82d6872e43429f5828d68a4bec9b01ad",
+      "bytes": 1263,
+      "preexisting_user_modified": false
+    }
+  ],
+  "original_documentation_backups": {
+    "README.md": "archive/prior_documentation/README.md",
+    "docs/DATA_DICTIONARY.md": "archive/prior_documentation/DATA_DICTIONARY.md"
+  },
+  "inspection_note": "Starting tree, branch, status, logs, remotes, code, datasets, outputs, docs and environment inspected before analysis edits. Original object inventory reconstructed from inspected starting commit; pre-existing presentation change separately protected."
+}

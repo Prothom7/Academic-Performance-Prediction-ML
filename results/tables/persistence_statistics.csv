@@ -1,0 +1,2 @@
+chi_square,df,p_value,cramers_v,N,minimum_expected,fraction_expected_below_5,spearman_rho,spearman_p,rho_CI_low,rho_CI_high,mean_band_change,signed_rank_statistic,signed_rank_p,direction_sign_test_p,note
+6800.67021532,16,0,0.695378771944,3516,67.0270193402,0,0.846809926863,0,0.830887601551,0.86135134987,-0.0583048919226,156606,2.26613067735e-07,8.9314886114e-05,"Paired ordinal band change; mean change is in bands, not CGPA points."

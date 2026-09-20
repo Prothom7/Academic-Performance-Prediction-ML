@@ -1,0 +1,4 @@
+|   NotParticipated |   Participated | actual_class    |
+|------------------:|---------------:|:----------------|
+|               308 |             28 | NotParticipated |
+|                71 |            115 | Participated    |

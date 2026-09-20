@@ -1,0 +1,19 @@
+factor,level,probability,CI_low,CI_high,standard_error,model_N,subgroup_N,conditioning,CI_method,model
+LivingArrangement,Private hostel,0.0764736494698,0.0557358835537,0.104076906755,0.0121985562624,3482,682,,"delta method, logit of standardized mean; covariate distribution fixed",improvement
+LivingArrangement,Rented apartment/house (alone),0.087042000419,0.0624515718634,0.120074885196,0.0145383488338,3482,358,,"delta method, logit of standardized mean; covariate distribution fixed",improvement
+LivingArrangement,Rented apartment/house (shared with others),0.116948608192,0.0946625047946,0.143648964371,0.0124529436151,3482,572,,"delta method, logit of standardized mean; covariate distribution fixed",improvement
+LivingArrangement,University residence hall/dormitory,0.129907291003,0.109690195271,0.153209387147,0.0110802087225,3482,822,,"delta method, logit of standardized mean; covariate distribution fixed",improvement
+LivingArrangement,With parents/family,0.122474651522,0.0992201466362,0.150270161313,0.01298043245,3482,781,,"delta method, logit of standardized mean; covariate distribution fixed",improvement
+LivingArrangement,With relatives,0.0693211839343,0.0434703212058,0.108796465398,0.0162631971644,3482,267,,"delta method, logit of standardized mean; covariate distribution fixed",improvement
+LivingArrangement,Private hostel,0.115473459232,0.0899876161698,0.147011222016,0.0144756167562,3482,682,,"delta method, logit of standardized mean; covariate distribution fixed",decline
+LivingArrangement,Rented apartment/house (alone),0.145872703428,0.113393761127,0.185705924139,0.0183835697692,3482,358,,"delta method, logit of standardized mean; covariate distribution fixed",decline
+LivingArrangement,Rented apartment/house (shared with others),0.182901752214,0.154986686905,0.214567987808,0.0151893723268,3482,572,,"delta method, logit of standardized mean; covariate distribution fixed",decline
+LivingArrangement,University residence hall/dormitory,0.181825126016,0.156935681857,0.209680187883,0.013448009934,3482,822,,"delta method, logit of standardized mean; covariate distribution fixed",decline
+LivingArrangement,With parents/family,0.103687456465,0.085070143847,0.125818812615,0.0103589556472,3482,781,,"delta method, logit of standardized mean; covariate distribution fixed",decline
+LivingArrangement,With relatives,0.0848329077091,0.0538068929832,0.131267141676,0.0193548425289,3482,267,,"delta method, logit of standardized mean; covariate distribution fixed",decline
+StudentClubMemberOrdinal,0,0.302498709332,0.283184924412,0.322537030497,0.010042861282,3445,1813,,"delta method, logit of standardized mean; covariate distribution fixed",research
+StudentClubMemberOrdinal,1,0.362994129444,0.347547007181,0.378729286399,0.00795714560761,3445,785,,"delta method, logit of standardized mean; covariate distribution fixed",research
+StudentClubMemberOrdinal,2,0.42793769695,0.402898177188,0.453351858344,0.0128817698278,3445,507,,"delta method, logit of standardized mean; covariate distribution fixed",research
+StudentClubMemberOrdinal,3,0.495493534896,0.45455266474,0.536494927565,0.020950995102,3445,340,,"delta method, logit of standardized mean; covariate distribution fixed",research
+CollegeCategory,Private,0.400154871747,0.371801176555,0.429193544038,0.0146565620443,3445,1359,,"delta method, logit of standardized mean; covariate distribution fixed",research
+CollegeCategory,Public,0.322663044324,0.300576829974,0.345570308969,0.0114844579779,3445,2086,,"delta method, logit of standardized mean; covariate distribution fixed",research

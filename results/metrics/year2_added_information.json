@@ -1,0 +1,16 @@
+{
+  "delta_accuracy": 0.2632575757575757,
+  "delta_weighted_f1": 0.2663182105777714,
+  "delta_macro_f1": 0.250377899726289,
+  "delta_accuracy_CI_low": 0.22159090909090906,
+  "delta_accuracy_CI_high": 0.304024621212121,
+  "delta_weighted_f1_CI_low": 0.22482512229159807,
+  "delta_weighted_f1_CI_high": 0.30905028158268294,
+  "delta_macro_f1_CI_low": 0.20955233830922357,
+  "delta_macro_f1_CI_high": 0.2936149455635636,
+  "test_N": 528,
+  "CI_method": "paired percentile bootstrap; 1500 draws; seed=1",
+  "discordant_gains": 151,
+  "discordant_losses": 12,
+  "exact_McNemar_p": 9.002303160266326e-32
+}

@@ -1,0 +1,42 @@
+# Preserve exact research bytes across Windows, Linux and macOS.
+# New artifacts retain generator line endings. Historical normalized files
+# restore their inspected CRLF working bytes on every platform.
+* -text
+data/processed/final/E1_Year1CGPA_FinalClean.csv text eol=crlf
+data/processed/intermediate/academic_performance_clean.csv text eol=crlf
+data/processed/intermediate/academic_performance_clean_v2.csv text eol=crlf
+data/processed/intermediate/academic_performance_clean_v3.csv text eol=crlf
+data/processed/research_participation/RP03_DATASET_AUDIT.txt text eol=crlf
+data/processed/research_participation/ResearchParticipation_Binary_FinalClean.arff text eol=crlf
+data/processed/research_participation/ResearchParticipation_Binary_FinalClean.csv text eol=crlf
+data/splits/research_participation/RP04_SPLIT_AUDIT.txt text eol=crlf
+data/splits/research_participation/SHA256SUMS.txt text eol=crlf
+data/splits/research_participation/SPLIT_MANIFEST.json text eol=crlf
+data/splits/research_participation/TEST_SET_LOCKED.txt text eol=crlf
+data/splits/research_participation/test.csv text eol=crlf
+data/splits/research_participation/train.csv text eol=crlf
+data/splits/research_participation/validation.csv text eol=crlf
+data/splits/test.csv text eol=crlf
+data/splits/train.csv text eol=crlf
+data/splits/validation.csv text eol=crlf
+experiments/weka/WEKA_MODEL_RESULTS.csv text eol=crlf
+"experiments/weka/raw_logs/Pasted text(1).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(10).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(2).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-064803).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-065202).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-065320).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-065516).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-070029).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-070147).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-070702).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(20260905-071337).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(5).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(6).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(7).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(8).txt" text eol=crlf
+"experiments/weka/raw_logs/Pasted text(9).txt" text eol=crlf
+experiments/weka/research_participation/ResearchParticipation_Benchmark_28_Reconstructed.csv text eol=crlf
+results/final/Academic_Performance_ML_Headline_Results.csv text eol=crlf
+scripts/standalone/research_participation/build_binary_dataset.py text eol=crlf
+scripts/standalone/research_participation/split_dataset.py text eol=crlf

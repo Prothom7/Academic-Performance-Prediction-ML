@@ -1,0 +1,36 @@
+[1/10] Verify protected inputs and characterize full population
+[2/10] Reproduce ML experiments (no generated-result inputs)
+  Reproducing frozen Year-1 experiment and validation sweep
+  Reproducing research participation
+  Running paired Year-2 feature comparison
+    year2_without_year1: 9/27 validation configurations
+    year2_without_year1: 18/27 validation configurations
+    year2_without_year1: 27/27 validation configurations
+    year2_with_year1: 9/27 validation configurations
+    year2_with_year1: 18/27 validation configurations
+    year2_with_year1: 27/27 validation configurations
+[3/10] Paired academic trajectory and subgroup persistence
+[4/10] Unadjusted associations and descriptive contrasts
+[5/10] Specified adjusted association models
+  Fitting adjusted year1
+  Fitting adjusted year2
+  Fitting adjusted improvement
+  Fitting adjusted decline
+  Fitting adjusted research
+[6/10] Interactions and standardized probabilities
+  Testing gender_HSCMath_year1
+  Testing gender_HSCPhysics_year1
+  Testing gender_HSCChemistry_year1
+  Testing gender_HSCMath_year2_without_year1
+  Testing gender_HSCMath_year2_with_year1
+  Testing clubs_college_research
+  Testing clubs_faculty_research
+  Testing gender_living_decline
+[7/10] Publication figures and evidence synthesis
+[8/10] Generate research documentation and final summary
+[9/10] Run meaningful validation tests
+.......................                                                  [100%]
+23 passed in 2.67s
+
+[10/10] Verify links, statistical intervals, preservation and output audit
+Complete: 57 tables, 21 figures, 1246 checks; 392.9s.

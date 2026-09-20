@@ -5,3 +5,12 @@ venv/
 .idea/
 .vscode/
 .DS_Store
+.research-venv/
+.uv-cache/
+.weka-runtime/
+.validation-checkout/
+.pytest_cache/
+.env
+.env.*
+*.tmp
+results/.pipeline.lock

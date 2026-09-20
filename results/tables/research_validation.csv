@@ -1,0 +1,2 @@
+n_estimators,max_features,min_samples_leaf,accuracy,weighted_f1,macro_f1,cohen_kappa,balanced_accuracy,MCC,weighted_precision,weighted_recall,macro_precision,macro_recall,accuracy_CI_low,accuracy_CI_high
+100,12,1,0.833333333333,0.825579937304,0.803636363636,0.611985441124,0.786530337942,0.629833994343,0.838626128303,0.833333333333,0.846115932505,0.786530337942,0.798951970627,0.862844459005

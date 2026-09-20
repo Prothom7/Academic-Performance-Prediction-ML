@@ -1,0 +1,7 @@
+{
+  "compared_numeric_artifacts": 64,
+  "byte_identical": 64,
+  "differences": [],
+  "excluded": "Historical-checkpoint comparison extended to cover additional supplied raw rates and intervals between runs; engine timings/manifests/docs excluded.",
+  "status": "passed"
+}

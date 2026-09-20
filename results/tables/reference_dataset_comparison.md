@@ -1,0 +1,10 @@
+| dimension           | reference_dataset                                       | current_project                                                                     |
+|:--------------------|:--------------------------------------------------------|:------------------------------------------------------------------------------------|
+| Population size     | 12411                                                   | 3516                                                                                |
+| Variables           | 44                                                      | 32                                                                                  |
+| Design              | Linked Colombian ICFES assessment databases             | Current assembled academic-performance survey population                            |
+| Educational stages  | Secondary-school Saber 11 and end-of-training Saber Pro | HSC preparation plus Year-1 and Year-2 CGPA bands                                   |
+| Academic evolution  | Competencies assessed across educational stages         | Ordinal persistence, transition matrix and mobility categories                      |
+| Context             | Academic, social and economic variables                 | Academic, socioeconomic, institutional, preferences, living and financial variables |
+| Research engagement | Not an outcome described in the article                 | Binary research participation; extracurricular and contextual associations          |
+| Comparison scope    | Data-description article                                | Predictive and explanatory association analyses; no accuracy-superiority claim      |
