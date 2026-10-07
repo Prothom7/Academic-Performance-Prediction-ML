@@ -1,0 +1,136 @@
+{
+  "source_sha256": "7cb8520f8d2b97a2f4baf13b93de8cc93ed7c7bcc26a99d4153eb027ea8bbc80",
+  "KUET_N": 1377,
+  "seed": 1,
+  "features": [
+    "Faculty",
+    "HSCGraduationYear",
+    "Gender",
+    "CollegeCategory",
+    "CollegeLocation",
+    "HSCLearningSource",
+    "CollegeAttendance",
+    "HSCMath",
+    "HSCPhysics",
+    "HSCChemistry",
+    "FamilyMembers",
+    "BirthOrder",
+    "HouseholdIncomeYearly",
+    "HSCMonthlyExpenditure",
+    "InternetAvailability",
+    "ComputerAvailability",
+    "UniversityPreferenceOrder",
+    "DepartmentPreferenceOrder",
+    "FatherEducation",
+    "MotherEducation",
+    "FatherEmploymentSector",
+    "MotherEmploymentSector"
+  ],
+  "experiments": {
+    "year1": {
+      "test_N": 207,
+      "accuracy": 0.5555555555555556,
+      "cohen_kappa": 0.3881642356872068,
+      "balanced_accuracy": 0.4904627075710667,
+      "matthews_correlation_coefficient": 0.39981380194402255,
+      "weighted_precision": 0.6164265186931359,
+      "weighted_recall": 0.5555555555555556,
+      "weighted_f1": 0.5456025773903986,
+      "weighted_roc_auc_ovr": 0.8177133997585647,
+      "macro_precision": 0.7016448370392934,
+      "macro_recall": 0.4904627075710667,
+      "macro_f1": 0.5326381565250813,
+      "macro_roc_auc_ovr": 0.8311229169698958,
+      "accuracy_CI_low": 0.48746351185659886,
+      "accuracy_CI_high": 0.6216231930478664,
+      "weighted_f1_CI_low": 0.4743043588636771,
+      "weighted_f1_CI_high": 0.6167662637276109,
+      "macro_f1_CI_low": 0.44554695852477644,
+      "macro_f1_CI_high": 0.607871286211118,
+      "test_class_distribution": {
+        "0": 19,
+        "1": 40,
+        "2": 68,
+        "3": 55,
+        "4": 25
+      },
+      "majority_class": 2,
+      "majority_baseline_accuracy": 0.3285024154589372,
+      "accuracy_above_majority_baseline": 0.22705314009661837,
+      "target": "Year1CGPA",
+      "class_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "class_labels": [
+        "<3.00",
+        "3.00–3.25",
+        "3.25–3.50",
+        "3.50–3.75",
+        ">3.75"
+      ],
+      "selected_parameters": {
+        "n_estimators": 250,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1
+      },
+      "seed": 1
+    },
+    "year2": {
+      "test_N": 207,
+      "accuracy": 0.5748792270531401,
+      "cohen_kappa": 0.4242002781641169,
+      "balanced_accuracy": 0.5114368074273734,
+      "matthews_correlation_coefficient": 0.4417027538604561,
+      "weighted_precision": 0.6254513748161812,
+      "weighted_recall": 0.5748792270531401,
+      "weighted_f1": 0.5560439692438272,
+      "weighted_roc_auc_ovr": 0.8334337186370847,
+      "macro_precision": 0.6767695274831245,
+      "macro_recall": 0.5114368074273734,
+      "macro_f1": 0.5358778255826551,
+      "macro_roc_auc_ovr": 0.8241825176689627,
+      "accuracy_CI_low": 0.5067720177683273,
+      "accuracy_CI_high": 0.6402578888420387,
+      "weighted_f1_CI_low": 0.4841435612564,
+      "weighted_f1_CI_high": 0.621941125126543,
+      "macro_f1_CI_low": 0.45455521182025405,
+      "macro_f1_CI_high": 0.6063001127064838,
+      "test_class_distribution": {
+        "0": 21,
+        "1": 42,
+        "2": 64,
+        "3": 53,
+        "4": 27
+      },
+      "majority_class": 2,
+      "majority_baseline_accuracy": 0.30917874396135264,
+      "accuracy_above_majority_baseline": 0.26570048309178745,
+      "target": "Year2CGPA",
+      "class_order": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "class_labels": [
+        "<3.00",
+        "3.00–3.25",
+        "3.25–3.50",
+        "3.50–3.75",
+        ">3.75"
+      ],
+      "selected_parameters": {
+        "n_estimators": 250,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1
+      },
+      "seed": 1
+    }
+  },
+  "interpretation": "Within-KUET held-out predictive comparison; no causal claim."
+}

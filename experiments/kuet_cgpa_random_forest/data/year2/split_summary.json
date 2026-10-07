@@ -1,0 +1,146 @@
+{
+  "target": "Year2CGPA",
+  "seed": 1,
+  "split_sizes": {
+    "train": 963,
+    "validation": 207,
+    "test": 207
+  },
+  "class_counts": [
+    {
+      "split": "train",
+      "target": "Year2CGPA",
+      "band": 0,
+      "band_label": "<3.00",
+      "count": 99,
+      "proportion": 0.102803738317757,
+      "split_N": 963
+    },
+    {
+      "split": "train",
+      "target": "Year2CGPA",
+      "band": 1,
+      "band_label": "3.00–3.25",
+      "count": 196,
+      "proportion": 0.2035306334371755,
+      "split_N": 963
+    },
+    {
+      "split": "train",
+      "target": "Year2CGPA",
+      "band": 2,
+      "band_label": "3.25–3.50",
+      "count": 296,
+      "proportion": 0.3073727933541018,
+      "split_N": 963
+    },
+    {
+      "split": "train",
+      "target": "Year2CGPA",
+      "band": 3,
+      "band_label": "3.50–3.75",
+      "count": 245,
+      "proportion": 0.2544132917964694,
+      "split_N": 963
+    },
+    {
+      "split": "train",
+      "target": "Year2CGPA",
+      "band": 4,
+      "band_label": ">3.75",
+      "count": 127,
+      "proportion": 0.13187954309449637,
+      "split_N": 963
+    },
+    {
+      "split": "validation",
+      "target": "Year2CGPA",
+      "band": 0,
+      "band_label": "<3.00",
+      "count": 21,
+      "proportion": 0.10144927536231885,
+      "split_N": 207
+    },
+    {
+      "split": "validation",
+      "target": "Year2CGPA",
+      "band": 1,
+      "band_label": "3.00–3.25",
+      "count": 43,
+      "proportion": 0.20772946859903382,
+      "split_N": 207
+    },
+    {
+      "split": "validation",
+      "target": "Year2CGPA",
+      "band": 2,
+      "band_label": "3.25–3.50",
+      "count": 63,
+      "proportion": 0.30434782608695654,
+      "split_N": 207
+    },
+    {
+      "split": "validation",
+      "target": "Year2CGPA",
+      "band": 3,
+      "band_label": "3.50–3.75",
+      "count": 53,
+      "proportion": 0.2560386473429952,
+      "split_N": 207
+    },
+    {
+      "split": "validation",
+      "target": "Year2CGPA",
+      "band": 4,
+      "band_label": ">3.75",
+      "count": 27,
+      "proportion": 0.13043478260869565,
+      "split_N": 207
+    },
+    {
+      "split": "test",
+      "target": "Year2CGPA",
+      "band": 0,
+      "band_label": "<3.00",
+      "count": 21,
+      "proportion": 0.10144927536231885,
+      "split_N": 207
+    },
+    {
+      "split": "test",
+      "target": "Year2CGPA",
+      "band": 1,
+      "band_label": "3.00–3.25",
+      "count": 42,
+      "proportion": 0.2028985507246377,
+      "split_N": 207
+    },
+    {
+      "split": "test",
+      "target": "Year2CGPA",
+      "band": 2,
+      "band_label": "3.25–3.50",
+      "count": 64,
+      "proportion": 0.30917874396135264,
+      "split_N": 207
+    },
+    {
+      "split": "test",
+      "target": "Year2CGPA",
+      "band": 3,
+      "band_label": "3.50–3.75",
+      "count": 53,
+      "proportion": 0.2560386473429952,
+      "split_N": 207
+    },
+    {
+      "split": "test",
+      "target": "Year2CGPA",
+      "band": 4,
+      "band_label": ">3.75",
+      "count": 27,
+      "proportion": 0.13043478260869565,
+      "split_N": 207
+    }
+  ]
+}

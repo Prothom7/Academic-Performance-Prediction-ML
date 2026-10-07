@@ -1,0 +1,42 @@
+{
+  "target": "Year2CGPA",
+  "parameters": {
+    "n_estimators": 250,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1
+  },
+  "validation_weighted_f1": 0.5506969283006931,
+  "validation_accuracy": 0.5603864734299517,
+  "validation_cohen_kappa": 0.40916504610752147,
+  "selection_order": [
+    "weighted_f1",
+    "accuracy",
+    "cohen_kappa"
+  ],
+  "candidate_count": 27,
+  "seed": 1,
+  "features": [
+    "Faculty",
+    "HSCGraduationYear",
+    "Gender",
+    "CollegeCategory",
+    "CollegeLocation",
+    "HSCLearningSource",
+    "CollegeAttendance",
+    "HSCMath",
+    "HSCPhysics",
+    "HSCChemistry",
+    "FamilyMembers",
+    "BirthOrder",
+    "HouseholdIncomeYearly",
+    "HSCMonthlyExpenditure",
+    "InternetAvailability",
+    "ComputerAvailability",
+    "UniversityPreferenceOrder",
+    "DepartmentPreferenceOrder",
+    "FatherEducation",
+    "MotherEducation",
+    "FatherEmploymentSector",
+    "MotherEmploymentSector"
+  ]
+}
